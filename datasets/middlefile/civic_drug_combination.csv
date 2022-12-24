@@ -1,0 +1,209 @@
+gene,variant,drugs,clinical_significance,chromosome,start,stop,reference_bases,variant_bases,representative_transcript,drug_interaction_type
+KIT,L576P,"Sorafenib,Imatinib,Nilotinib",Resistance,4,55593661.0,55593661.0,T,C,ENST00000288135.5,Substitutes
+BRAF,V600E,"Sorafenib,Panitumumab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Dabrafenib,Trametinib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Pictilisib Bismesylate,PLX4720",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Nutlin-3,PLX4720",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Capecitabine,Bevacizumab,Vemurafenib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+NPM1,W288FS,"Cytarabine,Daunorubicin,Etoposide",Sensitivity/Response,5,170837547.0,170837548.0,,TCTG,ENST00000517671.1,Combination
+EGFR,L858R,"Gefitinib,Erlotinib",Sensitivity/Response,7,55259515.0,55259515.0,T,G,ENST00000275493.2,Substitutes
+KRAS,G12A,"Gefitinib,Erlotinib",Resistance,12,25398284.0,25398284.0,C,G,ENST00000256078.4,Substitutes
+DDR2,S768R,"Erlotinib,Dasatinib",Sensitivity/Response,1,162748390.0,162748390.0,T,A,ENST00000367922.3,Combination
+EGFR,T790M,"Erlotinib,Pemetrexed",Sensitivity/Response,7,55249071.0,55249071.0,C,T,ENST00000275493.2,Combination
+ERBB2,D769H,"Lapatinib,Neratinib",Sensitivity/Response,17,37880261.0,37880261.0,G,C,ENST00000269571.5,Substitutes
+ERBB2,R678Q,"Lapatinib,Neratinib",Sensitivity/Response,17,37879658.0,37879658.0,G,A,ENST00000269571.5,Substitutes
+ESR1,L536Q,"Fulvestrant,Tamoxifen",Sensitivity/Response,6,152419920.0,152419921.0,TC,AG,ENST00000440973.1,Substitutes
+ESR1,D538G,"Tamoxifen,Fulvestrant",Sensitivity/Response,6,152419926.0,152419926.0,A,G,ENST00000206249.3,Substitutes
+ESR1,Y537C,"Tamoxifen,Fulvestrant",Sensitivity/Response,6,152419923.0,152419923.0,A,G,ENST00000206249.3,Substitutes
+ESR1,Y537N,"Tamoxifen,Fulvestrant",Sensitivity/Response,6,152419922.0,152419922.0,T,A,ENST00000206249.3,Substitutes
+ESR1,Y537S,"Fulvestrant,Tamoxifen",Sensitivity/Response,6,152419923.0,152419923.0,A,C,ENST00000206249.3,Substitutes
+KIT,L576P,"Dasatinib,Nilotinib,Imatinib",Sensitivity/Response,4,55593661.0,55593661.0,T,C,ENST00000288135.5,Substitutes
+KRAS,G12D,"Selumetinib,Dactolisib",Sensitivity/Response,12,25398284.0,25398284.0,C,T,ENST00000256078.4,Combination
+PIK3CA,E545K,"Panitumumab,Cetuximab",Resistance,3,178936091.0,178936091.0,G,A,ENST00000263967.3,Substitutes
+PIK3CA,H1047R,"Panitumumab,Cetuximab",Resistance,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Substitutes
+CSF1R,CSF1R,"Imatinib,GW-2580",Sensitivity/Response,1,156446804.0,156470620.0,,,ENST00000348159.4,Substitutes
+AR,F877L,"Apalutamide,Enzalutamide",Resistance,X,66943549.0,66943549.0,T,C,ENST00000374690.3,Substitutes
+NT5C2,R367Q,"Thioguanine,Mercaptopurine",Resistance,10,104852955.0,104852955.0,C,T,ENST00000343289.5,Substitutes
+NT5C2,K359Q,"Mercaptopurine,Thioguanine",Resistance,10,104852980.0,104852980.0,T,G,ENST00000343289.5,Substitutes
+NT5C2,D407A,"Mercaptopurine,Thioguanine",Resistance,10,104850745.0,104850745.0,T,G,ENST00000343289.5,Substitutes
+EGFR,T790M,"Gefitinib,Multikinase Inhibitor AEE788",Resistance,7,55249071.0,55249071.0,C,T,ENST00000275493.2,Sequential
+XRCC1,R194W,"Docetaxel,Gemcitabine,Vinorelbine",Sensitivity/Response,19,44057574.0,44057574.0,G,A,ENST00000262887.5,Substitutes
+XRCC1,Q399R,"Cisplatin,Carboplatin",Sensitivity/Response,19,44055726.0,44055726.0,T,C,ENST00000262887.5,Substitutes
+ABCB1,I1145I,"Cisplatin,Carboplatin",Sensitivity/Response,7,87138645.0,87138645.0,A,G,ENST00000265724.3,Substitutes
+ERCC2,K751Q,"Carboplatin,Paclitaxel",Sensitivity/Response,19,45854919.0,45854919.0,T,G,ENST00000391945.4,Combination
+PIK3CA,E545K,"Akt Inhibitor MK2206,Pictilisib",Sensitivity/Response,3,178936091.0,178936091.0,G,A,ENST00000263967.3,Substitutes
+MTOR,H1968Y,"PI3K/BET Inhibitor LY294002,Capivasertib",Sensitivity/Response,1,11188519.0,11188519.0,G,A,ENST00000361445.4,Substitutes
+MTOR,P2213S,"PI3K/BET Inhibitor LY294002,Capivasertib",Sensitivity/Response,1,11184580.0,11184580.0,G,A,ENST00000361445.4,Combination
+ALK,C1156Y,"Crizotinib,Luminespib,Ceritinib",Resistance,2,29445258.0,29445258.0,C,T,ENST00000389048.3,Sequential
+RAC1,P29S,"Vemurafenib,Dabrafenib",Resistance,7,6426892.0,6426892.0,C,T,ENST00000356142.4,Substitutes
+EGFR,T790M,"Rociletinib,Osimertinib",Sensitivity/Response,7,55249071.0,55249071.0,C,T,ENST00000275493.2,Substitutes
+NRAS,Q61K,"Everolimus,Binimetinib",Sensitivity/Response,1,115256530.0,115256530.0,G,T,ENST00000369535.4,Combination
+BRAF,V600E,"Dactolisib,Selumetinib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+EGFR,G465R,"Cetuximab,Panitumumab",Resistance,7,55227926.0,55227926.0,G,A,ENST00000275493.2,Substitutes
+EGFR,S492R,"Panitumumab,Futuximab/Modotuximab Mixture",Sensitivity/Response,7,55228009.0,55228009.0,C,A,ENST00000275493.2,Substitutes
+EGFR,R451C,"Futuximab/Modotuximab Mixture,Panitumumab,Cetuximab",Sensitivity/Response,7,55227884.0,55227884.0,C,T,ENST00000275493.2,Substitutes
+EGFR,K467T,"Futuximab/Modotuximab Mixture,Panitumumab",Sensitivity/Response,7,55227933.0,55227933.0,A,C,ENST00000275493.2,Substitutes
+EGFR,P753S,"Cetuximab,Sirolimus",Sensitivity/Response,7,55242487.0,55242487.0,C,T,ENST00000275493.2,Combination
+KDR,A1065T,"Sorafenib,Sunitinib",Sensitivity/Response,4,55955969.0,55955969.0,C,T,ENST00000263923.4,Substitutes
+KDR,D717V,"Sorafenib,Sunitinib",Sensitivity/Response,4,55968180.0,55968180.0,T,A,ENST00000263923.4,Substitutes
+KRAS,G12C,"Docetaxel,Selumetinib",Sensitivity/Response,12,25398285.0,25398285.0,C,A,ENST00000256078.4,Combination
+KRAS,G12V,"Selumetinib,Docetaxel",Sensitivity/Response,12,25398284.0,25398284.0,C,A,ENST00000256078.4,Combination
+KRAS,G12C,"ARS-853,Epidermal Growth Factor Receptor Tyrosine Kinase Inhibitor",Sensitivity/Response,12,25398285.0,25398285.0,C,A,ENST00000256078.4,Combination
+ERBB2,V842I,"Trastuzumab,Neratinib,Lapatinib",Sensitivity/Response,17,37881332.0,37881332.0,G,A,ENST00000269571.5,Combination
+ERBB2,L755S,"Neratinib,Lapatinib,Trastuzumab",Sensitivity/Response,17,37880220.0,37880220.0,T,C,ENST00000269571.5,Combination
+ERBB2,V777L,"Neratinib,Lapatinib,Trastuzumab",Sensitivity/Response,17,37881000.0,37881000.0,G,T,ENST00000269571.5,Combination
+ERBB2,L866M,"Lapatinib,Neratinib,Trastuzumab",Sensitivity/Response,17,37881404.0,37881404.0,C,A,ENST00000269571.5,Combination
+KRAS,G12C,"Erlotinib,Gefitinib",Resistance,12,25398285.0,25398285.0,C,A,ENST00000256078.4,Substitutes
+ROS1,G2032R,"Foretinib,Cabozantinib",Sensitivity/Response,6,117638347.0,117638347.0,C,T,ENST00000368508.3,Substitutes
+ROS1,G2032R,"Brigatinib,Ceritinib,AZD3463,Crizotinib",Resistance,6,117638347.0,117638347.0,C,T,ENST00000368508.3,Substitutes
+ROS1,L2155S,"TAE684,Crizotinib,Foretinib",Resistance,6,117630062.0,117630062.0,A,G,ENST00000368508.3,Substitutes
+PIK3CA,H1047R,"Dactolisib,Cetuximab",Sensitivity/Response,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+EGFR,T790M,"Gefitinib,Erlotinib",Resistance,7,55249071.0,55249071.0,C,T,ENST00000275493.2,Substitutes
+BRAF,V600E,"Cetuximab,Vemurafenib,Gefitinib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Vemurafenib,Cobimetinib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Dactolisib,GDC-0879",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Dabrafenib,Vemurafenib,Trametinib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+MTOR,E2419K,"Everolimus,Pazopanib",Sensitivity/Response,1,11174420.0,11187857.0,,,ENST00000361445.4,Combination
+BRAF,D594A,"Sorafenib,Mitogen-Activated Protein Kinase Kinase Inhibitor",Sensitivity/Response,7,140453154.0,140453154.0,T,G,ENST00000288602.6,Substitutes
+BRAF,D594V,"Trametinib,Sorafenib",Sensitivity/Response,7,140453154.0,140453154.0,T,A,ENST00000288602.6,Substitutes
+BRAF,K483M,"Sorafenib,Mitogen-Activated Protein Kinase Kinase Inhibitor",Sensitivity/Response,7,140477859.0,140477860.0,TT,CA,ENST00000288602.6,Substitutes
+BRAF,L597R,"Vemurafenib,Trametinib",Sensitivity/Response,7,140453145.0,140453145.0,A,C,ENST00000288602.6,Substitutes
+BRAF,L597S,"Vemurafenib,Trametinib",Sensitivity/Response,7,140453145.0,140453146.0,AG,GA,ENST00000288602.6,Substitutes
+BRAF,L597Q,"Vemurafenib,Trametinib",Sensitivity/Response,7,140453145.0,140453145.0,A,T,ENST00000288602.6,Substitutes
+BRAF,K601E,"Vemurafenib,Trametinib",Sensitivity/Response,7,140453134.0,140453134.0,T,C,ENST00000288602.6,Substitutes
+ALK,I1171N,"Crizotinib,Alectinib",Resistance,2,29445213.0,29445213.0,A,T,ENST00000389048.3,Sequential
+ALK,I1171S,"Alectinib,Crizotinib",Resistance,2,29445213.0,29445213.0,A,C,ENST00000389048.3,Sequential
+PIK3CA,H1047R,"Capivasertib,Trastuzumab",Sensitivity/Response,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+PIK3CA,H1047R,"Lapatinib,Capivasertib",Sensitivity/Response,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+BRAF,V600E,"Vemurafenib,Panitumumab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+PIK3CA,H1047R,"Everolimus,Fulvestrant",Sensitivity/Response,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+PIK3CA,H1047R,"Perifosine,Temsirolimus",Sensitivity/Response,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Substitutes
+PIK3CA,E542K,"Perifosine,Temsirolimus",Sensitivity/Response,3,178936082.0,178936082.0,G,A,ENST00000263967.3,Substitutes
+MYD88,L265P,"IMG-2005-5,IRAK-1/4 Inhibitor",Sensitivity/Response,3,38182641.0,38182641.0,T,C,ENST00000396334.3,Substitutes
+EGFR,T790M,"Erlotinib,Gefitinib",Resistance,7,55249071.0,55249071.0,C,T,ENST00000275493.2,Substitutes
+PIK3CA,E545K,"Erlotinib,Gefitinib",Resistance,3,178936091.0,178936091.0,G,A,ENST00000263967.3,Substitutes
+EGFR,G719S,"Erlotinib,Gefitinib",Sensitivity/Response,7,55241707.0,55241707.0,G,A,ENST00000275493.2,Substitutes
+BRAF,G596C,"Dabrafenib,Trametinib",Sensitivity/Response,7,140453149.0,140453149.0,C,A,ENST00000288602.6,Combination
+EGFR,D761Y,"Gefitinib,Erlotinib",Resistance,7,55242511.0,55242511.0,G,T,ENST00000275493.2,Substitutes
+ERBB3,V855A,"Afatinib,Pertuzumab",Sensitivity/Response,12,56491672.0,56491672.0,T,C,ENST00000267101.3,Substitutes
+PTPRD,V253I,"Teprotumumab,Cixutumumab",Sensitivity/Response,9,8521481.0,8521481.0,C,T,ENST00000381196.4,Substitutes
+BRAF,V600E,"Irinotecan,Cetuximab,Vemurafenib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+ARAF,S490T,"Cetuximab,Vemurafenib,Irinotecan",Resistance,X,47429340.0,47429340.0,T,A,ENST00000377045.4,Combination
+GNAS,R201C,"Vemurafenib,Irinotecan,Cetuximab",Resistance,20,57484420.0,57484420.0,C,T,ENST00000371085.3,Combination
+PDGFRA,P577S,"Imatinib,Crenolanib",Sensitivity/Response,4,55141083.0,55141083.0,C,T,ENST00000257290.5,Substitutes
+PDGFRA,R841K,"Crenolanib,Imatinib",Sensitivity/Response,4,55152090.0,55152090.0,G,A,ENST00000257290.5,Substitutes
+PDGFRA,H845Y,"Crenolanib,Imatinib",Sensitivity/Response,4,55152101.0,55152101.0,C,T,ENST00000257290.5,Substitutes
+PDGFRA,G853D,"Imatinib,Crenolanib",Sensitivity/Response,4,55152126.0,55152126.0,G,A,ENST00000257290.5,Substitutes
+KRAS,G12V,"Selumetinib,Dactolisib",Sensitivity/Response,12,25398284.0,25398284.0,C,A,ENST00000256078.4,Combination
+NRAS,G12D,"Irinotecan,Cetuximab",Resistance,1,115258747.0,115258747.0,C,T,ENST00000369535.4,Combination
+BRAF,V600E,"Panitumumab,Cetuximab",Resistance,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Substitutes
+BRAF,V600E,"Bevacizumab,Capecitabine,Oxaliplatin",Resistance,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+NRAS,Q61L,"Irinotecan,Cetuximab",Resistance,1,115256529.0,115256529.0,T,A,ENST00000369535.4,Combination
+KRAS,G13D,"Selumetinib,Dactolisib",Sensitivity/Response,12,25398281.0,25398281.0,C,T,ENST00000256078.4,Combination
+NRAS,Q61K,"Cetuximab,Chemotherapy",Resistance,1,115256530.0,115256530.0,G,T,ENST00000369535.4,Combination
+NRAS,Q61K,"Selumetinib,Dactolisib",Sensitivity/Response,1,115256530.0,115256530.0,G,T,ENST00000369535.4,Combination
+NRAS,G13R,"Irinotecan,Cetuximab",Resistance,1,115258745.0,115258745.0,C,G,ENST00000369535.4,Combination
+KRAS,A146T,"Selumetinib,Dactolisib",Sensitivity/Response,12,25378562.0,25378562.0,C,T,ENST00000256078.4,Combination
+KRAS,A146V,"Selumetinib,Dactolisib",Sensitivity/Response,12,25378561.0,25378561.0,G,A,ENST00000256078.4,Combination
+KRAS,G12C,"Selumetinib,Dactolisib",Sensitivity/Response,12,25398285.0,25398285.0,C,A,ENST00000256078.4,Combination
+KRAS,A146P,"Cetuximab,Irinotecan",Resistance,12,25378562.0,25378562.0,C,G,ENST00000256078.4,Combination
+TP53,R273L,"Cisplatin,Carboplatin",Resistance,17,7577120.0,7577120.0,C,A,ENST00000269305.4,Substitutes
+TP53,Y220C,"Mitomycin,Cisplatin,Etoposide",Sensitivity/Response,17,7578190.0,7578190.0,T,C,ENST00000269305.4,Combination
+ABL1,L248V,"Dasatinib,Nilotinib,Imatinib Mesylate",Resistance,9,133738342.0,133738342.0,C,G,ENST00000318560.5,Substitutes
+ABL1,Y253H,"Imatinib Mesylate,Nilotinib",Resistance,9,133738357.0,133738357.0,T,C,ENST00000318560.5,Substitutes
+ABL1,T315I,"Nilotinib,Bafetinib,Imatinib,Dasatinib",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Substitutes
+TP53,Y234C,"Carboplatin,Cisplatin",Resistance,17,7577580.0,7577580.0,T,C,ENST00000269305.4,Substitutes
+ABL1,E255V,"Imatinib Mesylate,Nilotinib",Resistance,9,133738364.0,133738364.0,A,T,ENST00000318560.5,Substitutes
+ABL1,F359C,"Imatinib Mesylate,Nilotinib",Resistance,9,133748415.0,133748415.0,T,G,ENST00000318560.5,Substitutes
+ABL1,L384M,"Imatinib Mesylate,Nilotinib",Resistance,9,133750319.0,133750319.0,C,A,ENST00000318560.5,Substitutes
+NRAS,Q61K,"Trametinib,Selumetinib",Sensitivity/Response,1,115256530.0,115256530.0,G,T,ENST00000369535.4,Substitutes
+PIK3CA,E545K,"Pictilisib,Cisplatin",Sensitivity/Response,3,178936091.0,178936091.0,G,A,ENST00000263967.3,Combination
+FLT3,D835V,"Cytarabine,Sunitinib",Sensitivity/Response,13,28592641.0,28592641.0,T,A,ENST00000241453.7,Combination
+FLT3,D835V,"Sunitinib,Daunorubicin",Sensitivity/Response,13,28592641.0,28592641.0,T,A,ENST00000241453.7,Combination
+KIT,V559D,"Imatinib,PD-180970,Tandutinib,Dasatinib,Sunitinib",Sensitivity/Response,4,55593610.0,55593610.0,T,A,ENST00000288135.5,Substitutes
+FLT3,D835V,"Tyrphostin AG 1296,AS602868",Sensitivity/Response,13,28592641.0,28592641.0,T,A,ENST00000241453.7,Substitutes
+NRAS,Q61H,"Irinotecan,Cetuximab",Resistance,1,115256528.0,115256528.0,T,G,ENST00000369535.4,Combination
+BRAF,V600E,"Cetuximab,FOLFOX-4 Regimen",Resistance,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+EGFR,T790M,"Gefitinib,Multikinase Inhibitor AEE788,Erlotinib",Resistance,7,55249071.0,55249071.0,C,T,ENST00000275493.2,Substitutes
+EGFR,L858R,"Gefitinib,Erlotinib,Multikinase Inhibitor AEE788",Sensitivity/Response,7,55259515.0,55259515.0,T,G,ENST00000275493.2,Substitutes
+PIK3CA,H1047R,"Cetuximab,Irinotecan",Resistance,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+NRAS,G12C,"Chemotherapy,Cetuximab",Resistance,1,115258748.0,115258748.0,C,A,ENST00000369535.4,Combination
+KRAS,A146T,"Cetuximab,FOLFOX-4 Regimen",Resistance,12,25378562.0,25378562.0,C,T,ENST00000256078.4,Combination
+KRAS,Q61H,"Cetuximab,Chemotherapy",Resistance,12,25380275.0,25380275.0,T,G,ENST00000256078.4,Combination
+KRAS,Q61L,"Chemotherapy,Cetuximab",Resistance,12,25380276.0,25380276.0,T,A,ENST00000256078.4,Combination
+KRAS,Q61R,"Irinotecan,Cetuximab",Resistance,12,25380276.0,25380276.0,T,C,ENST00000256078.4,Combination
+KRAS,Q61K,"Cetuximab,Chemotherapy",Resistance,12,25380277.0,25380277.0,G,T,ENST00000256078.4,Combination
+KRAS,G12C,"Chemotherapy,Cetuximab",Resistance,12,25398285.0,25398285.0,C,A,ENST00000256078.4,Combination
+KRAS,G12R,"Chemotherapy,Cetuximab",Resistance,12,25398285.0,25398285.0,C,G,ENST00000256078.4,Combination
+KIT,V560D,"Regorafenib,Sunitinib,Ponatinib,Imatinib",Sensitivity/Response,4,55593613.0,55593613.0,T,A,ENST00000288135.5,Substitutes
+KIT,L576P,"Dasatinib,Imatinib",Sensitivity/Response,4,55593661.0,55593661.0,T,C,ENST00000288135.5,Substitutes
+BRAF,V600K,"Dabrafenib,Trametinib",Sensitivity/Response,7,140453136.0,140453137.0,AC,TT,ENST00000288602.6,Combination
+EGFR,G719D,"Gefitinib,Erlotinib",Sensitivity/Response,7,55241708.0,55241708.0,G,A,,Substitutes
+EGFR,L838V,"Gefitinib,Erlotinib",Resistance,7,55259454.0,55259454.0,C,G,ENST00000275493.2,Substitutes
+PIK3CA,H1047L,"Irinotecan,Cetuximab",Resistance,3,178952085.0,178952085.0,A,T,ENST00000263967.3,Combination
+KIT,V559D,"Ponatinib,Imatinib,Regorafenib",Sensitivity/Response,4,55593610.0,55593610.0,T,A,ENST00000288135.5,Substitutes
+PIK3CA,S158L,"Cetuximab,Irinotecan",Resistance,3,178917598.0,178917598.0,C,T,ENST00000263967.3,Combination
+PIK3CA,R93W,"Cetuximab,Fluorouracil,Oxaliplatin",Resistance,3,178916890.0,178916890.0,C,T,ENST00000263967.3,Combination
+BRAF,D594G,"Cetuximab,Irinotecan",Resistance,7,140453154.0,140453154.0,T,C,ENST00000288602.6,Combination
+KIT,D816E,"Sunitinib,Imatinib",Resistance,4,55599322.0,55599322.0,C,G,ENST00000288135.5,Substitutes
+ABL1,G340L,"Dasatinib,Imatinib Mesylate",Sensitivity/Response,9,133748300.0,133748301.0,GG,CT,ENST00000372348.2,Substitutes
+KIT,S628N,"Dasatinib,Imatinib",Sensitivity/Response,4,55594180.0,55594180.0,G,A,,Substitutes
+BRAF,V600E,"Trametinib,Dabrafenib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Irinotecan,Vemurafenib,Panitumumab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Vemurafenib,Pertuzumab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Panitumumab,Trametinib,Dabrafenib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600K,"Trametinib,Dabrafenib",Sensitivity/Response,7,140453136.0,140453137.0,AC,TT,ENST00000288602.6,Combination
+ABL1,T315I,"Imatinib Mesylate,Dasatinib",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Combination
+ABL1,E255K,"Imatinib Mesylate,Dasatinib",Resistance,9,133738363.0,133738363.0,G,A,ENST00000318560.5,Combination
+ABL1,E255K,"Nilotinib,Imatinib Mesylate,Dasatinib",Resistance,9,133738363.0,133738363.0,G,A,ENST00000318560.5,Substitutes
+ABL1,T315I,"Imatinib Mesylate,Nilotinib",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Combination
+ABL1,Y253H,"Nilotinib,Imatinib Mesylate",Resistance,9,133738357.0,133738357.0,T,C,ENST00000318560.5,Substitutes
+PIK3CA,H1047R,"Lapatinib,Trastuzumab",Resistance,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+ABL1,L248R,"Dasatinib,Imatinib Mesylate",Resistance,9,133738343.0,133738343.0,T,G,ENST00000318560.5,Substitutes
+PIK3CA,E545K,"Lapatinib,Trastuzumab",Resistance,3,178936091.0,178936091.0,G,A,ENST00000263967.3,Combination
+ABL1,E255K,"Imatinib Mesylate,Dasatinib",Resistance,9,133738363.0,133738363.0,G,A,ENST00000318560.5,Substitutes
+ABL1,E255K,"Imatinib Mesylate,Nilotinib",Resistance,9,133738363.0,133738363.0,G,A,ENST00000318560.5,Substitutes
+ABL1,T315I,"Nilotinib,Dasatinib",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Combination
+ABL1,L248V,"Imatinib Mesylate,Nilotinib",Resistance,9,133738342.0,133738342.0,C,G,ENST00000318560.5,Combination
+ABL1,Y253H,"Imatinib Mesylate,Nilotinib",Resistance,9,133738357.0,133738357.0,T,C,ENST00000318560.5,Combination
+ABL1,F311L,"Imatinib Mesylate,Nilotinib",Resistance,9,133748270.0,133748270.0,T,C,ENST00000318560.5,Combination
+ABL1,F359C,"Imatinib Mesylate,Nilotinib",Resistance,9,133748415.0,133748415.0,T,G,ENST00000318560.5,Combination
+ABL1,H396P,"Nilotinib,Imatinib Mesylate",Resistance,9,133750356.0,133750356.0,A,C,ENST00000318560.5,Combination
+ABL1,V299L,"Dasatinib,Imatinib Mesylate",Resistance,9,133747588.0,133747588.0,G,C,ENST00000318560.5,Combination
+ABL1,T315I,"Nilotinib,Dasatinib,Imatinib Mesylate",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Substitutes
+KRAS,G13V,"Cetuximab,Panitumumab",Resistance,12,25398280.0,25398281.0,GC,AA,ENST00000256078.4,Substitutes
+KRAS,G12S,"Cetuximab,Panitumumab",Resistance,12,25398285.0,25398285.0,C,T,ENST00000256078.4,Substitutes
+KRAS,G12D,"Panitumumab,Cetuximab",Resistance,12,25398284.0,25398284.0,C,T,ENST00000256078.4,Substitutes
+KRAS,G12A,"Panitumumab,Cetuximab",Resistance,12,25398284.0,25398284.0,C,G,ENST00000256078.4,Substitutes
+KRAS,G13D,"Panitumumab,Cetuximab",Resistance,12,25398281.0,25398281.0,C,T,ENST00000256078.4,Substitutes
+KRAS,G12V,"Cetuximab,Panitumumab",Resistance,12,25398284.0,25398284.0,C,A,ENST00000256078.4,Substitutes
+FGFR3,V555M,"FGFR Inhibitor AZD4547,AZ12908010,PD173074",Resistance,4,1807494.0,1807494.0,G,A,ENST00000440486.8,Substitutes
+ABL1,F359V,"Nilotinib,Imatinib Mesylate",Resistance,9,133748414.0,133748414.0,T,G,ENST00000318560.5,Substitutes
+ABL1,E255V,"Nilotinib,Imatinib Mesylate",Resistance,9,133738364.0,133738364.0,A,T,ENST00000318560.5,Substitutes
+EGFR,V441F,"Panitumumab,Cetuximab",Resistance,7,55227854.0,55227854.0,G,T,ENST00000275493.2,Substitutes
+BRAF,V600E,"Encorafenib,Binimetinib,Cetuximab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+PIK3CA,E542K,"Fulvestrant,Alpelisib",Sensitivity/Response,3,178936082.0,178936082.0,G,A,ENST00000263967.3,Combination
+KIT,V560G,"Regorafenib,Imatinib,Ponatinib",Sensitivity/Response,4,55593613.0,55593613.0,T,G,ENST00000288135.5,Substitutes
+KIT,K642E,"Sunitinib,Ponatinib",Sensitivity/Response,4,55594221.0,55594221.0,A,G,ENST00000288135.5,Substitutes
+KIT,N822K,"Imatinib,Sunitinib",Resistance,4,55599340.0,55599340.0,T,A,ENST00000288135.5,Substitutes
+KIT,A829P,"Imatinib,Sunitinib",Resistance,4,55602664.0,55602664.0,G,C,,Substitutes
+TP53,R273H,"Doxorubicin,Methotrexate",Resistance,17,7577120.0,7577120.0,C,T,ENST00000269305.4,Substitutes
+KIT,D816V,"Imatinib,Dasatinib",Resistance,4,55599321.0,55599321.0,A,T,ENST00000288135.5,Substitutes
+BRAF,G466V,"Panitumumab,Irinotecan",Sensitivity/Response,7,140481411.0,140481411.0,C,A,ENST00000288602.6,Combination
+BRAF,V600D,"BRAF Inhibitor,Mitogen-Activated Protein Kinase Kinase Inhibitor",Sensitivity/Response,7,140453135.0,140453136.0,CA,AT,ENST00000288602.6,Combination
+ABL1,T315I,"Dasatinib,Imatinib,Nilotinib",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Substitutes
+ABL1,T315I,"Nilotinib,Imatinib,Dasatinib",Resistance,9,133748283.0,133748283.0,C,T,ENST00000318560.5,Substitutes
+NT5C2,R238W,"Thioguanine,Mercaptopurine",Resistance,10,104857107.0,104857107.0,G,A,ENST00000343289.5,Substitutes
+NT5C2,S445F,"Thioguanine,Mercaptopurine",Resistance,10,104850483.0,104850483.0,G,A,ENST00000343289.5,Substitutes
+ABL1,F317L,"Imatinib,Dasatinib",Resistance,9,133748288.0,133748288.0,T,C,ENST00000318560.5,Substitutes
+ABL1,T315A,"Dasatinib,Imatinib",Resistance,9,133748282.0,133748282.0,A,G,ENST00000318560.5,Substitutes
+ABL1,Q252H,"Imatinib,Bafetinib",Resistance,9,133738356.0,133738356.0,G,C,ENST00000318560.5,Substitutes
+ABL1,M244V,"Bafetinib,Imatinib",Resistance,9,133738330.0,133738330.0,A,G,ENST00000318560.5,Substitutes
+ABL1,G250E,"Bafetinib,Imatinib",Resistance,9,133738349.0,133738349.0,G,A,ENST00000318560.5,Substitutes
+NT5C2,R367Q,"Mercaptopurine,Thioguanine",Resistance,10,104852955.0,104852955.0,C,T,ENST00000343289.5,Substitutes
+PIK3CA,E545K,"Cisplatin,Radiation Ionizing Radiotherapy",Resistance,3,178936091.0,178936091.0,G,A,ENST00000263967.3,Sequential
+PIK3CA,H1047R,"Akt Inhibitor MK2206,Vemurafenib",Sensitivity/Response,3,178952085.0,178952085.0,A,G,ENST00000263967.3,Combination
+BRAF,V600E,"Irinotecan,Vemurafenib,Cetuximab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Erlotinib,Vemurafenib",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+BRAF,V600E,"Encorafenib,Cetuximab",Sensitivity/Response,7,140453136.0,140453136.0,A,T,ENST00000288602.6,Combination
+SF3B1,K700E,"Etoposide,Olaparib",Sensitivity/Response,2,198266834.0,198266834.0,T,C,ENST00000335508.6,Substitutes
