@@ -1,0 +1,2741 @@
+HHsearch 1.5
+NAME  CSF3R_T618I
+FAM   
+COM   ../../hh-suite/build/bin/hhblits -i ../datasets/middlefile/fasta_mutation/CSF3R_T618I.fasta -ohhm ../datasets/middlefile/hhm/CSF3R_T618I.hhm -d ../../hh-suite/databases/uniprot20_2016_02/uniprot20_2016_02 -v 0 -maxres 40000 -Z 0 
+DATE  Mon Dec 26 15:06:03 2022
+LENG  836 match states, 836 columns in multiple alignment
+
+FILT  3938 out of 47652 sequences passed filter (-id 90 -cov 0 -qid 0 -qsc -20 -diff 1000)
+NEFF  10.8
+SEQ
+>Consensus
+mxxxxxxxlxxxxxxxxxxxxxxxxxxxixpxxxxvxxGxxvxlxCxxxxxxxxgxpxpxixWxkxgxxixxxxxxxxxxxxxxxxLxIxxvxxxdxGxY
+xCxaxnxxgxxxxxxxlxVxxxPxxPxxlxxxxxxxxxxlxxxWxxxxxxxxxxxyxvxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxixxLxxxxxyx
+xxvxAxnxxGxxxxxxxxxxxxxxxxpxpPxxxxxxxxxxvxxxxxxsixlxWxxxxxxxxxxxxyxvxxxxxxxxxxwxxxxxxxxxxxxxxixxLxpx
+txYxxxVxaxnxxgxgxxsxxsxxxxxxtxxxxPxxxxxxxlxxxxxxxxsvxlxWxxpxxxxxxxxixxYxvxxxxxxxxxxxxxxxxxxxxxixxLxp
+xxxYxxxVxAxnxxGxxxxsxxxxxxxxxxxpxxlxxxxxxxxsixlxWxxpxxxxxxYxvxxxxxxxxxxxxxxxxxxxxxxxxxxxxxixxLxpxtxY
+xxxVxAxnxxgxgxsxxxxxxTxxxxPxxpxxlxxxxxxxxsvxlxWxxxxxxxxxgxixxYxvxxxxxxxxxxxxxxxxxxxxxxlxxLxpxtxYxvxV
+xAxxxxGxgxxsxxxxxtxxxxxxxxxxixxxixxxxxlxxixxxxxxxxxxxxkxxxxpxvPxPxxsxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxlxxxxxxxxxxxxxx
+>CSF3R_T618I
+MARLGNCSLTWAALIILLLPGSLEECGHISVSAPIVHLGDPITASCIIKQNCSHLDPEPQILWRLGAELQPGGRQQRLSDGTQESIITLPHLNHTQAFLS
+CCLNWGNSLQILDQVELRAGYPPAIPHNLSCLMNLTTSSLICQWEPGPETHLPTSFTLKSFKSRGNCQTQGDSILDCVPKDGQSHCCIPRKHLLLYQNMG
+IWVQAENALGTSMSPQLCLDPMDVVKLEPPMLRTMDPSPEAAPPQAGCLQLCWEPWQPGLHINQKCELRHKPQRGEASWALVGPLPLEALQYELCGLLPA
+TAYTLQIRCIRWPLPGHWSDWSPSLELRTTERAPTVRLDTWWRQRQLDPRTVQLFWKPVPLEEDSGRIQGYVVSWRPSGQAGAILPLCNTTELSCTFHLP
+SEAQEVALVAYNSAGTSRPTPVVFSESRGPALTRLHAMARDPHSLWVGWEPPNPWPQGYVIEWGLGPPSASNSNKTWRMEQNGRATGFLLKENIRPFQLY
+EIIVTPLYQDTMGPSQHVYAYSQEMAPSHAPELHLKHIGKTWAQLEWVPEPPELGKSPLTHYTIFWTNAQNQSFSAILNASSRGFVLHGLEPASLYHIHL
+MAASQAGATNSTVLTLMILTPEGSELHIILGLFGLLLLLTCLCGTAWLCCSPNRKNPLWPSVPDPAHSSLGSWVPTIMEEDAFQLPGLGTPPITKLTVLE
+EDEKKPVPWESHNSSETCGLPTLVQTYVLQGDPRAVSTQPQSQSGTSDQVLYGQLLGSPTSPGPGHYLRCDSTQPLLAGLTPSPKSYENLWFQASPLGTL
+VTPAPSQEDDCVFGPLLNFPLLQGIRVHGMEALGSF
+>tr|R7UG54|R7UG54_CAPTE Uncharacterized protein OS=Capitella teleta GN=CAPTEDRAFT_229048 PE=4 SV=1
+--------------------------------PVLTKEGETFEISCTVS-----GDPQPEVVCTKDGKPLKSnKRVKFT-LKDGVCLVVIEDAKQKDEGE
+YTITAKNEMGTVFHAVSVQVQPHGTELaddtpkfvskmspvvatenQPVLLETTISGSKLKVEWTKDGQaLASNdILQLSHKKdVYSLS----LAKATTS
+dtgeytctasndS-----GAifCSVTVQITPEQEEMTAEDRALmeQLSgriqeeKNKLPIDdePLFQ----------AY------PALDDFVDTDKNV--
+--------tLKKGDIVEVLDKEDDKKWLVRlQNEPNKIFYVPVELLLGKDedsspeeeeEEKEEVIPIYsaivDYAPSDDDSDALPLKAGDLVEVLDS-K
+S-SDRwLCRRPGKPNERGWVPPSI-LKA------QVEENVDsrttqevfrediikiqN-------KeqeaIMKRRYAFRDLWESEKIyvedlKFTMDqyY
+PAFDGEGVPEQLqgkknmvfsdmpdiskfhhdcflreleectndpnsvgeaflkhkdlfqkwyvpffsnrnissylvktkeaqkflkfvekkldqklpke
+hdariknvgetkqdlmeylerpwnrideyvtilqdfirystqakqetakleeaiqmlmdlrkmADDsvtlSGIMGYAGDlADLGPMFRHDDFVVWEGPVE
+grgrDRHLFLFKENLLLT------KKH-KPQRQHDRPSFEYMGMLELGKMYLRENLDDEKRFELHYedPRKGKVTFQARSVPLK------------EAWC
+D----------------LLRRWLRKWGSAPQvvKR-MD--KVAIKEGETGQFSIsvSAQPV-PKIMWF--------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+>tr|S4RPX8|S4RPX8_PETMA Uncharacterized protein OS=Petromyzon marinus GN=COL17A1 (1 of 2) PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+-----------------G-----RGANTGEAVRSLLQNHFTAQAGSRKDEG-YTQIAVIL-------------T-------GSDSQDVVEQHAGALKQ--
+------------------------------EGVKV------FALGAEQARLPqLNALGS---LPSEQHVLYAP--NFS----------------------
+---------ELFSSFDRF----L------KYLR--LKIHT-G-ILAGASQSVIVIYWGVKV--------PMPCVSPTEGYADvvflvdg-----------
+-------------------------SDAVGQENFrhSLGLVSRVVDALDVDKDHIRIGLAQY--------------SGDPR---------AEFFLSTHAA
+K-------------KDVTDAIRGIRFKGNGSSRPKYPg----------KMVP------LCH------------------SVTGPDKDNiAVL--------
+---------------VAGSGSG-DDVLASAQAL-------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------------
+>tr|A0A060WW90|A0A060WW90_ONCMY Uncharacterized protein OS=Oncorhynchus mykiss GN=GSONMT00017587001 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+------------------------SSKRdivflldgsddsrnglpairefirrmaneldidgdnvrvavvqysddaaeyfhlkahktkraviyavrslrh
+kggrlrntgaaLQ-YVrdNVFTASSGSRHLEGVPQILFLLIGGEssddvtaaasdlkrlgvlsfaigmknvrqeelqsiayssrfifnlpVFGE------
+--LlSIQPEilafvqskmgiepptivdaaqrdivfLLDGSDDSR----SGFPAMCGFVQRLVENLnvgenkdrvsvVQYSRNPEAHFLlntypekqsvLG
+SIRslqhkggRPLNTGAALQY------VK------DNVFTASSG---SrsQEGIPQILIL--LSGGKSQDdvggaaaalkqdrivpfsigtrnsdilelq
+miahipsyalsvprfddlesiqqqllsfvkrvprqprvyqptvvdnteskqldvvflldgsdetlngfeairdfvqrvvekltvqetrdrvsvvqyskep
+eahfylntyttkqdivdavrqlrhkggitlntgaalqyvrdniftassgsrrqegipqilvllsggrsnDDVR---------------------------
+-----------------navknlkaidvmaivvgmrnadmlelqtisdepsyafyapnyndlpniqqqvfsavqkvamttpnlpttlidattddrrdivf
+lldgsddsrrifpdiqdfmqrvveklnvdgnkdhvsvvqysdtaevnfnlgmhstkdyvldavrglrhkgGS-PLNTGA-ALQYVRDNV------FTASS
+-----GSR--------SLQGVPQIliLLSGGRSTDDIRTP----VTKLKEMGVISIGIGTGDADTleLQTISHEPNYALSITDFEDPTI---------QK
+ELLSL----LTE----AshqpE-------PGAPTM-H-FES-------DKKDVVFLIDGSDNSKTG------------FEgIRRFAEK------------
+------VV---EILNVEENGDRVAlvqysgn-----ATPNFYLNSY------SSKNDVLNSIRS------------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+>tr|C3ZZV3|C3ZZV3_BRAFL Putative uncharacterized protein (Fragment) OS=Branchiostoma floridae GN=BRAFLDRAFT_90333 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+---------------------------VMIVVTDGQSSD-DV-VGPAQTA--RNAGISMYAVGIGNgvdTNElLQiagqV---------DRVVQSADFST
+LFSVGENLQElvCDAGWCGDPGVPV-NGFRLGSYFE--GHVVtfgcnagfiLNG------ASSTICQGDGSWSNAVP---VCVAITTPSPtrapvctdlS
+-FGGLDLVF-L-LDG-SGSVTAVNFDLVKDFASGVVSEFQIsttetrvGVVQFSDTLRTEFFMSSFStkqqvlqaisdidyiqgnTLTGA-----AITFA
+T----ASSFSTPA-----GNRANFPDFMIVVTDGLSQDsvvqpaqsardqgitifavgvgnevdfatllqitgvpeyilqvtdfsdllaaqlqvaeiacn
+ltycgepgtpvngfhrggyfegsvvtygcndgfllqgassttclgngqwsdpvpicllptttpapttpmpdpvcvnftpvdmvflldgsgsvtqpnfelv
+kqftqnvvvnfnissattrvglvqysdtirtefflnshpsrntltgaaidfvrtssfsipagnrltlpdvlvvvtdglsqDDVa----------GPAQIA
+RDNGIAIYAVGIGSEVDFATLldiaglqsrvlqindfsslldaeeqlteivcnisycgdpgapvngfrngnffqgsmvtwgcnngyylmgapnatclgng
+qwsdpvpmcmeiittpapaeRNTLTGAA---IDFVRTSTFS---TPAGNRAGQPDFLIVVTDGLSQD------NVAVPAQTAR-------------NNGI
+SIFAVGIGSEVDADtLLQIAGTP--SRTLQINDF-AGLVNAE------------EQLASIVCNTITTTppattptpapSCSSITPV--------------
+----DLV-FLLDGSSSITSP--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------------
+>tr|S4RPX8|S4RPX8_PETMA Uncharacterized protein OS=Petromyzon marinus GN=COL17A1 (1 of 2) PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-------------------------------DVVF------LLDSSDAVGRK---NFEGM---KTFVGQIVE-YLDVDaskVRVGLAQY---------SD
+NPRNEFFLNTHGTKPDVQAA----IQLARFTGG-----RGAN-TGEAVRSlLQNHFTAQAGSRK-----DEgYTQIAVIL----------TGSDSQDVVE
+QHAGALKQ-----------------------------EGVKVFALGAEQARLPqLNALGSLPSEQHVLYAPNFS--------------------------
+-----------ELFSSFDRFL------KYLR-LKIHTG-ILAGASQSVIVIYWGVKV--------PMPCVSPTEGYADvvflvdg---------------
+----------------------SDAVGQENF---------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-------------------------------------------------
+>tr|T1EVU3|T1EVU3_HELRO Uncharacterized protein OS=Helobdella robusta GN=HELRODRAFT_164811 PE=4 SV=1
+------------------------------PTNVTAYDDDDAVFICVV-----SGYPRAFLEWQINE---K----PIIYNDRInME------EKISTGDK
+YECTVKQTvvikkitpsdageiqvvasnsSGKLSKSSLLRVKVKSLkfleKPGDMKVYTD-HVATISCVLSGSPK----PDLLWLLNGRPIKFSDRiIMQ
+esTDtdRNDLSIIQQTIVI--TKVTTEDEGEVQVVASNLAGKLDASCKLIV---KEMTIMFmekpigltvtlgsqATFIC------KVSGLPKPDICWLY
+QGRLMKFSDRIKQQETV--EEDNGG----AYIVKQVVVVSEVTAEDEGEFQVVASNLKGEISAR---AILNV----KVGSlkclKKPN-DVTAYKDDNAT
+FSCIvsGHPKPIINWE--INGRPIKYDDRIskeEKIvtgdedvyTVEQTIVITKITPADAGL---VQVVAS--NSSGNISVSsiltvhvKSLKFLEKPen
+visfvGESATFGCSVSGLPR--------------------PD--------IRWLLngqAIELNDriskQETTTIDQDNITvirhaiVINKLtsadeGkiq
+ivasnltgkiaatatlnvkmkSLQFLKNpsdaTVYNddYVAFNCLASGSPK----------------------------------------------pii
+dwqinnnqikTDDRIKVEE---KITNVRDeyiveqtliikkvtvadagrvevVASNSYETISTSCSLtvVVRVKSIQFVE--------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+>tr|H2LW08|H2LW08_ORYLA Uncharacterized protein OS=Oryzias latipes PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+-----------------------PTQRDIV-FLLDSSDEM-RSNFKT-----VIGFVERILEKLNVEE-------------NKDQVSVVQYSNEPTAEFF
+LNTHKTKQSvtdnvqalrhkggrplntgaalsyvkdeifasssgsrrqqgvpqililltggpsrdEIRDAVV---nlkdvgvntfvvgiknadilemqsv
+sqeptkaflvadsssltdieqklilaigksesptiskepkcvtflidskkkdvvflidgsfdsrsgfeeirnfvkgiveilkvgnngdkvavvqysrvat
+vnfyfylntymtkdeilnavrnlrhkGGRSLNTGAALQY---------LRENVFTASSGSRRLEG-VPqVLILLSSGRSAD-----SV------------
+-DAPASALKQMGILTFAVGSRGSDSR----ELQRISHKPtsaftvaeftdlssvpqqllaslealpidvtpetptdsardvvflldatdatRSDFPAVQ-
+DFvqrvvETLLVDEKKDRVSVVQYS-----RdPAVQFYLNT---------ymtkdeilnavrnlrhkggrslntgaalqylr------------------
+--------------ENVFTASSGSRrlEgVPQVLILLSSGRSADSVDAPASALkQMGILTFAVGSRGSdsrelqrishkptsaftvaefTD------LSS
+VPQQLLASLEALPIDVTpetptdsgyprkdivflvdgsngvgrefpiiqdfiskvvesldvgekririgvaqysdfaqsyinlndhatkqsvlngireik
+rlggtQRNlgvaLAFVRqnmlrpekgsreeegvpQFLIIVSSGSSTdDFIGQVTDLKrsrvvtlnigtrdisspqlrivsslptfaftvddlpglytvqa
+plvniltdlsgiipalvggikkdvvflidgttkassnfpairnfmrslvekldiglnkarvsvvqysdepklefllnefstknqvqerimrltskggsrr
+ntgralewvsrnifqrsagsrieegvpqflivlisgkssddvsrssaslkrlgiapvpigsadadsnelrqisfnqelfyvvkdyeqF---AEEQsKFFK
+TITSTSTGD----------ITRSQAFPSVF----pgitpapagGDkkDVVflidgttstrskfpsirilmrilvekldigldkarvsvvqysdesklefp
+lnefstknevqerimrltskggtrrntgralewvsrniyqrsagsrieegvpqflivilggkssddvsrssaslkrlgiasvpigsadadsnelkqissn
+pevfyivnnfeqfarnqptfmesltststgditravappyv-----------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--
+>tr|T1JCN0|T1JCN0_STRMM Uncharacterized protein OS=Strigamia maritima PE=4 SV=1
+---------------------------ISA----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------
+>tr|F7A5C3|F7A5C3_MONDO Uncharacterized protein (Fragment) OS=Monodelphis domestica PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+---------------------NFQLAVELlrkiiH-TLIIGPNKVRVGLVLYSDE-PRLEFGLNT---------flsqseilshlnklpfiggktktgaa
+ldflr------------------------------------------NTVFTQQKGSRY--RQGVQQLAVVIT----EGYSQDEVDRPASLLrRAGV---
+TVFARPEQN--SipptseachlpgiipaalSDHGKDKETCMHRDC---AENLfcssd--------------------dpyparsteeadfyflidgsgsi
+nhddfaemktfmielistfrvgadhvrfgvvqysdsptvefdirqhssvaqlksaitkiwqtgggtrtgealtfmkrlfsevardkvlrflivitdgqsq
+dqvaqaaeelrqenitiyaIGV-KSAVTKELLEisgsqnrmffvndfdsL---KPIQ-QEVIQDICFLEGKK-----D-----EGIPH---------qlp
+piihnvGMKAdilflvdgserintrdfdkmkefmmqmvnksdlgpekvqigllqfssnpqeefrlntyyskvdilraitgmvqiragarvgsalsfslpy
+fersrggrlnvpqyliiiisgktgdavkmpakalrdkgikifaigvhkannsqlleitgaqdkvyyeenfdsllflekqiffrfcnmeegnfpfl-----
+------------------------------------------------------------------------F-LTACKKTEVAD-----ILFLVHASGG
+ITSQELLAIHRL---MEAIINDSLVGKDNVRFgAISYS---DNSevlfSLDTYITKAQIRdavfHLKPKV------GKAHTATALKFA--kerfsemhgg
+rqslavtqilvlitnkpteseekkylqesaqtlqeagidvfaigiknVKRPELQAITK----------HRDRSFM--VQ-SYNELYNLHEKVTHiiCNES
+KP--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------
+>tr|I3LEW1|I3LEW1_PIG Uncharacterized protein OS=Sus scrofa GN=ROS1 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------IALIEGLQPFSTYM
+IQIAVKNYYSDPLeqlpLGKEIWGKTKSGVPEAVELINT------TVQSDTSLVISWRESHKPNGPKelVRYQVAISHLASvPETPLRPSEYPNGRLSLL
+VTRLSGGKLYVLkeKVLACHAE--EMWCAESQPVTVETFDTPE------KPYALAPENTSLQLGWKAPS----NVNL--ISFWFELQ---KHSSIQvfqi
+eakcsfNHLKVIWQQTLNGYSSKNLYGLTIV----KiPIKFMH--QLMNSFPGCFKILR-----NKIFLIKTMTntkHLMQFSVKSRGRMQRfFPTMAGL
+LGPSMEGTCLIvtHPTSQIl---MTFFFFFSSFPFKLLFPQ-----------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------
+>tr|W0Z869|W0Z869_9MICO Uncharacterized protein OS=Microbacterium sp. C448 GN=MIC448_1360010 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-------------------------YPQAPTSVRQ------VayADGAVTLRIDPGAANQAYPALSEFVVRSSA-SGAGtgsasGTVVATC---SVEgIC
+pSIPA-PNGAERTYEVVSVNAIGESRT-SVSTVAWAYDTPAAPRSVTwApVVTG-GEGGLISLAIEGIDQA-K-TGSVQIT------SA---aGETVv-V
+dlpSGRDTLTVPSfrVGANTSTTVVVTPQSRfplpPGltGTASGAsVAIQANGIGAPTGISLS-LSStangng-TSTINAQATAasggDgSTLRLGVSR-
+-AD------------ETCSPAsA-D-gsa-VFTVPDGLEYAFTACAVSRFAGEtfgsaS-VQQS--vRAVQSTAPPQGYTFEVsptPDVETNAARWVIrd
+lPTSSE-DApTLNVPQ------F-EGAPPN----------PVFDVD--PGIRVRYTHTQW----------------------------------------
+----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+>tr|I0ALJ6|I0ALJ6_IGNAJ Uncharacterized protein OS=Ignavibacterium album (strain DSM 19864 / JCM 16511 / NBRC 101810 / Mat9-16) GN=IALB_2148 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+------------TYLTITNTRFDPKKGFKQIQANENDGSIEIIWDIDNQ---FSTYNVERSEDk-KTFKRlNDSPLLTLKSAQadSSNKDSYIDTTIVNY
+KPYTYRVYAMTVFADEIllGEI-TAMGRDRTPPEQPYVPQ-------PSHiEENKIKITWQMADPPAADLAGFYIGRDS-LIDGKYNYITKtpLPKTSRE
+FIDTTFSKNNYNFYTVFAFDTAGNSSSS---YPVYVVLNDTTPPAPPK-WKEAFMDSNGVVTLRLQPNKE----FDLMGYRILKANAPDHEfssiiESFn
+pdstelKFKIEFADTVDLQTMTKYVYYRATALDNRYnESEFSEIIAVPRPDvvpPIAPVLTDALVTEKDVTLKFIPSESEDVKNHLVLKRVNG-----EE
+KWDTLAVLKpKDSVYVDDKVSANITYQYCLFAVDSSNlkSELSFILEARPYYLGILPDIKnFIVSFDsEKKSANLSWAFE-----YEKDVYFVVYRAYEN
+qPLTRYKTLKSsEARNYTDTDFSNGsGKYFYAIKAFDNLN------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------
+>tr|Q6ED62|Q6ED62_AOTNI CD45 OS=Aotus nigriceps PE=2 SV=1
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------VLEDRKP
+NHNYTCDSEILYNHRKYiNINETIQTDFGIPeEPQNVTCRSEGAHEGVITWNHPHSLFHSFTLCFQNKP--------------DncfqvDKNLTKCDLQN
+LKPYTKYISSLYAYIIAraq--rnGTAVPCHFTTNSARPSEVQNMTVSITSENSMLVKCNAP--KDLNGPRGRYHLEVKDGDSlvRN----ESNHPCLFS
+VKDLQYSTNYTFQAYYHNGDYPGDPVSQFQSTSYNF--KALIAFLAFLIIVTSIALLVVLYKIYDLHKKR------------------------------
+----------------------------------------------------------------------------------------------------
+--------------------------------------------------
+>tr|V9KKN8|V9KKN8_CALMI Interleukin-5 receptor subunit alpha OS=Callorhinchus milii PE=2 SV=1
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------NPPADVHMEEIELGELSISWNSNLSEDiHKMFSINYQFEWKYNDSVTWQPpsRMEDPEYTDDFE
+LHRGVDMQVKNVIIekPinFDSMeaeSNWTEMNY-ppasGDPETAAANISCIVYNNTYMNCSWQIGTKapEDIVYFLRYRQDD-DTRICTDYLKDDRGRH
+IGCHIVNGIDTEVIVILLVN----GSSQQaeiyPIYRIFQPSSFEKFNPPVNVQV-----VNHTVKWDISDNTsiTNPRCF-AYLLNVKDWTNNA--EKN
+isVNERTDYKLLVYIPSKRYSVKVSLSLQfcGVSQFWSDWSNEVFIEAEHsgSFSSSP-MLILL---VVVLNLSvlvIICLLKRVIKKMLVPVPDPQR--
+----------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------
+>tr|U6NKM4|U6NKM4_HAECO EGF receptor and Furin cysteine rich region and Tyrosine protein kinase domain containing protein OS=Haemonchus contortus GN=HC
+----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------RKC-------
+--------------LPCYAECLT-C--SGPSERDC------LSCRNVQLISDGQLVCLTNCSVSHYQDGTQCRPC--hescsnlrctgpgdhlgeggcse
+clyaqlsrshevircliapsmheacsdivgyypstqaidg-----------------VQLVHCDPCDEQCTSCTSAGRntiANGCVCKGYANEM-----A
+KDSICL---------------------------DRCFESHYIAQHPNGsqpgicKSCHHLCDRGhGc---TGPSP-SECNQCMHATLAGEPNVCVaecpe
+EFPF------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------
+>tr|B7QMY2|B7QMY2_IXOSC High affinity nerve growth factor receptor, putative OS=Ixodes scapularis GN=IscW_ISCW015459 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+---------------------SEG----------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------------------
+>tr|A0A0P7TGZ6|A0A0P7TGZ6_9TELE Uncharacterized protein (Fragment) OS=Scleropages formosus GN=Z043_121939 PE=4 SV=1
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+------------------------lpsD------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------------------------------
+#
+NULL   3706	5728	4211	4064	4839	3729	4763	4308	4069	3323	5509	4640	4464	4937	4285	4423	3815	3783	6325	4665	
+HMM    A	C	D	E	F	G	H	I	K	L	M	N	P	Q	R	S	T	V	W	Y	
+       M->M	M->I	M->D	I->M	I->I	D->M	D->D	Neff	Neff_I	Neff_D
+       0	*	*	0	*	0	*	*	*	*	
+M 1    6094	*	5995	*	5230	*	*	*	*	5097	224	*	*	*	*	6575	*	5890	5054	*	1
+       0	*	*	*	*	*	*	7327	0	0	
+
+A 2    1157	*	*	*	*	5942	*	5317	3919	*	4662	*	3867	*	3293	2783	4278	4745	*	*	2
+       97	*	3944	*	*	*	*	7418	0	0	
+
+R 3    5205	7187	6317	3842	5656	3459	4920	4324	*	5179	4827	5954	3663	3300	2185	2917	6483	4200	*	6300	3
+       1365	1187	2534	921	1084	162	3239	7233	1825	1114	
+
+L 4    3229	5548	*	*	4533	3974	6116	7226	5263	1774	2462	6424	5156	*	4135	*	*	2762	*	*	4
+       0	*	*	*	*	*	0	7588	0	1525	
+
+G 5    4165	5451	*	5199	*	1968	*	*	*	2959	5226	*	5508	*	1665	3071	*	5220	*	*	5
+       0	*	*	*	*	4002	93	7762	0	1525	
+
+N 6    2258	*	4730	5779	4398	3769	*	*	3650	5017	*	3236	*	5897	3495	4276	2940	3773	*	4755	6
+       29	*	5641	*	*	*	0	7949	0	1493	
+
+C 7    4172	1559	*	*	3446	5160	*	4289	*	4711	3780	4449	4470	5525	5615	3468	*	4045	5030	6833	7
+       26	5784	*	1000	1000	3208	165	8331	1011	1552	
+
+S 8    6588	4444	*	*	2524	3526	6206	6610	*	2749	4000	3874	3737	*	4844	2663	4346	4829	5758	6757	8
+       64	*	4529	*	*	*	0	8344	0	1493	
+
+L 9    4448	4779	*	*	5569	4897	5753	5792	*	850	6776	*	7327	5990	4279	4602	4842	3859	6432	4944	9
+       11	*	7016	*	*	421	1981	8312	0	1654	
+
+T 10   2433	5142	*	6671	5359	5615	6422	3766	7120	2008	6387	5706	*	*	5228	5793	2370	3686	*	4506	10
+       69	4755	6709	2613	258	76	4278	8423	1042	1174	
+
+W 11   5383	4987	*	8031	3921	3476	*	3759	6854	1755	6142	6221	7055	5130	5198	5068	4735	4716	2537	4745	11
+       69	*	4422	*	*	*	0	8649	0	1049	
+
+A 12   3044	3411	*	*	6202	*	*	3273	7024	2385	4674	5244	4581	*	6211	3051	3830	2798	6266	*	12
+       48	*	4943	*	*	*	0	8663	0	1239	
+
+A 13   3008	4042	6438	6394	2626	5884	*	3214	*	2657	*	*	5400	*	*	4986	4775	2274	4381	*	13
+       0	*	*	*	*	686	1402	8670	0	1405	
+
+L 14   4926	5240	6748	*	2983	5237	*	2819	*	1220	5376	4621	*	*	*	*	3818	3932	*	7329	14
+       23	6001	*	0	*	628	1503	8665	1008	1151	
+
+I 15   4553	4657	*	6734	4358	6657	*	1840	*	2170	6155	*	4631	5866	5744	3917	4106	3185	6669	6161	15
+       199	*	2959	*	*	*	0	8679	0	1049	
+
+I 16   3068	3177	*	6401	4059	*	5079	2781	5201	2563	3790	*	*	4953	6847	4452	4058	3743	*	4915	16
+       76	*	4280	*	*	219	2831	8593	0	1616	
+
+L 17   3719	*	*	*	3370	6079	6447	3811	*	1174	*	*	*	*	6313	5120	6980	2795	3671	6072	17
+       1527	615	*	2023	408	161	3245	8535	3147	1205	
+
+L 18   2549	3464	5343	7261	4661	5232	6364	4745	*	1694	6597	*	5642	5099	6392	4086	5534	2934	*	*	18
+       249	*	2657	*	*	*	0	8811	0	1805	
+
+L 19   4526	4670	6493	*	2710	*	6850	5725	5184	1946	4315	5731	4732	5859	6930	3905	3820	4160	5048	3592	19
+       21	*	6080	*	*	5158	41	8602	0	2353	
+
+P 20   2991	*	5293	5025	6923	1892	6779	6709	4706	4112	6482	6074	2480	5297	*	3402	5954	3574	*	*	20
+       0	*	*	*	*	5974	23	8500	0	2338	
+
+G 21   4165	3301	5989	4093	4623	2782	6097	5126	4441	*	*	3248	6117	4008	3827	2658	4608	4949	*	6772	21
+       0	*	*	*	*	6020	22	8610	0	2318	
+
+S 22   3919	5980	5317	*	4674	2233	4837	7283	*	2393	*	6039	*	5073	6053	1977	*	3687	5818	*	22
+       0	*	*	*	*	*	0	8634	0	2298	
+
+L 23   3133	6636	5240	4928	4321	4092	5997	4663	4765	2976	6466	4991	5253	6000	5752	3169	3681	2417	6736	*	23
+       346	2228	*	2263	337	0	*	8634	2910	2298	
+
+E 24   4396	*	2886	3015	5727	5178	8010	*	2921	3638	*	3538	4663	3139	5088	3077	6125	6470	*	5779	24
+       22	6022	*	0	*	*	0	8870	1006	1048	
+
+E 25   4016	5723	3298	4051	5347	4356	6812	4563	5937	5002	6619	3904	2554	6018	6007	2596	4662	3655	*	5467	25
+       0	*	*	*	*	0	*	9137	0	1048	
+
+C 26   3736	1075	5541	5778	5418	5811	6661	4923	4794	5065	*	*	4935	7441	6096	3498	4963	4199	7570	5195	26
+       234	2822	6884	1720	522	*	*	9177	1942	0	
+
+G 27   2163	*	4106	6865	5588	1453	*	5144	5810	5417	6752	4938	5901	6671	*	3995	4892	3617	*	6934	27
+       24	6988	6883	2585	263	*	0	9596	1006	1000	
+
+H 28   8143	*	4594	3904	6341	5751	3318	4224	3218	5119	5087	5344	6051	4552	3343	3586	4685	2505	5702	4661	28
+       11	8250	7781	1000	1000	544	1670	10636	1000	1012	
+
+I 29   4940	*	8061	6291	6556	6670	7607	1465	6959	3962	5190	7447	5813	5960	8601	4960	3370	1859	7135	6684	29
+       31	6336	6870	1945	434	*	0	11034	1051	1007	
+
+S 30   3438	8316	7133	3721	3501	4277	4709	4472	4815	4827	7598	5829	3979	4023	4868	2617	3868	3891	5980	5014	30
+       26	6674	6977	2051	398	1165	852	11198	1046	1047	
+
+V 31   5781	*	6895	6158	6836	5965	7720	4889	5618	3939	7423	6232	759	6193	6905	3867	4472	4037	10149	8231	31
+       21	6445	8493	1808	485	1796	490	11662	1061	1056	
+
+S 32   4238	*	4223	2823	6587	4652	6004	5949	3536	5230	6500	4755	3640	2994	4244	2907	3684	5147	8879	6748	32
+       107	3988	6939	572	1611	710	1363	11844	1408	1050	
+
+A 33   3901	9874	2120	3996	6306	4636	6541	6236	5362	5831	7152	2622	4168	5436	5133	2734	4177	5311	*	6262	33
+       17	6704	8699	1593	581	872	1140	11827	1103	1061	
+
+P 34   4511	7692	6037	4877	5493	5832	4931	3663	4101	3568	5318	5698	3617	2995	4614	4035	3703	2733	8714	5303	34
+       10	7981	8323	1765	503	1858	466	11879	1034	1039	
+
+I 35   4876	11203	5413	3157	5510	6778	5492	3612	4761	4620	5922	4976	5829	4957	4464	4082	2404	2584	7050	4275	35
+       20	6407	9014	559	1638	1817	482	11870	1089	1054	
+
+V 36   2867	7912	10680	6926	5087	5092	9295	3263	6563	3166	6528	8007	5519	6760	6811	5600	4861	1165	9459	7300	36
+       10	7535	9325	913	1092	3017	190	11920	1035	1049	
+
+H 37   3878	8997	5191	3502	5575	5803	5530	3990	3453	3526	6044	3956	3988	4289	3590	3952	4116	3533	6960	5698	37
+       12	7168	9946	2218	349	1864	463	11935	1063	1064	
+
+L 38   3528	7899	5835	2162	6149	7202	7056	4004	4419	2864	5491	6363	4280	4770	4155	5128	5380	2721	8198	7165	38
+       5	8120	*	1044	957	901	1106	11940	1030	1071	
+
+G 39   6790	9895	4814	5192	8019	470	5827	9088	5976	6541	7861	3646	7218	7612	7104	5393	5755	8647	*	7137	39
+       13	7002	10105	1326	734	*	0	11967	1072	1030	
+
+D 40   5119	8027	3063	2524	8115	3674	6032	7722	4007	6309	6331	4352	7082	3183	4757	2259	4042	7404	9826	7781	40
+       14	7258	8209	2340	317	798	1235	11926	1045	1037	
+
+P 41   4981	9195	2929	3996	7507	5886	6667	7407	4493	6216	6606	3062	3277	5196	4114	2628	2663	4878	9136	8405	41
+       9	7856	9141	2977	196	1937	437	11943	1021	1047	
+
+I 42   2276	7465	8879	8260	3800	5399	6994	2970	7309	2923	6053	8083	8189	7069	7436	6074	4436	1763	7993	5767	42
+       3	9031	*	0	*	1826	478	11932	1023	1044	
+
+T 43   5376	8587	6096	3419	5535	8045	5661	3951	3975	4459	5430	4313	7923	4602	3704	3641	1979	3371	8562	5812	43
+       4	10477	8977	3000	193	1862	464	11984	1000	1030	
+
+A 44   3955	8822	9423	8328	2381	*	9062	2659	9896	1308	4392	9011	9357	11099	*	7648	7309	3454	6165	8051	44
+       10	8535	8014	1197	827	*	0	11949	1028	1041	
+
+S 45   5249	5199	4352	2937	5137	6905	4865	5264	4411	5020	6695	3923	3908	4191	4657	2824	2993	4095	8261	5219	45
+       7	8463	9049	2104	382	3904	100	11937	1018	1073	
+
+C 46   6196	206	8792	7790	7075	8027	*	6108	7982	6744	8013	9494	8633	9044	8595	8070	7042	4486	8364	8649	46
+       13	7984	7626	250	2652	2753	232	11933	1032	1084	
+
+I 47   5099	6917	4689	3144	5812	5602	5044	3678	3736	4385	6060	4584	4583	3784	4141	3310	3011	3694	*	6493	47
+       8	8101	8966	892	1116	2087	387	11958	1029	1114	
+
+I 48   2032	8127	7624	8208	4236	6015	8299	3245	7343	3094	6944	8134	4673	8427	9028	4275	4632	1899	9061	5305	48
+       995	9547	1008	2170	362	2203	353	11935	1003	1124	
+
+K 49   5012	*	3900	4008	6061	5094	6205	5173	3220	5414	6105	3331	5010	4167	4149	2682	2970	4348	7555	5123	49
+       484	9150	1820	2585	263	9612	2	11618	1006	4581	
+
+Q 50   2797	5427	3709	3461	7618	3296	4830	5067	4154	6501	7142	3937	3636	4819	4472	3520	4175	4885	7095	6730	50
+       462	4514	2118	36	5326	6280	19	11319	1951	5255	
+
+N 51   5020	7257	2240	3796	5866	4456	6062	5848	4042	5299	*	2412	4845	4228	5033	3326	4895	5386	6638	5380	51
+       549	7963	1677	5700	28	3370	147	11161	1001	5948	
+
+C 52   4669	2388	3045	4829	5565	4265	5928	6456	5044	5141	6856	5039	2005	4844	5391	4640	5510	5736	7729	5550	52
+       242	5700	2890	3764	110	5175	41	10652	1030	6062	
+
+S 53   3858	3062	4705	4397	4988	5833	7010	6556	5171	4353	4756	3555	2602	4512	5279	3157	4108	4608	*	6174	53
+       473	*	1838	*	*	560	1636	10775	0	6087	
+
+H 54   4952	8678	3739	3618	4607	3807	4581	4898	4484	5085	7579	4487	4180	4532	3759	2926	3054	4389	8085	5542	54
+       72	5792	5019	1521	618	1693	534	11885	1102	3382	
+
+L 55   3740	8069	5932	5206	6281	839	6265	5844	6326	4254	7634	6052	5472	7126	5672	3460	5902	6139	10138	5748	55
+       61	5189	6189	2159	366	743	1313	11833	1354	2939	
+
+D 56   4117	7291	3138	4741	4655	4766	4910	4377	4205	4221	6019	3354	4507	5063	4483	3194	4286	4162	7780	3911	56
+       49	6031	5812	1970	425	2303	327	12052	1135	1972	
+
+P 57   5264	8315	4799	4529	8159	4919	6174	6049	5480	4137	7475	4762	804	5888	6184	4257	5156	6601	9636	6767	57
+       116	3951	6344	935	1068	1245	790	11964	3112	1896	
+
+E 58   3295	9287	4389	3496	5984	4930	5948	4766	3436	4137	7216	4241	2675	4497	4322	3897	3801	4338	7487	7634	58
+       30	6164	7231	1275	769	1500	629	11940	1119	1639	
+
+P 59   3449	7642	5858	6557	5782	5203	6833	4120	4992	4180	6329	5235	1315	6080	5797	3960	4628	3880	7235	5353	59
+       34	5575	8596	1465	649	1288	760	11974	1226	1532	
+
+Q 60   4999	*	3849	3447	6101	6346	4965	4507	3521	4536	6516	3990	6276	3690	3914	3267	2686	4114	8222	5409	60
+       18	7163	7478	1555	600	1346	721	11988	1065	1374	
+
+I 61   5154	6935	7881	8611	4294	6783	7867	1689	6464	3184	5237	8047	7467	7551	7104	6139	5728	1790	7601	3556	61
+       5	10177	8427	0	*	972	1029	11978	1001	1407	
+
+L 62   5507	7316	5667	3805	4512	7017	5380	4074	3670	3812	5586	5528	8670	4122	3967	3163	2351	3787	8238	4439	62
+       2	*	9777	*	*	1230	802	11967	0	1293	
+
+W 63   8945	6867	*	*	4239	8716	10132	5917	9630	4816	7432	9152	10105	8248	8607	7369	7349	7436	309	4623	63
+       21	6437	8320	328	2297	4248	78	11962	1096	1176	
+
+R 64   5853	7847	6482	4989	3603	6057	5909	4458	2902	2884	5208	5582	8215	4772	3305	3964	3582	5424	5546	2992	64
+       22	7968	6518	2587	263	3417	142	11957	1024	1240	
+
+L 65   6775	10082	5663	6245	3994	6080	4123	4976	1471	3449	6469	4969	6774	5890	2709	5246	5629	4832	6420	5470	65
+       16	7401	7563	4371	71	3445	139	11954	1034	1361	
+
+G 66   5269	9129	2002	3798	7157	3363	6657	6617	4274	6294	8621	1801	4958	5178	5478	4616	5756	5507	*	6795	66
+       51	6061	5681	2475	286	4685	57	11951	1124	1407	
+
+A 67   4959	9785	2998	4484	7040	1241	6227	7322	4719	6633	7972	3006	6048	5284	4962	4099	5673	6433	7896	8214	67
+       94	4692	5370	1447	659	2823	220	11976	1294	1927	
+
+E 68   4619	8339	4050	2920	6375	4121	6060	4618	2979	4545	6525	3959	5993	3298	3693	4414	4027	3745	9572	6082	68
+       100	4037	7387	1598	579	3054	185	11982	1513	1992	
+
+L 69   4577	9356	4492	3196	5605	5651	5634	4223	3888	3054	6603	4814	2613	4707	4103	4060	4371	3836	8299	6189	69
+       126	4294	4946	2121	377	833	1189	11950	1418	1963	
+
+Q 70   5442	9980	5793	5358	4839	6352	7417	1858	5354	1960	5227	6352	6219	5282	6177	5504	5229	2619	7643	6086	70
+       148	3764	5375	1214	814	1280	766	11928	2094	1955	
+
+P 71   4279	8198	3559	4034	5712	5168	5089	4567	4030	4308	6340	4122	2609	4391	4453	3195	3674	4627	8450	6486	71
+       379	2629	3848	1833	475	1033	967	11937	2234	2157	
+
+G 72   4355	8638	3283	3513	4643	3575	6030	5669	4270	4468	6486	3530	3504	4924	4781	3022	3863	4754	9174	5918	72
+       167	4009	4412	2465	288	1474	644	11884	1506	2165	
+
+G 73   4235	7780	3508	3546	6593	2606	6223	4978	4783	6032	7488	3410	4535	5060	5170	2505	3769	4811	8654	6737	73
+       206	4298	3602	2143	370	2474	286	11914	1418	2685	
+
+R 74   4731	7916	3897	4215	6440	4060	4864	5819	3042	5273	8033	4016	4870	5178	2055	3360	4343	4968	7135	6305	74
+       67	5242	5706	2328	320	993	1007	11948	1204	3222	
+
+Q 75   4920	7487	4895	4622	4038	4934	4330	3794	4134	4435	6634	4471	5716	3174	3351	4284	4594	3712	6739	3223	75
+       86	4623	5866	2687	243	2490	283	11905	1327	2296	
+
+Q 76   5082	6910	5290	4101	4152	5564	4419	3797	4035	4382	6169	5091	5316	4114	3483	3499	3781	3410	7517	3364	76
+       55	5757	5736	1806	486	2366	311	11915	1150	2210	
+
+R 77   4986	8355	5137	4498	5034	4965	4874	3129	3824	3614	5100	4955	5532	4108	3432	4108	3580	3028	7315	5301	77
+       85	5278	5001	1971	425	1549	603	11930	1227	2203	
+
+L 78   4682	10110	4828	4429	4818	5660	4719	3126	4600	2651	4514	4881	5739	4690	4657	4140	3497	3338	6803	4561	78
+       61	6147	5194	2819	221	2739	234	11920	1102	2043	
+
+S 79   4482	10160	3800	3687	5641	4614	6320	3501	4270	4112	6827	3963	3546	4839	4508	3086	3689	3880	7270	5241	79
+       129	4299	4859	2581	264	1608	574	11925	1849	2194	
+
+D 80   5334	7532	3043	3984	5089	3949	5422	4769	4698	4447	6847	2262	5398	4622	4944	3427	4075	4212	9115	5335	80
+       82	5140	5205	3428	141	1084	921	11939	1265	2413	
+
+G 81   4987	9132	3472	4296	5969	1808	5809	5042	4806	5289	7516	3124	5605	5555	3998	3383	4369	5207	7965	6085	81
+       734	5938	1387	4960	47	1358	713	11948	1122	1957	
+
+T 82   4539	7238	3549	3708	6292	2807	5722	4982	4659	4984	6056	3826	4869	4870	4283	3083	2982	4691	7501	5899	82
+       82	6448	4514	1712	525	2117	378	11892	1062	4157	
+
+Q 83   4850	7445	4064	4216	4753	3336	5505	4632	4500	4417	6651	4066	5179	3971	3821	3625	2881	4109	7018	4561	83
+       93	6149	4377	2349	315	4063	89	11978	1094	3718	
+
+E 84   4792	8724	4327	3911	5158	4066	5609	4077	3659	4305	5773	4453	6397	4996	4319	3278	3021	2775	8522	5990	84
+       57	5473	5934	2240	343	1732	517	12052	1134	3926	
+
+S 85   3430	5271	6096	6142	4917	3121	4510	4954	6155	4667	7854	4168	5689	5101	4304	2052	3445	4518	7344	4921	85
+       20	6332	9831	2076	391	330	2291	12048	1075	3210	
+
+I 86   4915	8338	4926	4013	6094	5250	6205	4199	4360	4914	6239	3776	7421	4391	4149	2370	2396	3695	8395	5765	86
+       5	9163	9313	2040	402	987	1013	12093	1007	1509	
+
+I 87   6479	8327	10332	10401	4190	7444	8478	3788	8135	582	5701	8026	9169	8257	7759	7718	6954	3329	8313	5123	87
+       9	7296	*	847	1171	4450	68	12116	1059	1281	
+
+T 88   5546	7192	6486	4119	5937	7912	4621	3543	3930	3725	6028	4898	6545	3876	3631	3830	2257	3376	7221	5388	88
+       39	6810	5832	5611	30	1888	454	12140	1063	1268	
+
+L 89   6859	7806	6303	9223	3597	8688	8634	981	7361	2411	5480	6763	8555	9799	6515	6669	7373	3207	7857	6740	89
+       11	10283	7221	0	*	6834	13	12148	1000	2179	
+
+P 90   4709	8028	4019	3886	6266	5933	4770	5361	3372	4252	6768	3995	3655	4483	3352	2964	3265	4808	8333	5365	90
+       16	8017	7167	478	1827	4519	64	12132	1023	2227	
+
+H 91   4764	9097	3214	4257	8094	3864	4734	6662	3826	5595	8082	1999	4355	4671	4101	3038	4950	5295	9482	6783	91
+       12	7365	8748	1999	415	4151	84	12147	1067	2236	
+
+L 92   3076	5814	6970	6981	4562	6979	8844	3339	6460	2254	6708	7146	5119	8028	7381	4880	4074	1626	10933	8573	92
+       53	5232	6746	2890	209	4626	60	12153	1249	2194	
+
+N 93   5042	8281	4355	3807	6505	5018	6104	5590	3651	4883	6786	3548	5819	3041	3773	2961	2650	4403	8579	6511	93
+       9	7653	9423	460	1874	267	2564	12139	1043	2227	
+
+H 94   3760	8224	5386	3446	5372	5744	5642	4626	3437	3187	5407	6372	2975	4803	3125	3890	4498	4613	7718	5004	94
+       26	7260	6464	1927	440	1518	620	12113	1082	1224	
+
+T 95   3560	10277	3201	2616	6265	3570	6094	6705	4280	5176	6286	4078	5459	5292	4969	2473	3766	6163	8774	5663	95
+       44	7816	5285	1885	456	615	1527	12143	1046	1377	
+
+Q 96   5774	7885	854	5142	7622	5557	3779	8450	5264	6398	7402	4139	7125	4615	5110	4508	4527	5851	8759	6716	96
+       15	7767	7387	2197	355	3223	163	12151	1035	1336	
+
+A 97   2346	6827	4189	3123	6529	4256	6125	5552	5697	5993	6210	4497	6568	4207	4740	2331	3290	5541	9284	7140	97
+       55	5113	6858	1012	988	785	1253	12135	1245	1352	
+
+F 98   3803	8506	5818	6908	6378	654	7310	7265	5731	5516	6742	5200	6822	6117	6780	5379	4814	5690	7947	4421	98
+       15	6663	10586	648	1466	2482	285	12142	1075	1229	
+
+L 99   5173	8417	4637	3471	4600	7091	6457	4161	3889	3031	5970	3595	6505	4916	4294	4369	3068	3181	6542	4296	99
+       27	5918	9060	2033	404	3470	136	12156	1185	1193	
+
+S 100  7567	10288	7998	8125	3404	9307	8210	4730	7716	5186	9281	7586	8608	6917	7416	5392	4984	4478	5930	563	100
+       7	8803	8601	4296	75	3227	163	12239	1013	1205	
+
+C 101  6407	3147	6530	3983	6289	6487	5854	4502	4012	5415	6209	6441	10090	3806	3415	3038	2106	4023	8029	5652	101
+       6	*	8016	*	*	2062	395	12234	0	1209	
+
+C 102  5475	546	8189	7212	5392	7352	7654	4730	5656	4452	7898	5990	9217	7285	7147	6441	6543	3842	8629	6059	102
+       51	7889	5044	1671	544	3700	115	12237	1053	1192	
+
+L 103  4495	6126	6465	3653	5225	6296	5270	3413	3784	3436	5750	5350	8430	4340	3362	3883	3370	2790	7232	5802	103
+       41	5531	7340	1493	633	4753	55	12230	1378	1501	
+
+N 104  949	5805	6625	5939	6781	5147	8967	4400	5963	4285	7130	7025	5880	6049	6387	4697	5570	2656	10598	7366	104
+       22	7276	6813	5831	26	2114	379	12206	1054	1806	
+
+W 105  4900	5306	4647	3154	5813	5120	5736	5123	3661	5406	6047	4342	6453	4457	4045	2610	3031	4024	5079	4910	105
+       281	2838	4760	1592	582	2024	407	12187	2959	1769	
+
+G 106  5404	10159	4789	5372	7427	3632	6064	6002	6412	6853	7660	993	5942	5574	5456	3387	3573	5721	10463	6483	106
+       90	5557	4662	987	1013	1622	567	12182	1189	2121	
+
+N 107  3953	8261	3504	3371	5836	3229	5406	4697	3898	5441	6564	4110	3970	4927	4247	3002	3871	4655	10272	5684	107
+       167	3852	4633	1286	762	1607	574	12184	1604	2126	
+
+S 108  2799	6394	5015	4215	4816	3566	4939	4271	4844	3225	5951	4660	5529	4904	4829	3519	4385	3405	7168	5007	108
+       40	6482	5937	1506	626	832	1191	12112	1094	2762	
+
+L 109  4414	6996	3720	3972	7084	1158	6138	5957	5346	4186	7289	4990	5296	5777	5439	4270	4638	5005	7603	7062	109
+       42	5585	6997	2923	204	1177	842	12104	1177	1958	
+
+Q 110  5055	9804	5101	3087	5249	4459	5798	4576	3921	5207	6091	4249	4573	3184	4571	2559	3442	4345	7678	5637	110
+       63	4985	6524	1008	992	2120	377	12110	1285	1624	
+
+I 111  2914	6206	3666	5046	6177	4948	6528	3404	4977	3768	6558	4783	5654	5005	4363	3761	3532	2559	8777	6742	111
+       89	4132	8521	1598	579	1218	811	12118	1505	1589	
+
+L 112  4812	7333	5204	3255	5476	5727	5710	3976	4757	4030	6539	4594	5012	4566	4404	2138	3335	3614	7900	5686	112
+       57	5327	6152	1900	450	2253	340	12158	1237	1383	
+
+D 113  2462	4258	4208	4683	5746	4174	4852	5195	3690	5272	6512	4973	5922	4765	3976	3139	3787	4449	6737	4918	113
+       42	5680	6757	811	1217	2306	326	12160	1180	1436	
+
+Q 114  3993	8145	4352	3862	5641	3441	5563	5419	4389	4922	6417	4327	4964	4734	4640	2372	2774	4533	7527	5702	114
+       20	6899	7456	2680	245	2051	398	12150	1111	1448	
+
+V 115  1893	6050	6955	6330	4198	4643	5836	2839	6427	4302	5793	6341	6303	6101	6845	4516	3180	2816	7676	6177	115
+       15	7123	8173	2471	287	2052	398	12142	1059	1413	
+
+E 116  4990	8584	4374	3211	4663	7028	4752	4302	3840	4919	6360	3894	6103	3800	3429	3577	3078	4159	6880	4424	116
+       16	7479	7505	5787	26	2439	294	12142	1067	1347	
+
+L 117  5864	8450	8194	7439	5057	8281	8680	2608	7978	1199	6289	6525	6780	7060	8182	6577	5854	1992	*	6862	117
+       28	7021	6450	2234	345	3383	145	12152	1084	1338	
+
+R 118  5583	7834	4350	3996	4218	5634	5074	3374	3998	3936	7363	4034	7588	4443	3607	3766	2687	3684	7484	5473	118
+       83	5198	5129	1936	437	1868	462	12152	1295	1419	
+
+A 119  3874	7274	5375	6036	5837	6118	8224	3005	7003	4655	7160	6805	6124	6390	6682	5136	4506	872	*	6980	119
+       112	3983	6435	4676	58	3861	103	12207	1615	1616	
+
+G 120  4285	7403	5175	4103	5430	2665	5254	4367	3687	3468	5952	5358	5164	3367	3911	4492	3750	4456	7938	4915	120
+       101	4903	4873	3320	152	985	1015	12428	1487	1761	
+
+Y 121  3731	6351	3295	3445	4890	3306	5311	4965	5246	4531	6990	5627	5023	5568	4626	4070	3775	3417	8985	3205	121
+       82	4289	7881	2667	247	754	1297	12433	2057	2151	
+
+P 122  3486	7861	5911	5463	6471	5640	7262	4873	3539	4009	7066	6495	1481	5713	4343	4294	5166	3155	10343	6640	122
+       30	6086	7441	2939	202	2108	381	12478	1216	1520	
+
+P 123  4413	8965	6696	5725	6983	5636	7662	5780	6364	4718	8813	6435	546	6408	6548	4608	4997	5709	*	6891	123
+       181	3212	6628	3712	115	2388	306	12468	2281	1507	
+
+A 124  3887	7306	3308	3447	6549	2514	5940	5657	4067	4468	6904	4850	4893	4967	4404	2843	4154	4647	8912	6222	124
+       284	2504	8843	2092	386	1421	674	12486	3049	1609	
+
+I 125  2832	8106	5376	3777	5374	4502	6681	4639	3373	4814	6065	5841	2259	4253	4732	3959	4310	4284	7519	7389	125
+       51	5240	6933	1518	619	1883	456	12512	1334	1456	
+
+P 126  4869	8848	5407	5703	6470	6116	6806	5099	5768	4871	7127	6078	784	5674	5544	4585	4996	3597	*	7559	126
+       41	6353	5992	2670	247	2656	249	12507	1152	1435	
+
+H 127  3812	8192	5028	3755	5716	4145	5725	4425	3748	4152	6564	5204	4767	3352	3703	3524	3098	3610	7975	6607	127
+       33	6284	6727	2598	260	1072	932	12521	1148	1614	
+
+N 128  4898	9040	2894	4289	6158	3881	5736	4597	4722	4982	6921	1849	4514	5136	4861	3601	4427	5021	8249	6389	128
+       28	6682	6735	3312	153	2057	396	12528	1114	1441	
+
+L 129  5121	8880	6644	5739	3783	7204	6719	3060	5858	1535	5520	6503	3910	5557	6661	5248	4903	2563	8535	7125	129
+       64	4985	6405	1572	592	2330	320	12547	1397	1440	
+
+S 130  4564	8463	5178	3713	6499	5422	5301	4503	3802	4321	6123	4654	5195	3869	3751	2663	2666	3939	8079	5878	130
+       492	6908	1832	2308	325	2553	269	12537	1119	1540	
+
+C 131  3048	1592	5507	5158	6045	5210	7487	4376	5976	4106	7498	5471	6100	5518	5536	4589	4828	2775	8851	5920	131
+       89	5165	4969	2255	339	197	2970	12502	1244	4256	
+
+L 132  3859	7478	5560	3755	4418	5681	5960	3215	4813	3467	6451	5651	5419	4798	4628	4101	4038	2211	7660	4540	132
+       135	5571	3871	1911	446	1018	982	12570	1270	1743	
+
+M 133  3534	7778	5128	4279	5463	4631	6498	4117	4743	4206	5744	5075	4284	4771	4151	2975	2828	3058	9294	5412	133
+       112	6658	3947	1548	604	2128	375	12544	1148	2837	
+
+N 134  4007	9594	3393	2859	5763	4078	5458	4914	4363	4964	7231	3339	4906	4530	4081	3612	4313	3632	8316	4955	134
+       272	7505	2587	2578	264	2063	395	12542	1078	3032	
+
+L 135  4461	6254	4613	5200	5334	2186	6134	3523	5316	3254	6819	5018	5198	4931	5056	3850	4705	2815	9401	5894	135
+       37	6413	6238	2011	411	230	2764	12481	1115	4141	
+
+T 136  4860	9119	3632	3669	6461	3232	6121	6401	4614	5667	6343	3654	5553	4277	4840	2305	2614	6461	8405	5610	136
+       134	3845	5697	1210	817	2212	351	12521	3107	1704	
+
+T 137  3952	8451	3381	3935	6005	4107	5829	6065	4241	5186	6750	3510	3377	5009	4612	2618	3335	5075	6360	6004	137
+       25	7059	6738	1975	423	2294	329	12516	1122	1917	
+
+S 138  3506	7536	3985	4456	5419	3678	5763	5019	4663	4447	7283	3825	4236	5064	3956	3420	2850	3476	9789	6123	138
+       50	6058	5734	1781	496	1053	949	12544	1296	1966	
+
+S 139  4175	7136	4399	3995	5816	4775	5394	5135	4502	4647	5948	4305	5195	4629	4503	2101	2709	4425	7356	5676	139
+       9	9968	7544	0	*	1030	970	12522	1017	1812	
+
+L 140  3437	6492	7744	7495	3504	7003	8306	2616	7227	1898	4177	8002	4898	7190	7922	6822	5983	2331	7216	6034	140
+       12	7473	8673	2073	391	2944	201	12572	1075	1506	
+
+I 141  4667	8042	4642	3542	5656	6133	4973	4798	4042	4013	6211	3819	5418	4363	3771	3533	2250	4136	8309	5635	141
+       9	7840	9125	0	*	2692	243	12573	1063	1471	
+
+C 142  5283	1535	8471	8796	4966	7080	8816	2882	9229	2141	6506	9297	7764	9428	7986	7339	7024	2527	8057	7679	142
+       7	9295	8360	4270	77	3077	182	12577	1018	1423	
+
+Q 143  4537	7429	5194	3639	5831	5821	5045	5396	4023	5170	6895	4497	6514	3800	3786	2057	2631	5022	8268	5554	143
+       13	8059	7518	1936	437	3388	145	12575	1045	1435	
+
+W 144  3167	5829	9637	7651	4793	6674	9694	5951	8960	5747	7429	9857	6824	8096	7976	6206	6374	4069	598	6386	144
+       82	4253	8489	884	1126	2728	236	12574	1699	1464	
+
+E 145  4813	8011	2926	3131	6235	5597	5648	5438	3493	4912	6455	3850	5961	4108	3991	3073	3069	4770	7316	5862	145
+       54	5346	6383	979	1021	3622	122	12570	1318	1440	
+
+P 146  3059	7393	5140	4546	6560	2862	5434	5401	3860	4828	6663	5264	2004	5343	4234	4563	4939	4487	9514	5644	146
+       24	6496	7448	1260	780	1852	468	12568	1165	1572	
+
+G 147  4416	7508	3621	4684	6019	2822	6273	5477	4880	4567	6766	3857	1932	5450	5526	3910	4723	4324	10574	5695	147
+       51	5794	5876	3440	139	2420	298	12577	1227	1543	
+
+P 148  3938	7806	4124	4043	5659	3442	6210	5532	4150	4579	7502	4397	2095	4532	4052	3643	4510	4731	9258	6221	148
+       63	5280	5868	716	1353	1757	506	12556	1354	1673	
+
+E 149  4562	8222	2661	3197	5651	3609	5236	4963	4313	4843	6779	3770	3661	4659	4556	3676	4397	4671	6799	5379	149
+       254	3456	3832	1299	752	1448	659	12574	2509	1835	
+
+T 150  3606	7230	4462	4636	7332	3438	5437	4875	5266	4337	6816	3261	2216	5401	5835	3774	3294	4583	8670	7431	150
+       467	5222	2001	3465	137	2299	328	12546	1307	2509	
+
+H 151  4535	7630	4115	5109	4610	2351	3991	4761	5033	4430	6380	2922	5106	5256	4674	3696	4208	4523	8685	4795	151
+       100	5377	4543	1207	819	3805	107	12264	1230	4648	
+
+L 152  3877	5851	3955	4334	5963	3034	6271	4404	5679	2609	6318	4569	4003	4612	5574	3055	4901	4594	5246	5771	152
+       139	3838	5509	2298	328	3498	134	12247	1595	4698	
+
+P 153  4617	8503	4042	4204	5663	4859	6004	3298	4713	3999	7086	4299	2242	5151	4709	3947	4329	3606	8491	4878	153
+       74	4992	5762	1726	519	928	1076	12286	1283	4594	
+
+T 154  4550	7839	4198	4977	5855	4609	6370	2511	4840	3756	6189	4810	4711	5342	5417	3572	2423	3548	7918	5945	154
+       192	3286	5515	423	1977	452	1894	12418	2052	3034	
+
+S 155  4741	8217	4648	3766	5967	3034	4468	4883	3678	5262	5815	3323	6101	4318	3936	3254	3167	4819	7834	5585	155
+       110	3894	7401	906	1100	1360	712	12573	1821	1860	
+
+F 156  5683	6932	6815	6332	2862	6123	5905	3626	6257	4366	6588	6503	6199	6817	6298	5715	5838	3803	5691	1134	156
+       38	6453	6134	2958	199	2785	226	12571	1155	1639	
+
+T 157  5578	7051	5483	3851	5216	5938	5191	3746	3859	4172	5989	4732	6988	4063	3319	3506	2499	3807	6328	4635	157
+       31	6490	6608	1628	564	2252	340	12568	1176	1777	
+
+L 158  6105	8002	7603	7703	4860	6373	7434	2380	6578	2313	6655	6868	6395	7030	5770	6236	5827	2084	2541	5597	158
+       379	5450	2265	3197	167	3738	112	12567	1380	1774	
+
+K 159  5341	6152	5565	2905	4205	6000	4361	4382	3579	3742	5941	5175	7482	3620	3712	3960	3873	4025	6793	3805	159
+       70	5048	5891	1641	558	1067	936	12532	1301	4100	
+
+S 160  5399	5221	6045	4726	4416	5202	5430	4231	3417	3930	5655	5640	6818	4656	3333	3666	4803	4097	3855	2670	160
+       92	5991	4431	3134	174	2457	290	12560	1179	2887	
+
+F 161  4709	6226	4245	4168	3652	4908	6042	4510	3833	3988	5594	4025	5534	4261	3696	3678	4165	4049	5692	3502	161
+       65	4745	7245	1482	639	2521	276	12573	1426	3337	
+
+K 162  4834	7066	3609	3729	5711	3107	6127	5288	3031	4644	7153	3727	4218	5043	3132	3747	4264	4837	6925	6344	162
+       65	5058	6180	2097	384	3700	115	12571	2492	3121	
+
+S 163  4011	6712	3193	3750	6755	3292	6309	5185	4181	4441	6460	3841	4288	4799	4743	2958	3751	4537	6419	5116	163
+       113	4758	4704	1305	748	2184	359	12568	1448	3591	
+
+R 164  4568	8135	3724	3667	6453	3184	5070	5698	3665	4798	7650	3630	4103	4554	3102	3411	4071	4593	8936	6098	164
+       101	4986	4799	2010	412	3379	146	12521	1353	3567	
+
+G 165  4785	8182	3574	3673	5638	2666	6381	3951	4074	3594	6287	4212	4608	4904	4958	3367	4299	4305	6111	6029	165
+       142	4560	4289	1576	590	3696	116	12512	1468	3689	
+
+N 166  4240	6049	3909	3890	5819	3564	5117	4782	4370	4276	6728	3484	3717	4436	4411	3236	3947	4061	9219	5059	166
+       276	5255	2760	1910	446	3657	119	12498	1299	4210	
+
+C 167  4757	3109	4471	4010	3714	4127	5682	4665	5063	3940	5725	4602	4500	5526	5042	3934	4424	4200	3722	4211	167
+       102	5680	4350	1579	588	3432	140	12440	1171	5214	
+
+Q 168  4731	5415	4128	3672	5727	4166	5494	5008	3938	4219	6878	4050	3751	3994	3842	3209	3429	4228	6534	5999	168
+       453	5001	2069	2539	272	3956	96	12438	1306	5255	
+
+T 169  4179	7014	3874	3589	6123	3580	5623	4824	4175	4494	6670	3694	3928	5327	4364	3027	3285	4194	7625	5557	169
+       201	4467	3563	2472	287	4131	85	12347	1348	6334	
+
+Q 170  4262	7881	3840	3680	5251	3309	5327	4697	4389	4112	5606	4205	5438	3850	4077	3437	3951	3614	6287	5524	170
+       65	6586	4900	3517	132	2819	220	12416	1095	6682	
+
+G 171  5095	7450	4203	3146	4351	4646	5396	5059	4682	4802	6778	4224	4779	4555	4103	3951	3727	4395	2825	4275	171
+       54	5799	5749	4208	80	2043	401	12317	1140	6261	
+
+D 172  4573	8312	4158	3858	5133	4588	5773	4475	4044	3126	5745	4757	4920	3894	3649	3811	3389	3602	8097	4923	172
+       63	5958	5228	3047	186	4252	78	12359	1143	5387	
+
+S 173  4044	7524	4062	3764	5676	4189	5909	4401	3932	4480	5853	4108	3975	4065	4127	3266	3303	3776	8470	6069	173
+       67	5283	5667	1546	605	4498	65	12348	1250	5400	
+
+I 174  4366	6855	5495	5297	4133	6448	5143	2468	4732	3259	5269	4829	4856	5787	5960	4288	4402	2468	4952	4866	174
+       357	7464	2227	1382	699	3958	96	12344	1060	5389	
+
+L 175  3941	6981	4730	4486	5827	4212	5754	4248	4122	3991	6348	4123	3899	4214	4205	3246	3375	3501	7939	4554	175
+       120	5926	3977	3149	173	4773	54	12248	1115	6291	
+
+D 176  4521	7136	3122	3486	6031	4641	5841	4579	4437	4882	6080	3465	4610	4203	4239	3307	3366	3709	7123	6039	176
+       200	5879	3150	2258	338	5497	32	12244	1119	6423	
+
+C 177  4145	2669	5319	4468	4666	5007	5962	4316	5185	3792	5793	4348	5023	5737	4994	3596	3735	3293	6239	4095	177
+       434	5468	2077	2243	342	2946	200	12212	1128	6709	
+
+V 178  4431	7434	4404	3847	5454	5084	5145	3526	4586	4025	5913	4523	4224	4428	4704	3373	3488	2914	7657	4685	178
+       91	5041	5025	2819	220	2662	248	12245	1163	6915	
+
+P 179  3853	6892	4203	4661	3846	5081	6256	4207	4545	3455	6171	4483	2799	4806	5082	3703	3515	3929	7335	5348	179
+       136	4682	4286	2379	308	3634	121	12300	1314	6362	
+
+K 180  4053	8965	3916	3289	6633	4135	7078	4341	4187	4878	6624	3584	3483	4396	5480	2877	3575	4028	8719	5644	180
+       338	2681	4241	910	1096	4607	60	12379	2048	6296	
+
+D 181  3801	8266	3235	3906	6188	2850	6080	5099	4993	4475	6671	3726	4239	5078	4716	3099	3778	3865	8869	6281	181
+       75	5029	5629	1784	495	1708	527	12404	1489	6380	
+
+G 182  4522	8267	3512	3903	6825	2032	5414	5568	4620	4851	7876	3978	4636	4719	4174	3166	3759	5370	9009	6289	182
+       44	5992	6116	1718	523	1205	821	12456	1160	5205	
+
+Q 183  4139	7509	4084	3975	6382	3433	6046	4851	4354	4593	6422	3561	4426	3916	4192	3253	3029	3903	7586	7125	183
+       83	4806	5655	783	1256	1837	474	12540	1648	3780	
+
+S 184  4518	7170	3999	4649	5851	3714	4946	5966	4398	3972	6321	3178	5032	4804	4728	2811	2975	5143	7942	3950	184
+       38	6340	6162	2459	290	2620	256	12560	1197	3310	
+
+H 185  4838	8125	4354	3654	5313	4947	5041	4947	4263	4955	6517	3965	6008	4364	3883	2587	2693	4129	5939	5210	185
+       25	7387	6445	1960	429	1853	468	12557	1122	3099	
+
+C 186  4378	2601	6141	5983	4560	4520	5188	4341	6379	2668	6051	4707	5743	5888	4732	3897	3135	4000	8548	4256	186
+       38	5483	8025	1319	739	2303	327	12576	1356	2716	
+
+C 187  4884	7256	5140	3850	5618	6033	5204	4350	4280	4558	5874	4452	6074	4099	3954	2638	2289	3940	7727	5603	187
+       41	7177	5589	2116	378	3578	126	12553	1089	2445	
+
+I 188  3851	6969	8468	7306	3187	7714	5130	2166	6739	2220	6252	7382	7021	6998	6828	5684	5082	2957	5711	3587	188
+       288	7876	2501	2887	209	3857	103	12552	1061	2553	
+
+P 189  5102	7078	4430	4133	5871	5611	5568	4098	4048	3895	6430	4385	3956	4375	4195	3568	2345	3681	8109	5265	189
+       38	8505	5445	1694	533	4189	81	12321	1028	4465	
+
+R 190  4938	6814	3918	5998	3833	5847	6317	2106	5759	2609	6038	5328	6734	6085	4106	5142	5104	2632	8383	5807	190
+       82	5727	4779	1896	451	805	1225	12305	1204	4491	
+
+K 191  4530	8036	3558	3504	6027	4791	5340	5657	3565	4547	7461	3957	4845	4400	4078	2890	2719	4749	7425	6019	191
+       14	7514	7821	2231	346	1172	847	12339	1071	2969	
+
+H 192  4938	8393	2907	4311	6875	2281	4464	6144	4247	5466	7547	2626	4779	4719	4709	3727	4940	5165	8931	6202	192
+       37	7331	5701	4049	90	2993	194	12335	1074	2214	
+
+L 193  4054	7012	6270	6664	4684	7168	9094	4304	6524	865	6065	7627	6154	7480	7257	5489	4828	2889	8960	6617	193
+       31	6195	7004	2665	247	2760	231	12326	1284	2378	
+
+L 194  4702	8119	4430	3591	6219	4545	5216	4935	3560	4075	6409	4369	4877	3390	3825	3025	3109	4293	8312	6007	194
+       8	8232	8780	1508	625	3532	130	12317	1061	2307	
+
+L 195  3616	7270	4635	4162	5415	5674	6219	5742	4313	3696	5877	5241	1606	5325	4210	3906	4784	4906	7585	5588	195
+       42	5882	6437	2401	303	3515	132	12317	1778	2238	
+
+Y 196  4087	6036	3607	3455	3978	2295	5635	7043	5094	4995	6658	3560	6787	5180	5398	3448	5327	6115	5660	3454	196
+       21	8266	6497	2028	406	2170	363	12317	1085	2282	
+
+Q 197  4808	7054	2427	4666	6678	4209	4572	5553	4503	6241	5958	5155	7001	4330	4314	3595	2050	4231	8034	6194	197
+       38	7197	5725	1689	536	2419	299	12308	1149	2214	
+
+N 198  3699	6488	4304	2949	5626	5107	6060	5340	4053	4345	6117	3498	5209	4134	4217	3173	3050	4932	7961	5362	198
+       7	11052	7769	3700	115	2564	267	12309	1000	2294	
+
+M 199  5142	7220	7572	8323	4980	2312	6063	5349	7772	4763	5729	6525	8795	6993	6547	6672	6320	5182	6951	904	199
+       8	9446	7981	2471	287	3852	104	12321	1013	2152	
+
+G 200  4859	6841	4794	3344	4997	5483	5301	4443	4290	4143	5740	3699	7139	4190	3826	3455	2708	4035	7056	4361	200
+       13	12112	6843	0	*	2476	286	12326	1000	2141	
+
+I 201  5257	6089	9951	8299	2072	7311	8878	2854	9427	3784	5762	9505	8869	9154	8348	7421	7569	2464	6344	1916	201
+       8	8732	8218	3463	137	4085	88	12337	1024	2059	
+
+W 202  5270	6678	6404	4183	5736	6351	6733	5013	3723	5216	6570	5814	8107	3669	2345	3365	2587	4329	3926	4753	202
+       8	8450	8713	808	1221	1611	572	12337	1033	2052	
+
+V 203  4623	1995	8647	8151	6519	6558	9530	3066	9196	3354	5908	8510	8069	9953	8393	7006	6610	1287	9572	7833	203
+       4	8951	10901	822	1204	6130	21	12330	1032	1756	
+
+Q 204  4039	6764	6333	3731	5105	6496	5920	3693	3859	4372	6079	5495	7700	3874	2911	3637	3135	3209	6272	4929	204
+       22	7255	6837	2110	380	4697	57	12330	1104	1752	
+
+A 205  825	6620	6474	6918	7297	4506	8445	5364	6953	4775	7051	7478	4676	7653	7544	3640	4414	3514	8334	8284	205
+       18	8030	6918	1296	755	4277	76	12332	1052	1853	
+
+E 206  4545	5503	5292	3405	4858	5497	5502	4040	3748	4451	5961	5089	7546	4651	3822	3222	3465	3027	6706	3957	206
+       44	6595	5650	2000	415	2935	202	12326	1148	1915	
+
+N 207  5239	7457	4315	6670	6718	5314	6467	6438	5671	5177	7672	882	7234	6473	5213	3502	3537	5775	7981	6151	207
+       20	6920	7477	2267	336	2758	231	12315	1111	2101	
+
+A 208  3245	7024	3837	3423	6554	3057	6204	4679	3911	5057	6236	4514	4092	4566	4167	3076	4276	4465	9263	6268	208
+       57	5343	6178	2040	402	4490	66	12325	1308	2035	
+
+L 209  3042	6924	4614	4578	4487	4370	5100	3779	4787	2731	5979	3769	6331	4791	5345	4074	5128	3245	6990	4566	209
+       31	6303	6861	2914	205	1553	601	12306	1174	2194	
+
+G 210  5111	7757	4489	4996	6643	747	6222	6454	5426	5067	7550	5300	5811	5880	4972	4546	4982	5698	7371	6698	210
+       23	7246	6779	892	1117	2917	205	12317	1083	1918	
+
+T 211  4402	6647	4320	3266	5729	4743	6220	4601	3841	4855	5892	3811	4731	4404	4004	2899	3101	4365	6188	5297	211
+       31	6415	6685	581	1594	2724	237	12318	1241	1925	
+
+S 212  3281	6614	4355	4670	6582	2511	6644	4640	5223	4792	6724	5228	4683	5567	5105	2109	4171	3738	8342	6732	212
+       41	6175	6108	2281	332	2619	256	12323	1221	1952	
+
+M 213  4067	8229	4413	2858	5657	4293	6227	4761	4270	3984	6876	4426	3701	4370	4522	2946	3661	4219	7170	5456	213
+       156	4116	4473	1210	816	1945	434	12340	1820	2122	
+
+S 214  3274	6710	5718	4722	5194	4358	5913	5344	4569	5050	6641	5376	2888	5144	5090	1988	4041	4511	4847	5485	214
+       102	6784	4084	2235	344	2654	250	12347	1125	2457	
+
+P 215  3524	6841	4155	3985	5736	4680	6026	5284	4333	4581	6570	4612	4194	4930	4558	1877	3614	4542	8034	6284	215
+       121	5031	4334	2527	275	3768	110	12311	1378	2999	
+
+Q 216  3132	6631	4628	3471	5393	4725	5600	4344	4743	4846	6600	4416	3218	4697	5421	3271	3251	3782	7155	5222	216
+       418	2547	3639	924	1081	2409	301	12307	3015	3427	
+
+L 217  3686	7333	5913	4951	4524	5288	5705	2971	4824	2789	5634	5421	4847	4983	4757	3875	3472	2945	6782	5196	217
+       74	6409	4718	2403	302	4128	85	12290	1142	3864	
+
+C 218  4402	4164	5487	4555	4276	6178	5347	4099	5035	3422	6528	4420	5356	4961	4766	3446	2884	2939	7046	4510	218
+       97	6886	4151	2228	346	3515	132	12298	1104	4095	
+
+L 219  4189	8440	5583	5337	2859	5524	5963	3316	5277	2721	5872	5506	6570	5187	4753	4467	3877	2574	6208	4865	219
+       28	6808	6626	3920	99	4733	55	12271	1143	4342	
+
+D 220  4139	7304	3757	4150	5289	5846	5385	4165	4210	4451	6034	4110	5599	4457	4258	3894	2399	3170	8178	5556	220
+       289	5929	2596	4649	59	861	1154	12271	1187	4318	
+
+P 221  3969	7559	5505	4633	5167	5115	6410	4359	4763	2973	6306	5257	2909	5072	5398	3962	2455	3423	8816	5664	221
+       40	6404	5986	1629	563	3777	109	12246	1153	4223	
+
+M 222  3860	7139	4198	3909	5100	4693	6035	4437	4572	3585	4795	4650	4060	5112	4955	3151	2817	3957	7515	5206	222
+       67	5481	5439	2897	208	4668	58	12232	1269	4172	
+
+D 223  3727	7028	2889	3165	5791	4168	4788	5287	4164	4729	8166	4654	4091	4329	4369	3675	3554	4243	8107	5541	223
+       119	6205	3926	2982	195	1969	426	12209	1192	4290	
+
+V 224  3519	6684	4788	4493	5058	4943	6311	3221	4423	3298	6383	5737	4050	5100	3855	3970	3744	3026	6311	5130	224
+       55	6029	5506	3000	193	875	1137	12261	1239	4159	
+
+V 225  3497	7030	4535	4588	6216	4611	6869	3694	5151	4208	5670	5538	3945	5820	5442	4507	3076	1882	7945	6409	225
+       54	5194	6780	5551	31	3233	162	12315	1388	2798	
+
+K 226  3808	7219	5537	4841	5592	6019	5694	3845	2687	4046	6320	5602	2804	4607	3955	4391	3989	3190	8431	5679	226
+       121	5856	3987	3316	153	2839	217	12316	1255	2739	
+
+L 227  4252	6994	5799	4916	5222	5249	7448	4470	5043	3513	6369	5959	1361	5201	5605	4062	3738	4599	8455	5465	227
+       49	5555	6408	2697	242	1289	760	12307	1292	3264	
+
+E 228  3268	8026	3300	3391	5340	3517	5628	5544	4481	3801	6336	4455	4362	4871	4838	3129	4150	4272	8558	5349	228
+       34	6729	6198	3737	112	1409	682	12343	1179	2545	
+
+P 229  2590	8019	5981	5023	6961	5375	6690	5620	4364	5011	6649	6279	1307	5010	4988	4037	4700	4479	10678	7110	229
+       20	6942	7434	2014	410	3552	129	12360	1143	2218	
+
+P 230  4296	7894	6131	5884	6350	6524	7648	5241	6003	5012	7544	6903	648	6703	6402	5145	5556	3589	9957	7521	230
+       31	6781	6396	2541	272	3089	180	12361	1146	2214	
+
+M 231  3664	8044	4441	3525	5901	4445	5133	5310	4039	4530	6146	4679	4839	3591	3660	3214	3167	3874	6461	6050	231
+       44	6547	5715	2548	271	3011	191	12355	1193	2254	
+
+L 232  4636	8306	3642	4830	3905	4217	6553	3193	4665	3510	6583	2645	4209	5448	5036	3999	5027	3581	7140	6373	232
+       58	6370	5206	2792	225	2497	281	12336	1217	2422	
+
+R 233  4852	7327	5768	4777	4633	5725	6326	3267	4837	2131	6326	5480	3430	5356	5747	4154	4186	2627	6899	6218	233
+       35	6405	6340	2449	292	3764	110	12356	1170	2560	
+
+T 234  4101	7879	4730	4221	5678	4858	5093	4618	3849	4248	5999	4462	4394	4349	3558	3120	2837	3603	7436	6109	234
+       349	7537	2256	2701	241	4064	89	12375	1070	2701	
+
+M 235  3102	5624	6439	5193	4690	5098	6864	3074	4861	2828	5508	5936	4571	5701	5352	4495	4484	2143	7935	6607	235
+       991	7861	1022	530	1701	3486	135	12328	1066	5083	
+
+D 236  4344	8587	4183	3741	6096	4661	6271	4787	3945	4164	6368	4545	2319	4469	4327	3593	3657	3784	9794	6955	236
+       323	5009	2559	1435	666	4315	74	12188	1178	7820	
+
+P 237  4220	5282	5119	4321	4631	4010	6345	4671	4788	4426	6113	4333	2559	4488	4514	3185	3729	3482	8132	7759	237
+       462	5476	1991	2301	327	7164	10	12092	1166	8044	
+
+S 238  4042	8412	3019	3863	7537	3539	5962	4831	4053	4638	6074	3196	4709	4502	4602	3008	3994	4099	*	6906	238
+       141	4340	4506	1632	562	6583	15	12042	1245	8940	
+
+P 239  5060	8477	5180	4680	5230	4894	6434	3786	4841	2756	6304	4386	2365	4685	6250	3499	4269	3216	8248	5997	239
+       167	3727	4879	2775	228	6437	17	12035	1386	8962	
+
+E 240  4261	7197	4443	3123	5661	4616	5864	4180	3809	4055	6872	4606	5122	4060	3699	3686	2945	3783	*	5619	240
+       99	6925	4104	961	1040	6115	21	12043	1055	8965	
+
+A 241  2788	5864	5229	5340	5577	4638	6611	3433	6401	3704	6984	5516	5856	5388	5707	3942	4252	1712	7103	6138	241
+       402	5761	2152	898	1109	379	2114	12179	1062	9034	
+
+A 242  3658	7421	4485	3860	5780	4711	6211	3744	4354	3653	6768	5057	5679	4912	4807	3115	3012	2939	7337	5325	242
+       53	6160	5487	3124	176	3910	99	12250	1158	4774	
+
+P 243  3464	7565	3642	3379	5792	4036	5774	4954	4754	4876	6812	3469	3890	4806	4819	2905	3775	3956	8661	5971	243
+       27	6525	7028	1545	605	3115	177	12231	1145	4796	
+
+P 244  3817	6680	4771	4930	5430	4594	6730	3148	4466	3393	6020	4753	4464	5121	4461	3767	3376	2651	7647	5905	244
+       59	5754	5537	1152	862	2690	243	12248	1228	4513	
+
+Q 245  4574	8338	4123	4013	6442	3146	6152	6374	4611	4732	6980	3615	6326	4447	4939	2405	2342	5460	8715	6070	245
+       40	5862	6577	3665	118	2823	220	12219	1224	4317	
+
+A 246  3358	8124	3544	4155	6361	4040	5433	6294	4482	5138	7056	3793	3008	5041	5194	2403	3729	5098	7493	6150	246
+       19	7533	7018	1705	529	4527	64	12259	1056	4034	
+
+G 247  5017	8016	3219	4487	5947	3226	5231	6922	4873	5964	7302	3229	5858	4982	3847	3013	2242	5740	7864	6018	247
+       22	6558	7851	1744	511	2567	267	12253	1185	4016	
+
+C 248  4012	4874	5273	3856	5851	4415	5979	6388	4521	6034	5824	4097	5846	4152	4531	1801	3080	5064	6205	5922	248
+       19	7302	7166	2677	245	4392	70	12300	1079	3631	
+
+L 249  3099	5435	7958	7057	4067	6843	8040	2280	7781	2075	5131	7254	6488	7468	7611	6260	5766	2154	8715	6239	249
+       9	7650	10065	2883	210	2410	301	12305	1069	3652	
+
+Q 250  4963	7267	4741	3953	5455	6502	5274	4347	3796	3689	5724	4364	6619	4203	3656	3741	2265	3659	6753	5756	250
+       8	9310	8058	1387	695	5358	36	12361	1023	3218	
+
+L 251  5375	6798	8044	7856	4442	8668	8759	2432	7306	1443	5605	7925	6862	7924	6725	6828	6657	1902	6971	7057	251
+       8	7896	9580	4858	51	5612	30	12349	1056	3219	
+
+C 252  4554	6829	5543	3761	6107	5313	5041	5673	3879	5235	6159	4494	6447	3949	3695	2001	2748	5125	7003	5482	252
+       26	7512	6315	2938	202	6151	20	12350	1091	3208	
+
+W 253  6335	6016	7100	7309	5017	7042	8516	5916	8082	5264	7949	7671	7983	8481	7142	7653	7013	5500	323	6130	253
+       7	9196	8231	561	1635	5797	26	12333	1030	3355	
+
+E 254  4482	8678	3315	3048	6180	5405	6063	5178	3282	4615	6530	3543	5247	3967	4371	3239	3082	4783	8375	6762	254
+       73	5213	5467	1320	738	6249	19	12347	1415	3358	
+
+P 255  3205	8679	4901	4346	5978	5118	5436	4938	3907	4606	6494	4467	1880	5188	4315	4105	4408	4190	7803	5143	255
+       15	7570	7581	1577	589	3148	173	12344	1069	3621	
+
+W 256  4269	7865	4733	5325	5383	4166	6807	5186	5620	4211	6538	4637	1414	5987	5427	3653	4448	3738	5913	6810	256
+       44	6260	5853	4037	91	591	1573	12338	1228	3422	
+
+Q 257  3476	6532	3803	3444	5322	4059	5821	4926	3842	4179	7140	4233	3392	4842	4294	3344	3982	4340	8026	5727	257
+       94	5642	4537	1329	732	2424	298	12456	1373	2154	
+
+P 258  4357	6058	3145	3251	6014	3361	5758	4740	4527	4347	6902	4009	3818	4761	4404	3429	4358	4239	6214	5418	258
+       351	3771	2807	2242	343	1987	419	12426	2231	2749	
+
+G 259  3759	7588	3383	4030	6850	2399	5754	5404	5292	4922	6048	3537	3547	5296	5342	3197	3902	4840	7990	6234	259
+       96	4703	5277	2212	351	2741	234	12357	1521	4289	
+
+L 260  4305	7460	3351	3582	5180	2765	5561	5424	4656	4547	5882	3114	4489	4728	4941	3586	4076	4910	9116	4811	260
+       109	5150	4484	1429	670	3253	160	12371	1452	4746	
+
+H 261  4086	6554	4226	4488	4480	2845	4579	5529	5318	4376	6425	4454	4419	4729	4193	3232	4046	4632	5342	3583	261
+       269	3240	3959	1131	880	1987	419	12333	2458	4871	
+
+I 262  3717	6451	4509	4489	4822	5132	5730	3389	4514	3656	5211	3597	3494	5426	4445	4188	4098	3242	8438	4903	262
+       185	4083	4023	776	1266	2069	393	12374	1846	4702	
+
+N 263  4527	7304	4486	4018	5704	3753	6468	2339	4778	3448	6457	4496	4890	5262	5143	4761	4066	2694	7768	6154	263
+       42	5488	7301	1286	762	729	1334	12399	1756	4623	
+
+Q 264  5005	7798	4160	4381	3708	5632	5870	3534	5136	2191	5863	5528	5860	4161	5222	4401	3195	3806	6525	4827	264
+       59	5601	5667	1959	429	2583	263	12432	1300	2796	
+
+K 265  4647	7130	5025	3865	5342	2457	4427	5235	3866	4602	6121	4513	5736	4360	3904	3311	3851	4527	5985	4564	265
+       26	6451	7325	1086	919	858	1157	12430	1181	2981	
+
+C 266  5821	2375	7615	6749	3210	6879	6955	4871	6530	5303	7619	6324	6450	7516	5932	5525	6014	4482	6682	1192	266
+       12	8738	7433	3267	158	1531	613	12437	1041	2020	
+
+E 267  5100	7490	4615	2784	5907	5917	5579	3736	3929	4193	6169	4402	6271	3367	3173	3840	3890	3739	7929	4985	267
+       31	8087	5820	3353	149	4005	93	12446	1053	1791	
+
+L 268  3676	8901	6794	6920	4801	6887	7321	2147	7979	2651	6184	6700	7290	7232	7437	5514	5348	1587	8144	4725	268
+       57	6128	5349	3590	125	3620	122	12440	1227	2018	
+
+R 269  5047	7556	4766	2835	5016	6100	4962	4908	4051	4428	6147	5160	6991	3361	2899	3541	3554	4697	6905	3823	269
+       35	7250	5827	2453	291	2015	410	12447	1125	2319	
+
+H 270  4140	5713	6385	5790	3954	3349	5889	4171	5624	4056	5694	6062	6871	6106	4506	4782	5912	4246	4124	1670	270
+       48	6016	5843	3507	133	2927	203	12452	1268	2308	
+
+K 271  4587	5718	4184	4470	5750	4984	5257	5090	3142	5008	6485	4255	6522	4070	2249	3489	4091	4679	5664	4703	271
+       76	6431	4645	2328	320	3728	113	12459	1251	2411	
+
+P 272  4313	6844	4171	3605	6589	4954	5908	4843	3812	4314	6653	4858	2130	4857	3887	3827	3930	4521	5837	6007	272
+       1220	6167	845	2111	380	4075	88	12443	1237	2883	
+
+Q 273  3465	5669	3907	4206	4958	4266	6258	4633	3881	3877	6204	4151	4288	4226	3917	3629	3637	3883	7678	5580	273
+       148	3751	5430	3874	102	409	2019	12248	1624	8574	
+
+R 274  3858	5075	3387	3667	6269	3575	5959	4976	3910	3802	6578	4223	3940	5054	4663	3458	3791	4026	8438	5803	274
+       117	4185	5457	2011	411	773	1269	12470	1890	3929	
+
+G 275  4067	6949	3403	4113	6012	2807	6157	4960	4592	4674	6149	3921	2901	5006	5148	3334	4171	4434	7731	5986	275
+       92	5132	4910	2728	236	2845	216	12441	1441	2724	
+
+E 276  4186	7212	3368	3234	6068	3272	5817	5765	4338	4985	6472	3662	4783	4486	4628	2843	3379	4696	8270	6555	276
+       114	4378	5181	2555	269	1003	997	12427	1872	3302	
+
+A 277  4163	6745	3613	4067	5133	3238	5948	3786	4704	4139	6084	4112	4318	4720	4790	3356	3772	3612	7642	5597	277
+       55	5815	5666	2931	203	2508	279	12452	1332	2652	
+
+S 278  4147	8813	3725	3361	5916	3753	5728	5007	4073	4753	6708	3783	4733	4235	4299	3106	2974	4587	8235	5711	278
+       65	5718	5310	3505	133	2424	297	12510	1343	2693	
+
+W 279  5267	7716	5781	5190	4076	5081	6882	4907	5899	4448	6528	5454	6044	5600	5459	4679	5210	4734	1066	4134	279
+       36	6447	6210	2529	275	2184	359	12500	1181	2787	
+
+A 280  4639	7462	4989	3723	5018	5424	5278	4386	3491	3834	5088	4216	5293	3948	3848	3637	2910	4177	7428	4550	280
+       44	6048	6073	2491	283	1718	523	12445	1248	2633	
+
+L 281  5289	7397	4706	3596	5009	5544	5164	4714	2995	3720	5154	4277	4631	4194	3678	3798	3345	3702	8044	5388	281
+       44	6065	6055	2466	288	2128	375	12440	1242	2492	
+
+V 282  3988	5986	3870	4147	5252	4668	5703	3564	4725	3386	5966	3806	5350	4973	4857	4297	4139	2495	7583	5324	282
+       65	5733	5305	4114	86	2026	407	12427	1337	2397	
+
+G 283  4148	7333	3906	3733	5629	3126	5413	4646	4290	4413	6531	3775	3760	4546	4729	3501	3652	4017	7944	5192	283
+       126	5809	3920	2207	352	2439	294	12430	1322	2683	
+
+P 284  4761	5670	3993	3649	5243	4232	5972	4329	3937	4408	6455	4135	4138	4510	4182	3634	3287	3104	8926	5816	284
+       508	2154	3792	2696	242	1484	638	12446	4279	3389	
+
+L 285  4376	6618	4983	3974	4926	4421	6484	3409	4706	3154	6271	4523	4258	4793	4838	3802	3677	2804	6655	5155	285
+       96	4775	5166	2423	298	3086	181	12468	1645	3980	
+
+P 286  4190	7741	3528	4396	6230	3803	6082	4129	4763	3882	6776	3910	3234	4946	4813	3148	3322	4010	8085	5947	286
+       79	5013	5469	1793	491	747	1308	12476	1686	4059	
+
+L 287  3536	7215	4255	4722	6688	2897	6081	4832	4659	4595	7038	4110	3696	4720	4925	2906	3109	3946	7365	6911	287
+       77	5030	5548	2622	256	1853	468	12424	1601	2750	
+
+E 288  4388	8633	3456	3851	5911	3886	5435	6070	3925	4890	6712	2975	4084	4831	4635	2924	3013	5482	8848	5950	288
+       139	3963	5164	1782	496	1999	415	12412	2084	2643	
+
+A 289  3733	7278	3642	3269	6248	4100	6156	5000	4048	4582	6613	3836	5269	4122	4235	3127	3226	4044	7991	6267	289
+       67	4745	6996	1501	629	973	1028	12421	2853	2810	
+
+L 290  4789	5107	4730	4499	5053	4130	4960	5373	4911	3745	6019	3858	4506	4547	3948	3388	2447	4968	8661	4255	290
+       46	5647	6471	2333	319	1467	648	12418	1424	2384	
+
+Q 291  4815	6655	4768	3519	5342	5355	4986	5611	4180	4961	6166	4094	4872	4194	3658	2340	2935	4645	7278	5203	291
+       24	6829	7023	2932	203	1630	563	12403	1189	2105	
+
+Y 292  3732	4809	7240	5987	2881	6122	4437	3517	6035	2924	5976	6744	6990	6017	5657	5266	4422	3176	6487	2529	292
+       33	6602	6305	2372	310	2064	394	12394	1242	1916	
+
+E 293  5307	6660	4806	3769	5971	6714	5838	3864	4066	3807	6015	4247	5657	4628	4156	3700	2212	3140	8285	5716	293
+       19	6859	7756	2343	317	2115	379	12392	1152	1986	
+
+L 294  4960	6544	4620	6491	3821	6836	6882	1949	6419	1984	5674	6238	7200	6418	6608	5033	5538	2580	7545	7021	294
+       29	7093	6302	2262	337	3680	117	12389	1115	1855	
+
+C 295  4464	5114	3780	3620	6190	4769	5204	5239	3969	4571	6511	4163	4820	4171	4198	3227	2527	4579	7262	5583	295
+       59	5373	5967	3067	183	2296	329	12406	1411	2048	
+
+G 296  5397	8573	2893	4303	7719	1996	4825	5491	4495	5567	7549	2632	4825	4928	4999	3665	4860	5519	8974	7176	296
+       66	5194	5838	2531	274	2723	237	12398	1479	2134	
+
+L 297  5419	7059	6809	6745	5197	7551	7524	4496	6783	571	6041	6888	6006	7054	6563	5600	5115	3833	8242	7320	297
+       30	6492	6727	4592	61	2335	319	12390	1234	2297	
+
+L 298  4265	8543	4164	3136	6505	5828	5059	4908	3266	3722	6023	4480	4709	3565	3851	3431	3394	4436	7928	6194	298
+       24	6433	7577	1259	781	3189	168	12406	1217	2282	
+
+P 299  3596	7425	4958	4368	6371	5072	5690	5906	4329	4831	6857	5045	1242	5540	4886	3947	4858	5172	8851	5517	299
+       13	7237	8924	2370	310	2142	371	12415	1153	2269	
+
+A 300  4098	5207	3560	4428	3646	1998	5662	6857	5668	5236	6869	3348	6929	5922	5618	3904	5174	6341	5571	3341	300
+       11	8695	7678	4081	88	2778	227	12427	1039	2045	
+
+T 301  4388	6964	3738	4370	7200	4621	4997	5655	4418	5470	5912	5138	6526	4802	4279	3451	1511	4206	7928	6766	301
+       9	8678	8061	2559	268	1732	517	12415	1041	1985	
+
+A 302  3793	6560	4431	2988	6186	5397	5874	5165	3855	4092	5870	3811	5034	3909	3976	3544	3018	4240	7123	5927	302
+       6	8902	9028	1698	531	2912	206	12429	1052	1779	
+
+Y 303  6417	6511	6534	8174	4792	3592	5196	5979	7235	5344	8131	6954	9501	6926	6537	6451	6916	5563	6913	539	303
+       9	9062	7841	3716	114	3428	141	12415	1040	1716	
+
+T 304  4279	6714	4918	2971	5141	5944	5235	4699	4131	4537	5723	4215	6961	3747	3801	3363	2919	4049	6983	4514	304
+       27	6306	7441	1580	587	3602	124	12426	1225	1742	
+
+L 305  4884	6030	8509	7717	1973	6462	8744	2791	9171	2949	6036	8427	7652	8341	8121	7241	7298	2196	7226	2928	305
+       9	8031	8539	4071	88	3788	108	12411	1059	1772	
+
+Q 306  4674	6696	6403	4328	5768	5958	6243	5222	3549	4908	6337	5614	7366	3119	2066	3217	3160	4975	6458	4608	306
+       11	8233	7802	1814	483	3709	115	12407	1067	1771	
+
+I 307  4843	3894	8886	8573	5573	6391	9601	2245	8980	3221	5184	7846	7693	8655	9794	6429	6521	1112	10958	6283	307
+       9	8251	8554	2351	315	4091	87	12406	1047	1810	
+
+R 308  3712	6811	6542	4727	4935	6151	6130	4097	3774	4366	6388	5713	7288	3861	2208	3440	3632	3603	6620	4743	308
+       34	5619	8463	3585	126	2676	245	12404	1394	1810	
+
+C 309  1138	3426	6566	7119	6535	4662	7638	5351	7352	4883	7575	5927	4554	7386	6257	3461	3946	3976	8062	6856	309
+       15	7662	7506	3623	122	4298	75	12435	1079	1734	
+
+I 310  4550	5298	6255	3797	4495	5522	5405	3565	3845	4109	5298	5403	7846	4959	3359	4016	4083	2644	6461	3837	310
+       33	7216	5978	2928	203	3104	178	12430	1102	1792	
+
+R 311  4050	6812	4238	5989	5822	4919	6585	6151	4660	4788	6982	1535	6036	5898	4110	3401	3125	4991	8629	5326	311
+       128	5656	3938	1647	555	2889	209	12407	1354	1996	
+
+W 312  3450	6810	3586	3301	6232	3715	5495	4823	3808	4747	6684	4090	4618	4701	3919	2927	4254	4703	6552	6321	312
+       129	4737	4378	1577	589	1505	626	12399	1645	3156	
+
+P 313  3117	7706	3942	3904	5141	3947	5383	4141	4334	4145	6179	3236	4973	4782	4948	3720	4638	3470	7968	4746	313
+       120	6281	3906	2272	335	1797	490	12367	1207	3295	
+
+L 314  4728	7624	3600	4279	6348	1011	5289	5874	5162	5168	7072	4643	5926	6224	5406	4118	5088	5892	9732	6587	314
+       59	5938	5414	3234	162	1663	547	12378	1423	3798	
+
+P 315  4044	6536	4108	3384	4426	4693	5908	4838	4269	3974	6312	4259	4309	4263	4086	3148	3669	4064	6481	4884	315
+       80	4949	5515	1230	801	773	1270	12408	1577	3567	
+
+G 316  4411	6532	4816	5208	6528	1317	6907	6178	5030	5628	8099	5088	5842	6032	5717	2147	4854	5002	6785	6799	316
+       41	6195	6120	1372	704	3406	143	12428	1221	2506	
+
+H 317  4034	8017	4392	3336	5216	4031	5431	4729	4119	3871	6535	4237	2912	4465	4522	3541	4263	4310	8447	4765	317
+       261	6927	2670	4944	48	2828	219	12436	1145	2599	
+
+W 318  4035	6074	6153	4479	4109	5776	6234	4555	5068	4004	6075	5803	2909	5103	4826	4331	4522	4450	2550	3306	318
+       81	7147	4397	2715	238	4074	88	12409	1101	4531	
+
+S 319  4592	6457	5816	4795	6662	3604	6825	6122	5837	5412	7946	4946	5450	5837	5615	997	3546	4872	9107	5848	319
+       517	6797	1775	3774	110	3083	181	12406	1137	4829	
+
+D 320  3589	3443	3098	2700	6306	4154	7197	5630	4651	4842	6160	4473	3599	4565	5278	3667	4612	4561	9214	6558	320
+       399	3927	2506	3062	184	3778	109	12517	1657	6913	
+
+W 321  4227	7534	4719	4403	4256	5399	5518	4613	4794	4245	6329	5096	3379	5440	4911	4185	4284	4506	2110	4253	321
+       56	5740	5669	1724	520	1781	496	12551	1197	7468	
+
+S 322  3566	7835	5560	4997	6170	3918	6909	4969	5431	4969	6665	5406	4225	6059	5207	1261	3653	4463	10644	6432	322
+       68	5323	5576	2926	203	341	2248	12567	1316	6245	
+
+P 323  3046	9059	3762	3196	5860	4943	5786	5002	4407	4723	6452	4253	3293	4425	4771	3320	3535	4254	8774	5658	323
+       58	6337	5212	3515	132	3080	182	12413	1271	2621	
+
+S 324  3948	6936	5234	3626	5843	5676	6079	3616	5104	4461	6544	4213	3175	4920	4925	2896	3236	3252	6773	5985	324
+       29	6792	6547	1954	431	1783	495	12403	1152	2965	
+
+L 325  3639	6027	5217	4546	4334	5396	5931	2990	4131	2943	5952	5993	6158	4966	4935	4337	3989	2485	7388	5356	325
+       24	7171	6692	3583	126	2674	246	12416	1112	2607	
+
+E 326  4370	6091	5128	3848	4739	5762	5584	3775	4703	4276	6129	4337	5338	4573	4237	3117	2609	3648	6609	4431	326
+       39	5894	6626	2626	255	1284	763	12420	1295	2522	
+
+L 327  3573	5435	6303	5907	2761	3876	5597	3078	6002	3556	5636	6275	5320	5810	5983	4684	4392	2388	7103	4982	327
+       56	6783	5097	2235	344	2818	221	12430	1150	2095	
+
+R 328  4528	6837	5655	4451	5071	6028	5363	4048	3627	4424	5594	5185	5494	3859	3066	3889	2506	3922	6300	4501	328
+       37	6248	6402	3834	105	1748	510	12407	1231	2419	
+
+T 329  4630	8078	5278	5956	5885	5235	7611	4941	5607	4401	5939	6045	4148	6115	5642	3818	1013	3915	8600	7096	329
+       69	5651	5236	3469	137	2598	260	12411	1435	2231	
+
+T 330  3539	7009	4301	4298	5403	4159	5961	5095	3648	3023	6104	4881	2779	4483	4656	4070	4052	4326	8087	5328	330
+       53	5258	6634	3693	116	2334	319	12398	1470	2486	
+
+E 331  3797	5913	4597	2436	5774	4357	6544	4956	4440	4591	6719	5416	2298	4200	4989	4091	4235	4929	8709	5741	331
+       51	5627	6106	4125	85	3154	172	12397	1374	2407	
+
+R 332  2923	6649	3085	3694	5881	3181	6026	4592	4301	4498	7235	4717	4539	5147	4580	3318	3723	4824	7745	6587	332
+       200	3638	4345	5926	24	2591	262	12401	2429	2514	
+
+A 333  2398	6410	5015	4498	5823	4807	6563	4249	4169	4212	6282	5425	2988	5450	4458	4383	4151	2784	8877	6046	333
+       43	5381	7504	4162	83	1452	657	12451	1480	3452	
+
+P 334  4776	9687	6276	5550	7216	5746	6989	5698	5691	4842	8007	7163	609	5419	5948	4779	5138	4525	8956	7655	334
+       105	5737	4272	1540	608	1608	574	12482	1877	2703	
+
+T 335  3859	7535	3908	4150	6244	3670	6442	4393	4625	4383	6367	5047	3139	4771	5038	2496	3426	4179	8646	6322	335
+       215	5596	3085	2229	346	2160	365	12548	1350	2969	
+
+V 336  3106	7196	4761	4155	5614	3074	7124	4302	3842	4176	5850	5165	3303	4790	4336	3399	4283	3819	7758	6961	336
+       93	4492	5817	1494	632	2929	203	12459	1627	4140	
+
+R 337  3195	7710	5947	4785	6366	4622	6633	4812	4551	4685	6434	4863	1506	5304	4795	4276	4316	3686	8049	6531	337
+       63	7184	4792	4023	92	1861	464	12419	1095	4002	
+
+L 338  4295	7158	5428	4406	6164	5023	6295	4674	4739	3206	6754	6140	1610	4655	4619	4213	4125	3799	8320	6439	338
+       247	7495	2719	3377	146	3857	103	12325	1100	3751	
+
+D 339  4010	8239	2972	3796	6210	4233	6374	4778	4515	4427	6318	3875	2970	4416	4722	3550	3719	3987	*	6334	339
+       653	5240	1567	3394	144	4075	88	12420	1360	5249	
+
+T 340  3986	9328	5229	4862	4610	4906	6705	3570	5541	3200	6785	4152	3281	4821	4814	3849	3372	2639	7918	7360	340
+       219	6941	2913	2008	412	501	1768	12437	1082	7483	
+
+W 341  4594	7217	3812	4262	5040	4116	5059	4713	4631	4592	7121	2424	4789	5013	4553	3495	4058	4522	3721	5705	341
+       35	6908	6002	3316	153	1534	611	12543	1121	4445	
+
+W 342  5264	6514	6485	6339	3923	6672	7360	2945	5981	1768	5669	6671	4649	6815	4936	5003	5070	2307	5777	5252	342
+       34	6462	6378	3410	143	1023	978	12542	1198	3687	
+
+R 343  4525	7545	4988	3622	6005	5148	4811	4374	3289	4404	5687	4502	6293	3793	3198	3310	3033	4053	6893	6345	343
+       20	7029	7282	3081	181	1992	418	12310	1139	2642	
+
+Q 344  2741	4211	6445	5540	5095	4480	6763	3304	5720	3401	5876	5955	5384	5464	5557	4046	4443	2128	7329	5453	344
+       48	6087	5810	2125	376	3173	170	12301	1276	2391	
+
+R 345  4014	7174	4546	3444	5415	4227	5446	4049	4135	4087	6911	4634	5713	4628	4112	3256	2937	3520	6960	5371	345
+       42	6251	6010	2132	373	2140	371	12259	1251	2579	
+
+Q 346  3369	7633	3507	3736	5661	4014	5968	5043	4657	4728	6693	3525	3848	4740	4692	2905	4153	3690	7081	6245	346
+       56	5567	5873	2400	303	2076	391	12307	1417	2496	
+
+L 347  4028	5728	4614	4814	5719	4689	6374	3107	4250	3224	6071	4407	4618	4886	4598	3833	3687	2750	7480	5789	347
+       85	4442	6520	1117	892	1374	703	12310	3023	2744	
+
+D 348  4249	7876	3713	4482	7027	2789	6086	6595	4616	5367	6816	3453	5838	5348	4953	2470	2445	5465	8071	6093	348
+       132	5374	3984	1893	453	2942	201	12325	1643	3078	
+
+P 349  3467	6969	3499	3928	6486	3999	5525	6256	4376	5009	6737	4102	3201	5047	4688	2419	3648	5143	7777	6079	349
+       87	4273	7187	1048	954	3273	158	12342	2489	4266	
+
+R 350  5338	7834	3480	4551	5980	3918	5079	6337	4662	6078	7327	3406	4785	4923	3256	2930	2254	5719	7830	5533	350
+       50	4994	8486	1820	481	3856	103	12333	1832	4435	
+
+T 351  3928	6614	4837	3779	5637	4765	5317	5840	4188	5543	6328	4381	5913	4484	4393	1815	2930	5284	6530	5698	351
+       17	7140	7782	1948	433	345	2234	12341	2901	4277	
+
+V 352  3389	5624	7542	7737	4759	6751	7979	2061	7441	2385	5071	7250	5190	6773	7825	5871	6271	1932	8954	5985	352
+       12	7684	8260	1738	514	3310	153	12330	1094	1879	
+
+Q 353  5002	7751	4850	3927	5618	6133	5001	4374	3671	3581	5547	4269	6122	3974	3751	3559	2434	3823	7157	6098	353
+       11	8392	7867	3039	187	3676	118	12333	1048	1841	
+
+L 354  4784	5735	8777	7987	4194	8116	9836	2403	8509	1460	6077	8692	7417	8509	7391	7052	6403	1951	7156	7095	354
+       9	8357	8243	5364	35	3070	183	12322	1053	1847	
+
+F 355  4520	6765	5698	3965	4935	5283	5292	5302	4050	4605	5791	4406	6718	3982	3879	2133	2689	5011	7527	5173	355
+       19	7019	7626	931	1072	3173	169	12337	1144	1811	
+
+W 356  6248	5534	8142	7295	4817	6108	8126	5244	8337	5301	8118	8650	8107	9168	7491	7508	7989	5206	359	6161	356
+       13	8531	7379	3820	106	2387	306	12327	1045	1822	
+
+K 357  4644	7799	3365	3278	6224	5518	6379	5315	2798	4404	6287	3963	5827	3752	4254	3113	3188	5047	8574	6310	357
+       26	7201	6507	1627	564	3619	123	12322	1116	1780	
+
+P 358  3096	7855	5204	4009	6135	4921	5690	5182	3832	4399	6539	4896	1797	5427	4518	4020	4565	4248	8043	5751	358
+       34	8369	5628	3127	175	2411	300	12316	1064	1907	
+
+V 359  4181	7385	4746	5517	6433	4491	6717	4817	5551	3562	6127	4732	1322	6143	5820	3927	4728	3732	8988	6935	359
+       101	6073	4239	3595	125	3266	158	12306	1273	2129	
+
+P 360  3695	6642	3646	3532	5620	3803	6248	5015	4162	3975	7015	4533	3012	4716	4785	3024	3949	4859	9145	5811	360
+       763	7274	1306	1493	633	3271	158	12232	1132	3024	
+
+L 361  4258	5274	3791	3642	6242	3476	5836	4393	3697	4026	7625	4636	3107	4412	4146	3857	4117	4463	8243	5455	361
+       396	4791	2293	1977	423	2985	195	12135	1551	7158	
+
+E 362  3053	5290	3517	3389	4720	4654	6429	4735	4441	4371	6737	3751	4466	5048	5038	2856	4322	4713	7188	5192	362
+       311	3940	2956	2052	398	1191	832	11981	1594	7575	
+
+E 363  4568	7301	2641	2979	5756	4600	4815	5114	4799	3969	5023	3710	4455	4255	5042	3799	3923	4584	9324	5384	363
+       78	5247	5261	2003	414	1238	796	12215	1340	6062	
+
+D 364  3231	6659	4416	4683	6248	2871	5022	4774	5196	4523	6163	3995	3220	4519	4214	3911	4320	4383	4488	5696	364
+       93	5885	4465	3154	172	2280	333	12235	1224	4552	
+
+S 365  4469	6698	4421	4771	6030	2728	5120	5386	4811	4811	6510	1960	4595	5302	4128	3632	4536	5269	8043	5240	365
+       55	5672	5836	3403	143	1375	703	12209	1275	4461	
+
+G 366  3710	5088	4138	4519	5979	1509	6311	5684	5199	5091	6643	4878	4814	5330	5343	3034	4683	5101	6871	6609	366
+       61	5669	5511	2429	296	2949	200	12261	1362	3518	
+
+R 367  4107	6150	3670	3588	5952	4352	5335	4129	3930	4509	6487	4121	2557	4579	4416	3969	4468	4334	7701	5732	367
+       32	6890	6182	1324	736	2134	373	12270	1146	3577	
+
+I 368  4943	7734	4813	5104	4666	4810	7145	1784	5380	3023	6491	4873	4925	5643	5546	4752	4782	2602	8730	5760	368
+       55	5258	6462	1366	708	1022	979	12291	1612	3241	
+
+Q 369  4735	6851	3742	4381	4415	5547	5922	3879	4277	3067	6161	4941	6177	4149	4551	3724	2676	3635	6853	5223	369
+       29	6362	6993	2180	360	2381	308	12276	1240	2377	
+
+G 370  4498	7681	4936	4002	5440	2013	4232	5718	4030	5285	6851	4321	6371	4489	3834	3246	4036	5496	6394	4646	370
+       17	7085	7812	2801	223	2614	257	12288	1135	2295	
+
+Y 371  6619	7727	7879	7504	3024	7403	6580	5250	6389	5108	7824	7279	6600	7490	6583	6327	5954	5087	6421	595	371
+       20	6900	7533	3285	156	3373	146	12291	1154	2174	
+
+V 372  5106	6798	5077	3301	5799	5512	5246	3656	3471	3812	6295	4205	6578	4017	3030	4039	3559	3698	6922	4995	372
+       17	7536	7258	2412	300	3038	187	12292	1088	2164	
+
+V 373  5222	7938	7096	7648	5458	8328	8669	1983	7829	2295	6267	6748	7047	7266	7080	6080	6053	1447	6903	5748	373
+       28	6821	6561	2417	299	3452	138	12288	1159	2184	
+
+S 374  5269	6374	5077	3030	4579	5719	5083	5060	4000	4415	6075	4983	7349	3559	3650	3447	3295	4377	5582	3312	374
+       36	6114	6631	1208	818	2800	224	12276	1271	2269	
+
+W 375  4759	4956	6476	6087	3936	5604	5872	3511	5186	3437	5482	6204	6774	5927	4309	5671	5350	3407	3542	1953	375
+       84	4567	6111	1455	655	3565	127	12281	1754	2361	
+
+R 376  4633	5018	4806	4642	5309	4428	5295	5318	3344	4470	6393	4349	6480	3992	2590	3289	3978	4812	4256	4949	376
+       41	6612	5824	2976	196	2285	331	12278	1186	2678	
+
+P 377  4125	7017	3544	3283	7045	4195	5866	4986	3633	4086	6317	4022	3374	4451	3977	3704	3770	4497	8119	5770	377
+       74	5425	5228	2087	387	2841	217	12274	1397	2676	
+
+S 378  3864	7592	3747	3765	5855	3893	5820	4407	4010	3755	6064	3780	4475	4454	4551	3397	3895	3541	7540	5787	378
+       65	5430	5598	2337	318	2739	234	12241	1494	2983	
+
+G 379  4411	7449	3211	3812	6014	2595	5820	5549	4367	5065	7069	3440	4253	4790	4719	2999	3930	5111	7224	5863	379
+       208	4321	3569	2663	248	3100	179	12195	1903	3346	
+
+Q 380  4146	6872	3322	3317	6170	3225	5924	5511	4083	4732	6487	3971	4638	4209	4708	2699	3974	4872	8404	5908	380
+       134	4536	4451	2318	323	1739	514	12178	1693	4427	
+
+A 381  4149	7058	3440	3635	5443	3365	5573	5130	4183	4384	5720	3820	3861	4454	4372	3421	3624	4605	7639	5819	381
+       125	3997	5596	2027	406	2214	350	12197	2171	4220	
+
+G 382  4161	7169	3822	3258	5319	3543	5563	4861	4136	4031	6375	4097	4544	4550	4457	3423	3934	4156	4762	5363	382
+       334	2545	4819	2519	277	2330	320	12189	3467	4053	
+
+A 383  4241	6404	4025	3161	5698	4640	6159	4703	4456	4556	6442	3977	4690	4430	4704	3284	3387	4130	3416	6090	383
+       147	4754	4069	3516	132	2026	407	12173	1727	4407	
+
+I 384  4268	7192	4478	4079	4447	5058	5450	3897	4031	3805	5956	4468	4490	4437	3993	3388	3558	3495	5236	5150	384
+       163	3628	5257	1773	500	2297	328	12142	2640	4568	
+
+L 385  4411	6320	4816	3675	5708	4998	5840	4012	4026	3955	5582	4232	4262	4355	3788	3616	2975	3804	5504	5569	385
+       115	3967	6267	4270	77	2311	325	12152	2022	4269	
+
+P 386  4235	4913	4802	4075	5087	4999	5582	3578	4512	3562	6442	4292	4572	5058	4848	3645	3255	2930	7580	4865	386
+       86	4722	5664	2568	266	2663	248	12160	1741	3963	
+
+L 387  4164	7162	4214	3927	5904	4220	5573	4345	4397	3890	6785	3663	3825	4398	4772	3323	3419	3493	6775	5147	387
+       73	4792	6269	2466	288	3228	163	12197	1603	3817	
+
+C 388  3813	4244	4483	4822	5536	3370	5610	4637	4737	4459	6629	3790	4295	4733	5344	3189	3242	3498	7276	5145	388
+       263	2851	5146	1878	458	1543	606	12202	3089	3739	
+
+N 389  4409	7536	3529	4430	5998	3938	5717	4690	3991	4901	6862	2925	4493	4632	4805	3005	3072	4476	8449	5191	389
+       68	4863	6387	4334	73	2341	317	12233	1652	3336	
+
+T 390  3728	7555	4028	3545	5582	4014	5962	4915	4261	4479	6361	4405	5219	4317	4507	3058	2708	3877	8556	5710	390
+       97	4151	6836	2681	244	3032	188	12248	2096	3155	
+
+T 391  4565	5697	5324	4328	5434	4639	5025	5503	5221	3604	5999	3632	3908	5000	4205	3208	2220	4831	7848	5162	391
+       23	7093	6884	2734	235	2630	254	12248	1152	3060	
+
+E 392  4583	6900	4745	3233	5420	4855	4742	5265	4174	5049	6204	4013	5067	4206	3906	2430	3209	4603	6830	5082	392
+       54	5813	5713	2287	331	3340	150	12249	1343	2887	
+
+L 393  3702	5150	5300	5642	3519	5264	4312	3992	5467	2810	6219	5269	5578	5801	5614	4550	3667	3406	6780	2895	393
+       37	5765	7187	2289	330	3785	109	12243	1331	3073	
+
+S 394  4888	6190	4768	4010	5855	5847	5371	3943	4039	3909	5767	4319	5613	4437	4307	3568	2211	3417	7821	5745	394
+       17	7052	7915	2443	293	4229	79	12225	1122	3094	
+
+C 395  4887	4238	5344	6084	3629	6993	6962	2088	6079	2209	6370	6712	6927	6663	6109	5554	5178	2671	6346	4705	395
+       25	6549	7341	1505	627	3800	107	12179	1196	3058	
+
+T 396  4827	8074	3821	3731	5695	4583	5534	5281	3795	5015	6766	3919	4751	4697	4075	2969	2362	4651	7954	5198	396
+       57	5305	6202	3064	184	2390	305	12186	1462	3022	
+
+F 397  5137	7362	3124	4596	4668	2163	5080	5094	4746	4094	7867	2591	5218	5438	5405	4003	5305	4718	7158	6000	397
+       64	4748	7331	2004	414	4081	88	12209	1663	3024	
+
+H 398  5494	7433	6029	6081	5232	6992	6415	4763	6279	690	6364	5856	5638	6069	6134	4691	4960	4084	7056	6578	398
+       84	4435	6618	2865	213	2275	334	12210	1772	3023	
+
+L 399  4147	7990	4413	3319	6303	5927	5567	4296	3352	3136	5905	4536	4594	3967	4067	3474	3521	4059	7298	6455	399
+       9	8014	8641	864	1150	2883	210	12190	1075	2858	
+
+P 400  3615	6878	4770	4144	6039	5246	6675	6278	4364	5058	7146	5268	1239	5566	4747	3482	4633	5937	9048	6534	400
+       12	8121	7723	1456	654	3507	133	12190	1063	2659	
+
+S 401  4009	5132	3600	3846	4396	2042	5404	7191	4955	5215	7182	3143	5845	5746	5354	3744	5371	6272	6552	3748	401
+       57	5036	6977	1396	689	4101	87	12199	1926	2606	
+
+E 402  4168	7015	4006	4349	6859	4094	5097	5474	4163	5542	5791	5434	6621	4405	4054	3319	1695	4399	7573	6851	402
+       15	7769	7495	2047	400	3811	107	12213	1088	2663	
+
+A 403  3738	7022	4120	3159	5684	5592	5440	5399	4066	4143	6135	3971	4928	4282	4120	3414	2818	4197	7243	5153	403
+       21	6855	7440	1418	676	3809	107	12194	1168	2637	
+
+Q 404  6119	6054	7313	6431	4633	4022	5539	6103	6773	5784	8505	6711	7600	6620	6390	6634	6884	5306	6139	535	404
+       28	6205	7539	2360	313	3569	127	12197	1243	2625	
+
+E 405  4808	5267	4824	3042	5194	5628	5167	4541	4002	4380	5816	3902	6412	4095	3627	3539	3086	4244	5975	4492	405
+       15	7277	7905	3010	191	4052	90	12198	1177	2589	
+
+V 406  4254	5552	8243	7746	2154	7443	8213	2580	7993	3206	6330	8256	7993	8856	7573	6850	6417	2104	6821	3108	406
+       12	7532	8461	3834	105	4121	85	12194	1075	2574	
+
+A 407  4602	5893	5885	4249	5871	5736	5881	5658	3226	5309	6445	5186	7278	3759	2305	3041	2933	4717	5817	4719	407
+       14	7623	7772	3484	135	2519	277	12195	1086	2534	
+
+L 408  4690	4060	8137	7910	6595	7303	7941	2472	9068	2927	5515	7613	7160	8824	8046	6300	6363	1032	8667	8372	408
+       12	8191	7611	2505	280	3694	116	12220	1078	2352	
+
+V 409  3436	6207	6752	4859	5000	6192	6263	4261	3827	4403	6372	5824	6971	3590	2661	3291	3343	3526	6017	4618	409
+       35	7459	5770	2032	405	4506	65	12218	1080	2363	
+
+A 410  852	5937	7163	7129	7533	4829	7747	5402	7223	4789	7030	6304	4648	7559	7101	3461	4012	3847	9936	6984	410
+       27	6594	6954	1739	514	3469	137	12193	1160	2615	
+
+Y 411  4460	5015	6405	4080	3855	5866	5427	3629	4083	4208	6235	5345	7543	5130	3592	3917	4041	2643	6240	3407	411
+       44	5438	7176	3465	137	3329	151	12198	1386	2610	
+
+N 412  4930	6748	4183	6401	6550	4722	6163	5777	5477	4908	7851	1146	6433	6524	5412	3526	3011	5737	8542	5630	412
+       64	5136	6042	1037	964	3617	123	12270	1681	2586	
+
+S 413  3277	6788	3807	3448	6587	3272	6036	4936	3809	5014	6761	4216	4597	4841	4017	2690	4230	4721	8367	6591	413
+       90	4432	6131	1127	883	2807	222	12268	1700	2716	
+
+A 414  2751	7170	4219	4331	4550	4060	5282	4157	4021	3946	5934	3996	5602	4992	4634	3824	4514	3362	7722	4555	414
+       31	6447	6650	1895	452	2606	259	12261	1204	2801	
+
+G 415  4992	7222	4962	4912	6338	763	6369	6574	4886	5224	7495	4892	5816	6360	5515	4301	4911	5640	8325	6196	415
+       73	4688	6549	1915	444	3420	141	12262	1604	2666	
+
+T 416  4116	5779	3951	3038	4942	4796	5751	4704	4162	4351	5896	4279	4531	4433	4247	3365	3611	4154	4900	5137	416
+       61	5203	6136	1543	606	2463	289	12056	1659	2675	
+
+S 417  4467	6728	5002	4910	6261	1657	6907	5807	5519	5843	7481	5626	5549	5822	5890	1644	4582	5088	7764	7009	417
+       44	5465	7099	2611	258	2803	223	12095	1409	2627	
+
+R 418  3843	7761	4111	3238	6075	4673	6377	5564	4520	4215	6762	4421	2276	4573	5026	3118	3984	4422	8021	6248	418
+       45	5496	6830	3658	119	3147	173	12317	1434	2532	
+
+P 419  3575	7195	5227	4208	4013	5371	6113	5094	4844	4083	5948	4857	2241	5465	4980	3444	4385	4539	4124	4374	419
+       108	4019	6593	602	1552	3255	160	12413	2010	2537	
+
+T 420  3474	6933	5551	4703	6093	4608	6552	4977	5296	5218	8065	5017	4645	5354	5330	1290	3321	4643	8195	6034	420
+       37	5889	6846	2291	330	3072	183	12114	1277	2586	
+
+P 421  3804	6290	3782	3196	5368	5247	5757	4468	4341	4587	6265	4083	3600	4502	4578	3335	3341	3945	7124	5779	421
+       123	4033	5619	5824	26	3468	137	12131	1980	2563	
+
+V 422  3829	7354	5508	3944	5189	4954	5978	3320	4815	3464	5901	5088	3216	4878	4868	3900	3483	3054	6166	5503	422
+       92	4200	7118	2447	292	2280	333	12102	2834	2747	
+
+V 423  4029	6570	5677	5019	4769	5974	6383	2948	4928	2953	5936	5369	5479	5171	4965	3537	3250	2560	6580	5176	423
+       101	4273	5997	3220	164	3381	146	12122	1851	2527	
+
+F 424  4161	5982	5352	4426	3605	5418	5303	3375	4450	3775	5924	4638	5475	4518	4539	3678	2952	3320	8035	4876	424
+       45	5641	6576	2422	298	1766	502	12139	1384	2880	
+
+S 425  3712	5384	6066	5031	3600	4812	6131	3620	5036	3522	6500	5838	4151	4920	4370	4081	3077	2690	7417	5757	425
+       179	3371	5640	3117	177	2687	243	12121	2488	2601	
+
+E 426  3734	8336	4701	3781	5480	4648	6573	4986	4098	4777	6468	5522	4209	4457	4103	3869	1879	4356	7454	5278	426
+       80	5217	5195	3263	159	1803	487	12138	1490	2982	
+
+S 427  3595	6925	4233	4529	5871	4197	6525	4999	4465	4259	6395	5253	3940	5461	4387	3597	1957	3792	8030	6458	427
+       283	2691	5439	1827	478	3055	185	12099	3279	3070	
+
+R 428  3474	6256	4847	3689	6001	4008	7024	5236	3637	4223	7400	5126	2131	5318	4465	3931	3916	4148	8566	6091	428
+       113	3934	6693	1286	762	1651	553	12113	3336	3376	
+
+G 429  3873	7855	4264	3859	6188	3140	6604	4989	4967	3790	6364	5626	1900	5408	5226	3682	4487	4379	8649	6714	429
+       183	3206	6520	2043	401	3065	184	12111	2774	2834	
+
+P 430  3418	7283	4118	4079	6144	3257	6681	5676	4695	4150	7267	4774	2366	4924	5157	2964	4205	4322	8803	7035	430
+       82	4458	6706	1992	418	3152	172	12136	1794	2841	
+
+A 431  2654	5671	5343	4546	6887	5300	6071	5341	4331	5521	6673	5500	1606	4721	4952	3870	4488	4178	8568	7019	431
+       87	5102	5102	2113	379	3037	187	12159	1500	2850	
+
+L 432  4272	8294	5902	5218	7563	5384	7211	4639	5842	4767	7403	5988	1008	5990	5553	4480	4690	2980	9817	8030	432
+       177	3241	6671	2708	240	1494	633	12150	2746	3036	
+
+T 433  3652	7293	4806	3801	5973	4087	5749	4898	4390	4112	6088	5278	3971	3656	3748	3230	3040	3765	8120	6517	433
+       88	4512	6023	1136	876	3149	173	12169	1658	2579	
+
+R 434  4254	6740	3403	4164	6554	3870	5522	4839	4155	4923	6943	2111	4270	4517	4528	3558	4210	4962	8272	6600	434
+       15	7294	7930	3799	108	2840	217	12157	1080	2707	
+
+L 435  5485	5721	6676	5699	3813	6059	6827	2994	6163	1665	5910	6311	4104	6748	6956	5472	5189	2239	8981	6434	435
+       38	6264	6263	2145	370	3341	150	12185	1194	2549	
+
+H 436  4528	7216	5095	3820	6250	5059	4484	4806	3365	4704	6119	4360	5866	3667	3265	3101	2951	4100	6978	5983	436
+       48	5542	6483	4449	68	2366	311	12167	1536	2610	
+
+A 437  2597	4211	6146	5747	5100	5032	6707	3306	5696	3389	6172	5840	4967	6030	6095	4185	4341	2073	6764	5763	437
+       36	6464	6256	2615	257	3133	175	12221	1170	2489	
+
+M 438  4386	7214	4591	3662	5345	4868	5945	3619	4104	3698	5624	5023	5375	4867	4374	3074	2936	3312	7992	5539	438
+       54	6290	5367	1144	869	3238	162	12214	1240	2533	
+
+A 439  2994	6433	3767	3737	5486	4356	6270	5290	4656	4859	6980	3560	3479	4550	4962	3027	4046	3913	6977	5967	439
+       126	5239	4130	2442	293	2887	210	12197	1455	2777	
+
+R 440  3984	7292	4868	4677	5602	4561	5752	3196	4450	3140	5793	4737	4803	4723	4350	3768	3658	2707	7729	5762	440
+       77	4575	6677	2023	408	1039	962	12218	1662	3390	
+
+D 441  4670	7808	3789	4304	6974	2881	6052	6138	4788	5297	6924	3172	5567	5393	5171	2491	2361	5735	7809	6490	441
+       100	5535	4462	2044	401	2547	271	12279	1343	2457	
+
+P 442  3324	7304	3558	3693	6209	3969	5796	6013	4486	5172	6696	3547	3353	4888	5003	2516	3862	5154	7680	6185	442
+       38	5785	6964	2331	320	1159	857	12272	1309	3246	
+
+H 443  4987	8346	3301	4457	6219	3697	4663	6706	4500	5884	6296	3230	5052	4770	4156	3032	2230	5809	9288	5598	443
+       18	7428	7313	2986	195	3196	167	12288	1083	2465	
+
+S 444  3801	6269	5589	4090	5828	4002	5855	5899	4312	5534	6438	4231	6709	4444	4615	1641	3140	5259	6962	5614	444
+       35	5750	7577	2931	203	3068	183	12290	1312	2409	
+
+L 445  3482	6366	6828	7782	4122	7363	7474	2133	6992	2260	4578	7180	6323	7751	8488	5715	5469	2111	8394	5237	445
+       25	6958	6743	2579	264	4030	91	12290	1125	2378	
+
+W 446  4869	7886	4997	3807	5205	6137	4945	4632	3890	3408	5484	4031	7039	4293	3825	3600	2573	3687	5506	5627	446
+       8	9646	7832	1386	696	2893	209	12297	1032	2509	
+
+V 447  4985	5936	9077	8994	4331	8675	9679	2490	7672	1500	5700	8103	7378	9046	6856	7103	6705	1776	8175	7211	447
+       8	8151	8983	4999	46	3823	106	12299	1053	2408	
+
+G 448  4375	7392	5276	3867	6255	5039	4843	5831	4020	5247	6843	4312	6714	4009	3968	2004	2517	5192	7305	6019	448
+       19	7261	7297	2391	305	2825	219	12310	1093	2347	
+
+W 449  7284	6595	8701	7889	4565	7085	9245	6421	8009	5174	9057	8473	7805	8435	7171	7094	8364	6375	278	5953	449
+       27	6442	7221	3357	148	4553	63	12323	1238	2268	
+
+E 450  4319	8183	3205	2914	6091	5062	5978	5249	3465	4749	6405	3659	5514	3655	4386	3320	3159	5051	9834	7051	450
+       49	5238	7189	1560	598	2732	235	12316	1465	2398	
+
+P 451  2993	7109	4740	4019	6690	4981	5408	5152	4033	4604	6618	4800	1923	5041	4466	3871	4527	4381	7234	5574	451
+       31	6973	6246	2031	405	3942	97	12320	1139	2318	
+
+P 452  4244	7869	4946	5266	6383	3932	6471	5095	6029	4560	6826	4714	1207	5096	5535	3793	4754	4053	8399	7498	452
+       59	6149	5269	3233	162	3297	155	12313	1298	2468	
+
+N 453  3523	6329	3820	3468	5174	4258	5868	4929	4075	3933	7463	4234	3379	4784	4786	3159	3921	4472	7517	5122	453
+       268	3979	3237	1417	677	2297	328	12309	1988	2876	
+
+P 454  4002	6144	2870	3513	5821	3258	4842	5946	4092	5013	6564	3545	4181	4548	4631	3407	4255	5021	8795	5510	454
+       839	1239	5838	1502	628	871	1142	12320	6907	4153	
+
+W 455  3913	8694	3419	3271	6172	3604	5751	5306	4549	5180	6800	3739	2611	4364	4484	3556	4518	5105	9514	5379	455
+       307	2476	6415	3482	135	1612	572	12278	3612	3082	
+
+P 456  3860	7439	4969	5025	4936	4971	6224	2137	5535	3039	6935	4309	3862	5796	5843	4825	4692	2676	8798	5743	456
+       50	5344	6688	1330	732	2229	346	12298	1391	2690	
+
+Q 457  4618	5925	3551	4436	5800	4630	5671	4297	4169	3588	5904	4272	5945	3677	4317	3723	2618	3749	7570	6325	457
+       60	4862	7377	1410	681	3320	152	12286	1621	2559	
+
+G 458  4571	7145	5040	3871	5514	1862	4483	5979	4027	5394	6418	4154	7148	4624	4134	3108	4065	5453	8156	4833	458
+       18	7260	7346	2215	350	3891	101	12303	1123	2501	
+
+Y 459  6629	7060	7250	6450	2690	7129	5655	5178	6546	5376	8066	6898	6303	7543	6424	5885	6500	5266	6440	707	459
+       22	7585	6658	1430	669	4108	86	12305	1091	2497	
+
+V 460  5189	5982	5418	3682	5758	5942	5509	3318	3647	3892	5923	4489	7094	4172	3309	4462	3255	2895	7107	4847	460
+       54	5084	7048	6018	22	2918	205	12298	1437	2557	
+
+I 461  5182	8308	7916	7288	5224	8976	7453	1877	7226	2428	6423	7557	8101	7401	7320	6630	5900	1428	7156	5551	461
+       16	7681	7370	3511	132	2935	202	12298	1077	2486	
+
+E 462  5094	6738	4827	2430	4527	5767	4831	5127	4207	4506	6021	4881	7306	3365	3836	3682	3790	4708	6568	3395	462
+       43	5432	7352	982	1018	3304	154	12303	1342	2409	
+
+W 463  5199	5311	7146	6904	3977	6519	6384	3947	5197	3973	5643	7194	7784	6125	4341	5804	6395	3733	2587	1628	463
+       25	7016	6735	2097	384	4630	60	12298	1105	2379	
+
+G 464  4410	4373	5050	4458	5339	4225	5892	5073	3379	4395	6134	4521	6939	4053	2675	3458	3682	4824	5221	4420	464
+       29	6258	7251	2833	218	3819	106	12295	1236	2459	
+
+L 465  4310	6313	3884	3305	6559	4235	5435	4470	3847	3830	6606	3822	3216	4701	3988	3763	4092	4269	8665	5670	465
+       76	4818	5952	469	1850	2110	380	12314	3166	2575	
+
+G 466  3824	6831	3576	3803	5492	3694	5489	4419	4106	3644	5625	4201	4711	4722	4922	3547	3973	3453	7150	5199	466
+       80	5870	4765	2285	331	2660	248	12313	1270	2610	
+
+P 467  4328	6919	3330	3942	5638	2781	5447	5368	4317	4708	6717	3657	4211	5151	4427	3109	3876	4700	8081	4935	467
+       205	5562	3165	2320	322	2971	197	12307	1386	3061	
+
+P 468  4388	6884	3309	3589	5882	3082	5280	5417	4177	4279	6544	4156	4232	4388	4690	2906	3674	4816	7852	6549	468
+       658	5169	1562	845	1174	4552	63	12290	2521	4284	
+
+S 469  4140	7710	3161	3645	4790	3324	5708	5598	3752	4371	6415	3706	4067	4965	5429	3051	4346	4506	7936	5196	469
+       592	4193	1827	3341	150	3297	155	12125	1571	7516	
+
+A 470  4164	6939	3512	3506	5616	3848	6126	4739	4167	3983	6081	4325	3540	4753	4247	3244	3809	4389	5664	6050	470
+       194	4252	3771	2366	311	3137	174	12098	1536	8205	
+
+S 471  4014	4452	3417	3814	5386	4348	6471	4793	4132	4158	5831	4079	3840	4308	4767	3178	3620	4669	6462	5794	471
+       264	4419	3051	3149	173	3196	167	12072	1342	8003	
+
+N 472  4173	6884	3811	3948	5451	3306	4882	5042	4691	4171	6643	4031	3662	4321	4780	3232	3338	4593	5968	5782	472
+       96	5906	4389	3097	179	1999	416	12013	1119	7931	
+
+S 473  4056	3490	3778	3402	5343	3743	6099	5010	4235	4786	6174	4274	3975	4624	4794	3058	4158	4462	8444	5711	473
+       292	2795	4667	2094	385	2697	242	12104	2515	6989	
+
+N 474  4233	6881	3741	3690	5682	3981	5179	4486	4167	4576	7014	3458	3792	4284	4487	3211	3623	4263	8063	5529	474
+       86	4787	5547	3915	99	1451	657	12081	1410	6584	
+
+K 475  4337	7601	4111	3626	5158	3534	5603	4474	3956	3410	5569	4301	4222	4765	4368	3572	3788	3904	7510	5122	475
+       58	6120	5304	1736	515	3694	116	12222	1182	5154	
+
+T 476  4384	6727	3795	3399	5898	4316	5191	5041	3506	4882	6152	3765	4911	3878	4042	3291	3275	4423	8615	5322	476
+       61	6003	5270	2914	205	2445	293	12217	1198	5133	
+
+W 477  4781	6308	6080	5040	3581	6179	5558	4384	5096	4316	5624	5503	5219	5162	4997	4743	4702	4127	1568	4029	477
+       159	4551	4014	1635	561	2063	395	12213	1655	4784	
+
+R 478  4873	7088	4779	3338	5414	5478	5183	3767	3217	4025	5810	4852	4984	3821	3834	4013	3306	3381	9480	5511	478
+       101	5134	4678	1878	458	744	1311	12273	1465	5453	
+
+M 479  4619	7429	5263	3700	4931	5555	5940	3863	3772	3687	5504	4377	4823	4152	3850	3601	3222	3260	7169	5128	479
+       88	5031	5143	3574	126	1923	442	12241	1510	3560	
+
+E 480  4181	6308	4366	3532	4818	5601	6200	3324	4437	3237	5701	4845	5113	4953	4339	4186	3776	2687	8098	5373	480
+       129	5578	3959	1605	575	2457	290	12209	1352	3339	
+
+Q 481  4287	6868	4338	4294	5470	4799	5329	4087	4623	3975	6657	4026	3807	4406	4605	3469	3307	2968	7994	4667	481
+       52	5732	5924	3151	172	1225	805	12316	1284	3951	
+
+N 482  4051	6217	3527	4274	5946	3982	6096	4515	4482	3651	6901	3696	3777	4948	4775	3618	3639	3166	8472	5491	482
+       206	3412	4676	1920	443	2516	277	12325	2583	3007	
+
+G 483  4419	6835	3931	4185	5408	2895	5754	4988	4526	4438	7170	3651	3396	5027	4849	3159	3512	4131	7730	5792	483
+       57	6011	5425	2769	229	1538	609	12372	1244	3311	
+
+R 484  3781	7294	4299	4666	6112	3433	5904	5465	4532	5025	6886	3515	3814	4995	4662	2847	2759	4010	7429	5812	484
+       59	5555	5755	2130	374	1400	687	12409	1338	2887	
+
+A 485  3913	7339	3496	3944	6301	3984	5275	4874	4269	4751	7080	3414	4743	4499	4630	3017	2867	4451	8541	5888	485
+       63	5695	5423	1735	515	2179	360	12399	1307	2587	
+
+T 486  3942	7118	4236	3523	6563	4496	5654	4992	4383	4608	6155	4030	5016	4125	4050	2999	2582	4080	8549	6073	486
+       56	5946	5533	1811	484	1467	648	12389	1320	2638	
+
+G 487  4810	5507	5140	4516	4728	4694	4863	5433	4859	3712	5865	3688	4907	4456	3792	3287	2376	5095	6445	4505	487
+       59	6810	4991	3326	152	1735	516	12409	1150	2473	
+
+F 488  3873	5032	5546	3766	5075	5266	5104	5080	4298	4955	6586	4253	5581	4415	4534	2347	2778	4617	6182	4707	488
+       63	5230	5947	2090	386	1223	807	12410	1467	2587	
+
+L 489  3926	4643	6639	6168	3036	6539	4530	3543	6119	2943	5399	5924	7467	6063	6587	5051	4204	3076	6508	2483	489
+       58	7665	4859	2252	340	2460	289	12408	1160	2179	
+
+L 490  5433	7006	5027	4031	4978	6776	5955	3418	4110	3103	6264	4637	5688	4973	4274	4150	2343	3053	7425	5921	490
+       17	9096	6704	1003	997	1224	806	12407	1020	2541	
+
+K 491  5211	7144	4573	6295	3736	7139	7153	2172	5433	2154	6214	6341	5523	5465	5747	4621	5026	2507	8115	6322	491
+       64	6168	5086	764	1282	2180	360	12420	1226	2113	
+
+E 492  4840	7533	3403	3184	6359	3808	5608	6109	3859	5107	6864	4074	4549	4478	4275	3061	2625	5011	8586	5979	492
+       41	7020	5633	1760	505	1146	868	12411	1127	2481	
+
+N 493  4849	9637	2891	4405	6806	1878	5129	6331	4714	6112	7453	2256	5361	5287	5309	4018	5186	5777	10059	6828	493
+       16	7719	7269	1627	564	1942	435	12387	1072	2282	
+
+I 494  5824	7941	7550	7094	4514	6792	9063	3963	7707	514	6183	6969	6363	7641	7368	6323	5704	4114	8454	7766	494
+       18	7607	7099	3282	157	3387	145	12382	1092	2075	
+
+R 495  4513	7780	4337	3017	6091	5966	5017	4831	2979	3823	5886	4463	4757	3822	3732	3644	3452	4366	7544	6156	495
+       20	6540	8401	1315	742	3739	112	12373	1206	2107	
+
+P 496  3504	5826	5162	4223	5983	5011	4682	6210	4752	5680	7547	5683	1189	5255	5336	3837	5005	5772	9144	5544	496
+       18	7099	7689	2184	359	3418	142	12383	1115	2084	
+
+F 497  4356	5721	3694	4692	3316	1940	5477	7892	5077	5281	7177	3168	7224	5672	5527	3724	5605	6775	6688	3443	497
+       13	8021	7707	2395	304	2195	356	12383	1055	2067	
+
+Q 498  4421	6486	5297	4628	7100	4353	5440	5670	3893	5837	5632	5540	6774	4189	4381	3321	1479	4009	8349	6056	498
+       12	7941	7874	1505	627	3342	150	12407	1049	1911	
+
+L 499  4562	4556	4588	3315	5499	6058	6053	5187	3746	3776	6021	4082	4515	4225	3527	3641	2997	4369	6627	5403	499
+       16	6930	8347	4242	78	2838	217	12408	1122	1929	
+
+Y 500  7587	6853	8668	7482	4519	5787	5981	6279	8344	6015	7961	7285	8310	8101	8961	7686	7333	5961	7346	292	500
+       8	9105	8051	3498	134	4126	85	12403	1020	1842	
+
+E 501  4858	6910	5140	3112	4894	5689	5154	4732	3912	4333	6192	3600	7694	3815	3373	3504	3130	4508	7225	4137	501
+       10	7945	8376	2359	313	3887	101	12404	1054	1861	
+
+I 502  5342	5766	9204	9016	1972	6732	9408	2102	8551	3311	6423	8184	9108	8618	8229	7692	6760	2144	6904	3645	502
+       13	7791	7789	2790	225	3724	113	12414	1079	1852	
+
+I 503  4557	6191	5963	4230	5692	5577	5742	5859	3430	5404	6674	5268	8919	3875	2173	2751	3061	4925	6000	4748	503
+       6	8918	8898	3414	142	3858	103	12406	1034	1858	
+
+V 504  4721	6114	9198	8507	6291	8188	10004	2339	8739	3110	5530	8949	8038	9576	8184	6987	6590	850	10816	7795	504
+       11	9549	7290	973	1027	4290	76	12408	1014	1847	
+
+T 505  3495	5859	7207	5067	4686	6337	5484	4264	3923	4421	6729	5799	9874	3451	2639	3476	3465	3844	6159	3742	505
+       41	5374	8082	4132	85	4360	72	12432	1386	1926	
+
+P 506  861	5682	7231	7129	7960	4225	8412	5821	7898	5127	7566	6958	3764	7397	7313	3605	4116	4080	9632	7437	506
+       32	5989	7309	696	1386	3217	164	12398	1236	2124	
+
+L 507  4983	3929	6347	4301	3868	5938	5753	3971	4080	3522	5309	6113	7885	4912	3632	3939	4527	2543	6357	3712	507
+       25	7953	6253	1273	770	2577	265	12369	1050	2111	
+
+Y 508  5079	7107	4055	6196	5337	4788	6074	5926	5228	5385	7955	1504	6617	6387	5250	3322	2794	5007	7644	4030	508
+       39	6847	5799	2340	318	3319	152	12357	1199	2145	
+
+Q 509  3381	7374	3698	3167	7192	3321	5622	5292	3676	5447	6186	3988	4709	4672	3971	2924	4447	4486	7643	6577	509
+       54	5659	5871	790	1245	3237	162	12350	1290	2320	
+
+D 510  2986	7301	3536	4269	5217	3774	5227	4337	3935	4212	6002	3640	5106	5068	4762	3877	4570	3467	7410	4804	510
+       90	4345	6473	1690	535	2175	361	12333	1777	2421	
+
+T 511  4460	7083	5072	4607	6206	951	6271	5721	5194	5653	7500	4270	6206	5137	4838	4248	4721	5407	7681	6223	511
+       92	4356	6267	1954	431	2865	213	12329	1874	2361	
+
+M 512  3948	5123	4094	3149	5015	4430	5593	4702	4247	4202	6233	4213	4268	4611	4635	3326	3686	4034	5796	4832	512
+       54	5336	6424	1863	464	2097	384	12287	1449	2408	
+
+G 513  4426	7539	5656	4821	7042	1357	7348	6309	5899	5481	8085	5381	5149	5738	5390	1967	4532	5444	7852	6347	513
+       75	4849	5941	2541	272	3185	168	12352	1548	2281	
+
+P 514  3808	5551	4020	3460	5511	4964	6285	5681	4421	4021	5987	4417	2400	4632	4776	3220	4236	4685	6557	5551	514
+       625	1578	5908	1359	713	2637	253	12202	5498	2407	
+
+S 515  3545	7681	5367	4394	5111	4809	6757	5699	5138	4413	7427	5558	2720	5756	5272	1607	4268	5092	6081	5522	515
+       53	5157	6961	1301	751	906	1101	12227	1441	3088	
+
+Q 516  3167	7665	4122	3412	6087	4902	6431	4903	4396	4963	6536	4336	4279	4493	4760	2482	3554	3974	6074	5393	516
+       64	4802	7047	2985	195	2696	242	12142	1540	2138	
+
+H 517  4113	6522	4631	3429	5037	5666	5362	4328	4529	4767	6129	4669	3340	4818	4654	2795	3223	3854	5981	5051	517
+       46	5596	6547	1882	457	3080	182	12169	1331	2116	
+
+V 518  4024	6410	5791	4401	4898	5351	6034	2714	4215	3280	6061	6214	5261	5203	5367	4297	3528	2338	6454	5255	518
+       39	5726	7035	1293	757	3486	135	12167	1271	2157	
+
+Y 519  4407	6725	4761	3587	4893	5848	5378	4053	4244	3766	6222	4411	5102	4335	4421	3270	2862	3619	5958	4743	519
+       31	6124	7247	1997	416	2481	285	12168	1227	2179	
+
+A 520  2852	5081	6034	4865	3118	3971	6099	3565	5516	4346	6539	5436	5539	5266	5924	4257	3702	2535	6798	5329	520
+       35	6285	6532	3002	192	2619	256	12167	1227	2063	
+
+Y 521  4429	6855	5133	4819	3997	6240	5740	4447	3748	3956	5727	5255	5532	4352	3222	3915	2894	3879	6131	3383	521
+       39	5708	7052	2205	353	3168	170	12160	1311	2041	
+
+S 522  4725	7377	6422	5904	6340	6249	6444	4873	5465	4332	5696	5805	4906	5886	5353	3445	926	4567	9336	6540	522
+       58	6040	5352	3244	161	2816	221	12183	1251	2082	
+
+Q 523  3994	6812	4398	4128	5106	4248	6405	4957	3202	3055	5996	5034	3236	4004	4565	3964	3680	4483	7105	5798	523
+       128	4040	5387	5769	27	2691	243	12143	1956	2264	
+
+E 524  3645	7016	4371	2566	6111	4141	5739	3951	4256	4565	6299	5299	3055	3805	4868	3984	4544	4156	8360	5910	524
+       30	6573	6640	4230	79	2624	255	12086	1174	2437	
+
+M 525  3346	7243	3084	4077	6188	2922	6792	5377	4142	3735	6551	5213	4490	5086	4954	3226	3314	4713	7335	6411	525
+       211	3308	4833	2542	272	2252	340	12087	2350	2363	
+
+A 526  2380	7252	5645	4756	6802	4363	7061	3774	4133	4236	6267	4887	3137	6307	4417	4435	3846	2770	9526	6334	526
+       25	6859	6815	5630	29	1214	813	12052	1179	2574	
+
+P 527  4494	8313	5507	4856	6165	6557	7224	5711	5042	4710	7604	6408	657	6510	6040	5038	5250	4722	9994	7942	527
+       66	6638	4860	2707	240	2748	233	12075	1145	2049	
+
+S 528  4253	7153	3915	4163	6092	3551	7626	4357	5279	3742	6248	5216	2483	5298	5251	2400	4206	4652	8896	6964	528
+       44	6661	5652	4775	54	1725	520	12097	1156	2331	
+
+H 529  2764	6795	4316	3986	5991	3866	6007	4906	3685	4564	6187	5041	2905	4526	4588	3460	4211	4104	8483	6835	529
+       46	5506	6693	3658	119	2141	371	12069	1346	2250	
+
+A 530  3081	7900	6214	5534	6720	4104	7153	4377	5094	5270	6348	5870	1309	6122	6102	4476	4759	3148	9233	7289	530
+       35	6820	6055	2844	216	2312	324	12119	1116	2147	
+
+P 531  4659	8397	5521	4357	6992	4291	6400	4826	4595	4492	7082	5621	1429	4659	4404	3907	3786	4110	10049	6508	531
+       38	5779	7060	1152	862	2736	235	12119	1287	2127	
+
+E 532  4283	7991	3741	4047	5742	3955	4994	4436	4007	4261	6692	2903	4454	4045	4391	3413	3827	4136	7977	6395	532
+       397	2207	5386	448	1906	2837	218	12119	3811	2063	
+
+L 533  5442	7510	6071	6096	3979	6111	7276	2912	6134	1710	5645	5271	3651	6434	7003	5801	4815	2356	9152	6696	533
+       61	5659	5544	901	1106	2288	331	12098	1371	2243	
+
+H 534  4675	7910	5005	4023	5568	6054	4250	4518	3233	4418	6267	4104	6173	3720	3198	3343	2990	3952	8032	5987	534
+       53	5252	6632	2862	213	1638	559	12095	1343	2364	
+
+L 535  3063	5990	6498	5496	4436	5402	6999	3164	5854	2802	5988	6457	5380	6548	6003	4375	4114	1934	6404	5344	535
+       65	5396	5628	1180	840	2584	263	12102	1343	2120	
+
+K 536  4338	7626	4425	3695	5421	4882	5873	3873	3530	4037	5987	4849	5472	4529	4243	3089	3020	3403	7274	5594	536
+       88	5089	5080	3328	151	1892	453	12091	1433	2488	
+
+H 537  3603	6937	3588	3566	5840	4558	5435	4657	4280	4547	6435	3367	4028	4413	4783	3114	3980	3954	6713	5717	537
+       82	4743	5782	2070	392	1924	441	12046	1536	2509	
+
+I 538  3709	7510	5023	4494	6134	5344	5894	2849	4648	3415	5953	4879	4770	4831	4613	3679	3633	2535	7751	5945	538
+       91	4557	5737	1530	613	1861	465	12043	1577	2394	
+
+G 539  4904	9052	4080	4165	7191	2969	6751	6986	4521	5499	7103	3250	5390	5251	5221	2390	2331	5306	6653	5761	539
+       65	5587	5414	2722	237	1804	487	12087	1288	2337	
+
+K 540  3567	7699	3407	3692	7301	3778	5118	6453	3691	5387	7481	3803	3329	4625	4900	2628	3979	5474	7813	6021	540
+       38	5697	7220	2769	229	1597	579	12082	1308	2348	
+
+T 541  5241	8712	3066	4813	6452	3270	5297	6430	4537	6118	8212	2826	6375	5381	4605	2873	2293	5711	8947	5421	541
+       18	7770	7039	2502	280	2383	307	12086	1105	2029	
+
+W 542  3987	6377	5437	3970	5836	4160	5245	5718	4682	5275	6704	4762	6911	4344	4786	1675	2897	5119	5977	5507	542
+       21	6478	8388	1700	531	2859	214	12099	1150	1955	
+
+A 543  3024	6009	7551	8137	4239	6640	7349	2264	7234	2409	5046	7161	6360	8375	7383	6254	5793	1940	8535	5180	543
+       19	7067	7514	2075	391	2464	289	12097	1090	1882	
+
+Q 544  5160	7750	5139	3682	5309	6280	5036	4238	3789	3523	5765	4096	7463	4148	3553	3577	2596	3678	7234	5505	544
+       11	9481	7269	2744	233	3858	103	12099	1014	1797	
+
+L 545  5116	7506	9270	8354	4490	8834	10744	2234	9322	1529	5615	8147	7850	8141	7648	6727	7262	1756	9423	8499	545
+       8	7977	9248	3788	108	3286	156	12096	1050	1843	
+
+E 546  4215	6895	5448	3824	5818	5585	5030	5643	3708	5126	6413	4542	7702	3949	3608	2153	2733	4828	7103	5274	546
+       36	8105	5575	1297	754	3485	135	12107	1043	1788	
+
+W 547  7070	6951	10479	8287	4968	7813	10689	4970	9085	4521	7939	9159	9295	9121	7855	7038	8776	5551	310	6046	547
+       8	7874	9369	587	1580	3613	123	12078	1057	1971	
+
+V 548  4342	8269	3239	3248	6552	4835	6123	5317	3195	4536	6339	3732	5316	3841	4454	3005	3303	4829	9180	6996	548
+       29	8175	5933	2490	283	4131	85	12086	1045	1915	
+
+P 549  3211	6228	4908	3465	6849	5435	5159	5266	3971	4742	6439	5312	1767	5052	4776	4030	4604	4644	7077	5567	549
+       803	7522	1247	2876	211	4820	52	12084	1069	2093	
+
+E 550  4630	7194	5658	5262	6523	5109	7112	3279	6137	3755	7449	5017	1362	5703	7276	3968	5403	3084	8645	6766	550
+       216	6483	2970	3189	168	3209	165	11926	1110	6336	
+
+P 551  4031	7314	4101	3662	6026	4469	6405	5384	4321	3784	6505	4735	1915	4865	5095	3522	4069	4795	7762	6390	551
+       358	4741	2455	3106	178	510	1748	11919	1560	6488	
+
+P 552  4038	5513	4632	4116	5145	4131	7012	4781	4407	3480	6197	5312	1803	5330	5017	4088	4779	4364	6084	6217	552
+       141	6460	3618	1963	427	2544	271	11991	1148	4078	
+
+E 553  3920	5521	3163	3205	6067	4646	5134	5387	4277	4200	6557	4188	4409	4577	4265	2825	4039	4679	6387	5690	553
+       60	5826	5446	1090	915	3144	173	11963	1209	4309	
+
+L 554  4123	7040	2820	3151	4774	4606	5046	5391	4439	4284	5310	3759	4426	3929	5037	3497	4091	4703	9659	5441	554
+       38	7254	5688	1783	495	2058	396	12017	1093	4168	
+
+G 555  4457	5442	4319	4691	5979	2820	5264	5369	5142	4459	7083	3735	2925	3880	3614	3606	4398	4554	6219	6395	555
+       98	4412	5737	1383	698	1227	804	12034	1597	3668	
+
+K 556  4677	7550	4233	4788	6689	2461	5119	6308	4910	5099	6365	1907	4380	4854	4231	4018	4672	5470	8867	5023	556
+       32	6651	6346	1544	606	1733	516	12062	1128	2810	
+
+S 557  3785	5336	4644	4883	6315	1212	5542	6017	5264	5613	7065	5098	4991	5890	5523	3153	4905	5056	9210	5879	557
+       44	5756	6430	2052	398	2078	390	12074	1225	2443	
+
+P 558  4268	4640	4220	3945	4093	4592	5325	4040	4423	4046	6351	4541	2496	5286	4480	4496	4582	4016	9355	4504	558
+       16	8494	6921	1642	557	1592	582	12073	1031	2278	
+
+L 559  4308	7385	5458	5294	4929	5840	7628	1582	6083	2571	7185	5685	4788	6777	7148	4998	5119	2618	8176	5809	559
+       55	7230	5027	1475	643	2005	414	12078	1083	1969	
+
+T 560  4850	6665	3683	4157	5730	5741	6183	4139	3868	3061	6164	5238	6845	4095	4179	3686	2362	3825	7170	6309	560
+       21	6607	7826	2597	261	1069	934	12031	1127	2166	
+
+H 561  4331	6430	5617	4168	5249	2072	3839	5548	4233	4804	6725	3928	7397	4566	4329	3202	4430	5193	7244	4149	561
+       10	7612	8885	2507	279	2166	364	12101	1060	1684	
+
+Y 562  6734	7351	7952	8055	2859	7991	6567	5974	7051	5573	7732	7825	8071	7407	7041	6593	6926	5819	7348	492	562
+       5	9767	8766	1530	613	3572	127	12105	1013	1571	
+
+T 563  4715	7000	5189	3040	5615	5811	5143	3692	3743	4083	6417	4675	7545	3921	3133	4475	3050	3729	6873	4581	563
+       10	7991	8298	2461	289	5294	37	12108	1048	1554	
+
+I 564  5453	8190	8390	7409	5353	8050	7736	1653	7897	2396	6852	7081	7842	9024	8210	6395	6813	1520	7315	5766	564
+       50	5289	6927	998	1002	3123	176	12108	1346	1591	
+
+F 565  5142	5558	5286	3010	4085	5580	5248	4163	4489	3963	5813	5314	7815	3829	3737	3861	4072	4115	6213	2859	565
+       36	5948	6909	3067	183	4041	90	12103	1205	1660	
+
+W 566  4633	4860	7194	6559	4182	6515	6031	3652	5422	3590	5452	7256	7765	6417	4523	5855	6026	2942	3715	1678	566
+       59	4773	8071	1102	904	2691	243	12090	1532	1742	
+
+T 567  4401	5523	5119	4349	6718	4514	6281	5251	3066	4728	6664	4404	6366	3835	2532	3380	3685	4445	4544	5121	567
+       31	6087	7274	2130	374	2894	208	12101	1224	1710	
+
+N 568  3998	7450	3678	2990	6976	4233	6438	5029	3593	4568	6193	3774	3410	4733	4009	3425	3771	4743	7708	6598	568
+       129	5752	3897	2155	367	2937	202	12108	1254	1730	
+
+A 569  3712	7888	3682	3496	6807	3676	5862	4564	4056	4062	5938	3773	5191	4649	4504	3253	3668	3557	7784	6326	569
+       251	3084	4592	1770	501	870	1143	12119	2687	2685	
+
+Q 570  4336	7994	2839	3831	6487	2821	5338	5583	4253	5041	8052	3503	4901	4555	4358	2946	3748	5522	8560	6639	570
+       82	5293	5086	1984	420	2275	334	12139	1412	2362	
+
+N 571  4366	7878	3404	3663	6437	2675	5611	5558	4160	5169	6621	3564	4656	4665	4446	2653	4088	5313	7652	6302	571
+       112	4143	5773	2067	393	2068	393	12118	1892	2498	
+
+Q 572  4357	6861	3401	3503	5220	3676	5532	5444	3904	4475	6253	3493	4061	4051	4716	3484	3718	4859	5564	5875	572
+       147	3922	5007	2081	389	2577	265	12115	1861	2487	
+
+S 573  4056	5917	3870	3354	5558	4297	5481	4869	4016	4457	6130	4117	4191	4430	4525	3169	3596	4241	4676	5739	573
+       336	2401	5768	4707	56	1486	637	12094	3431	2707	
+
+F 574  4671	6554	5084	3885	3577	5635	5887	4155	4057	3753	6073	4898	5042	4205	4507	3998	3908	3512	3145	4843	574
+       119	3963	6057	1686	537	2311	325	12054	2877	2482	
+
+S 575  4076	5841	4934	3256	5649	5213	5603	4268	3964	4518	5972	4295	5117	4476	4502	2917	3177	3483	6885	4915	575
+       86	4440	6379	2484	284	2504	280	12020	2369	2595	
+
+A 576  4383	7242	4791	3628	5622	5288	5816	3329	3857	3626	5800	4316	5189	4288	4554	3976	3533	2860	7139	5005	576
+       130	3733	6547	2401	303	1395	690	12071	2200	2569	
+
+I 577  4578	5076	4765	4265	5368	4081	5806	3453	4575	3982	5785	4135	4838	4856	4515	3672	3152	2937	7528	5220	577
+       67	5302	5633	1715	524	1402	686	12076	1409	2264	
+
+L 578  4222	5918	4025	4610	5130	5173	6123	3491	4602	3175	6463	4682	5152	5635	5406	4032	3844	2287	8285	4185	578
+       103	4438	5456	2121	377	1470	646	12118	1619	2257	
+
+N 579  4272	6624	3273	3656	6782	3548	6363	5390	4457	4669	6672	3098	3538	5495	4929	3167	3567	4387	6846	5649	579
+       90	4411	6225	2169	363	2464	288	12104	1674	2157	
+
+A 580  3348	7122	4776	4799	6225	2666	6184	4971	4420	4766	7359	4418	3240	5360	4635	3191	3120	4107	8735	6176	580
+       85	4551	6100	1883	456	1796	490	12098	1600	2155	
+
+S 581  4519	7282	3291	3858	6734	4077	5476	5597	3815	5176	6677	3398	4671	4942	4481	2621	2805	5304	7768	6437	581
+       66	5046	6104	2815	221	2229	346	12099	1361	2085	
+
+S 582  3837	7214	3934	3119	6213	4356	5662	5078	3829	4641	6568	4270	5370	3545	4382	3435	3234	3799	8356	5221	582
+       68	4645	7409	2425	297	2224	347	12092	1763	2169	
+
+R 583  5359	6000	5125	4944	5399	4691	4643	5848	4721	3606	5678	3502	4645	4430	3561	3628	2116	5036	7357	4970	583
+       32	6862	6262	1669	545	2065	394	12092	1237	2040	
+
+G 584  4834	6412	4888	3384	5266	4122	5271	5287	4302	5791	6443	4119	5636	4041	4121	2179	3180	4982	6036	4850	584
+       22	6510	7939	2197	355	1875	459	12077	1129	1966	
+
+F 585  3620	4612	7011	6855	2724	5657	4376	3725	6080	3648	5888	6960	8508	6389	6037	5351	4235	3181	5654	2257	585
+       22	6194	9340	4383	71	2635	253	12088	1202	1780	
+
+V 586  5069	5149	5041	4278	5614	7282	5487	3533	4146	3901	5750	4713	5527	5109	4342	4089	2073	3129	6678	5382	586
+       24	6361	7777	1605	575	2431	296	12107	1176	1735	
+
+L 587  5547	7086	4757	6339	3691	7529	7845	2157	7091	1807	6140	4117	6921	7656	7430	6524	5934	2504	7082	6008	587
+       22	6965	7200	1241	794	3282	157	12117	1118	1663	
+
+H 588  4916	6697	4005	3487	6503	3904	5616	6255	3546	4711	6780	4328	3806	4530	3682	2879	2841	5369	8583	5899	588
+       19	6669	8234	1370	706	2639	253	12111	1129	1702	
+
+G 589  5105	8273	2753	4758	7195	1918	5050	6983	4512	5677	7768	2516	4110	5613	5207	3799	5215	5908	9647	6949	589
+       23	6636	7527	1333	730	2800	224	12109	1150	1651	
+
+L 590  6520	6762	7066	6544	6002	7209	9110	4835	7063	377	6625	8091	6363	7425	7807	6099	6468	4162	9638	7419	590
+       19	7385	7130	3481	135	2969	197	12109	1077	1689	
+
+E 591  4579	7802	4202	3114	6993	5970	5214	4870	2996	4240	6637	4143	4215	3376	4001	3479	3456	4476	7630	6568	591
+       15	8077	7239	2543	272	2636	253	12097	1047	1717	
+
+P 592  3563	6135	5058	4003	6139	5038	6580	6399	4822	5355	6502	5488	1204	5395	5147	3544	4874	5911	6412	6090	592
+       38	6830	5886	2424	298	1884	456	12110	1128	1722	
+
+A 593  3981	6718	3365	4552	4881	1653	6377	7665	5133	4646	7077	2957	6780	5862	5315	3499	6341	6151	7031	4640	593
+       84	6955	4367	4069	89	1646	555	12104	1128	1810	
+
+S 594  4381	6437	6010	4650	6879	4475	5479	5965	4020	5383	5911	5675	6955	4393	4348	3130	1405	4004	8709	6637	594
+       25	6626	7089	699	1381	765	1281	12041	1126	2222	
+
+L 595  4354	6722	4579	3460	5903	5924	5613	5068	3756	3654	5595	3724	4706	4082	4091	3612	2883	4129	5786	5213	595
+       7	7710	*	3072	183	2147	369	12088	1069	1706	
+
+Y 596  7610	6438	9121	7848	4570	7760	5945	6561	8470	5642	8381	7055	8615	8147	7501	6463	7016	6071	7738	286	596
+       12	9966	7171	1960	429	3700	115	12093	1007	1549	
+
+H 597  4837	4722	4800	3133	5412	6333	4719	4910	3875	4624	5977	4291	7689	4118	3467	3323	2955	4252	6997	4255	597
+       9	8089	8553	2991	194	2570	266	12093	1036	1611	
+
+I 598  4300	6061	10789	9068	2040	7561	9924	2613	8125	3085	6234	8194	8304	8554	8926	7568	6603	1787	6828	4092	598
+       10	8387	8094	2562	268	3326	152	12080	1030	1570	
+
+H 599  5047	5803	6685	4505	4889	5892	4911	6011	3026	5509	6245	5905	8994	3503	2046	3321	3659	4883	4704	4633	599
+       2	9870	10859	0	*	3304	154	12082	1012	1569	
+
+L 600  4510	7832	8996	9468	5995	8336	9458	2370	9815	2947	4245	8365	8202	10731	9260	7352	6964	940	*	7116	600
+       11	7868	8394	2868	213	3516	132	12088	1055	1519	
+
+M 601  3586	5950	7133	5146	5070	6347	7040	4503	4080	4501	4567	6117	8508	3497	2045	3664	3543	3806	6735	4950	601
+       13	7513	8222	2919	205	2688	243	12090	1061	1509	
+
+A 602  729	5963	8357	7789	7645	4185	7806	6006	8328	4975	7707	6965	4972	7717	7525	3608	4386	3935	9780	7195	602
+       21	7436	6868	2726	236	2947	200	12096	1072	1482	
+
+A 603  4509	5049	5583	4418	3325	5966	4841	3735	4207	4094	6302	5868	9199	5365	3717	3799	4012	2686	6825	3475	603
+       24	6576	7379	3552	129	2978	196	12088	1130	1544	
+
+S 604  4945	7244	4305	6971	6964	5217	7376	6064	5774	5350	7425	1627	6306	6719	5636	2785	2035	5230	8673	6191	604
+       42	5682	6720	1131	880	3164	171	12096	1343	1558	
+
+Q 605  3246	6788	3608	3276	6247	3689	5966	5032	3824	4271	6340	3962	4957	4524	4174	3012	4360	4426	8897	6415	605
+       81	4638	6133	1295	755	1985	420	12101	1521	1668	
+
+A 606  2143	7226	3948	4638	4881	3531	5685	4326	4270	4416	6311	4063	5723	5472	4898	3816	4717	3787	7067	4750	606
+       24	7274	6602	1495	632	1664	547	12075	1133	1724	
+
+G 607  5342	8223	5213	4919	6103	700	6671	6187	5587	4967	6966	5343	6423	5906	5549	4572	5270	5849	6637	5156	607
+       57	5071	6751	2291	330	3551	129	12084	1389	1642	
+
+A 608  4251	5158	3759	2889	4859	4324	5839	5078	4469	4432	6827	3563	4576	4228	4408	3379	4120	4667	5708	4653	608
+       73	5412	5270	2019	409	2055	397	12021	1333	1769	
+
+T 609  5060	7463	5736	5487	6718	1294	7981	6026	4448	6164	8392	5721	5853	6169	6069	1915	4065	5350	10435	6809	609
+       198	3032	7327	2735	235	2091	386	12004	2445	1909	
+
+N 610  3938	8263	4227	3313	5506	5468	6734	5655	4419	4833	6926	3645	2189	4668	5112	3185	4352	4657	5743	5111	610
+       202	3010	7255	269	2555	1557	599	11987	2413	1808	
+
+S 611  4024	6966	5483	5000	4742	3795	6790	5694	5107	5245	7121	5473	2746	5606	5116	1817	4089	5244	4497	4555	611
+       79	4382	7498	1310	745	1695	533	11983	1879	1609	
+
+T 612  3585	8403	4111	3990	6809	4709	6361	5495	4953	5486	7144	4770	4079	4930	5182	1583	3362	4493	8147	6104	612
+       36	6353	6324	1909	447	2560	268	12022	1114	1513	
+
+V 613  3995	6579	3728	3154	5273	5568	6109	4602	4830	4909	6964	4117	3090	4885	4628	2947	3435	4296	6422	5270	613
+       25	6560	7285	3524	131	1993	417	12024	1097	1573	
+
+L 614  4467	7055	6197	4268	3660	5614	7261	2732	4974	2971	6016	6760	4184	5227	5103	4538	4019	2635	5149	4781	614
+       29	6144	7432	1326	734	1905	448	12034	1221	1520	
+
+T 615  4298	8087	5574	4000	4861	6198	5425	3971	4354	4279	6146	4434	5375	4763	4352	2867	2573	3282	7571	4536	615
+       38	6493	6042	1670	544	1364	710	12042	1119	1452	
+
+L 616  3888	4499	5575	4216	2306	5276	6028	3525	6087	3356	6499	5964	5311	6037	5752	4265	4282	3012	6604	4408	616
+       40	5634	7061	3036	188	2507	279	12023	1222	1415	
+
+M 617  4233	6032	5359	3955	4081	5583	5168	3671	3715	4420	5376	5203	5481	4675	3803	3643	2841	3402	6619	5339	617
+       34	6438	6411	5542	31	2294	329	12012	1163	1422	
+
+I 618  4960	5778	6021	5231	5681	5604	6295	4026	4607	4386	5508	5838	5471	5449	5541	4186	1122	3816	10417	6361	618
+       52	5524	6164	1724	520	2561	268	12012	2037	1495	
+
+L 619  4147	6475	4803	4505	5546	5610	6454	4880	3686	3230	5370	5254	3012	4643	4564	3595	2446	4636	7666	6280	619
+       94	5620	4548	2882	210	1331	731	11972	1207	1670	
+
+T 620  3294	6791	4060	3688	5768	4044	5734	4788	3685	3970	6550	5239	2802	5403	4941	3278	4205	4342	8586	5059	620
+       103	5445	4440	2202	353	1660	549	11977	1224	1847	
+
+P 621  3874	*	4604	3857	4177	3837	5681	4928	4388	3226	6010	4021	2921	5025	5268	3429	4305	4549	8821	4828	621
+       277	2617	6381	3652	120	2334	319	11948	2360	2615	
+
+E 622  3572	7302	2753	3034	7255	3170	5879	5628	4532	5754	6320	4816	3006	4950	4985	3249	4360	5335	9257	7423	622
+       169	4725	3782	2980	196	3281	157	11727	1426	2475	
+
+G 623  4039	9259	3586	3292	5708	3498	5633	4882	4174	4598	5904	3597	3416	4931	4993	3303	3911	4329	8170	6002	623
+       299	2526	6215	4120	85	3240	161	11635	2208	2958	
+
+S 624  3714	8425	4695	4669	4753	3626	5759	4709	5263	3812	5252	4255	4006	4594	4492	2703	3381	4407	5285	5510	624
+       161	3452	6117	3659	119	553	1651	11695	1750	3006	
+
+E 625  4048	7962	3598	3340	5629	4533	6046	4449	4595	3652	5309	3733	4271	4727	4686	3126	3629	4051	7311	5789	625
+       85	4433	6525	270	2550	1033	968	11734	1513	1848	
+
+L 626  3798	7995	6512	6235	4452	3543	6547	3047	5828	2779	4785	5771	4171	5285	5563	4069	3740	3369	3937	5637	626
+       61	4829	7404	1997	416	1172	846	11720	1344	1707	
+
+H 627  3675	8786	6234	4888	5060	3236	5221	3519	4162	2990	5528	5266	4264	5199	5605	4232	4271	3412	3978	5031	627
+       63	7050	4831	2163	364	3431	140	11701	1057	1521	
+
+I 628  3242	7792	8336	6534	4100	5589	6833	1935	6673	3067	5357	6731	6379	6561	6212	4844	4765	2697	3530	6042	628
+       35	6512	6303	1992	418	577	1600	11726	1091	2190	
+
+I 629  3652	7396	9166	6442	3704	5925	9069	1764	7845	2571	5157	6229	5992	7589	7804	5445	4543	2517	6745	5468	629
+       43	5436	7302	1420	675	1940	436	11695	1172	1512	
+
+L 630  3025	7808	9915	6580	3824	3418	7341	2402	7513	2660	5542	6989	4777	7571	7763	5028	4607	2620	7685	5436	630
+       170	3635	5033	1283	763	4093	87	11686	2690	1428	
+
+G 631  2622	6567	8675	10103	5820	1903	8937	3199	6907	3176	6511	9055	4416	7976	6750	3861	4841	3147	6144	7669	631
+       34	6783	6171	1514	622	2028	406	11670	1062	2011	
+
+L 632  4098	4447	*	9063	4817	5156	*	2494	8285	2593	5642	7248	4134	9619	7519	3699	4133	2000	8423	7203	632
+       98	4135	6810	1154	861	1251	786	11665	1546	1897	
+
+F 633  3843	5017	*	9673	3366	4525	9694	2143	7555	2289	5243	9048	6730	9244	7420	5217	4591	2321	8963	7825	633
+       48	5691	6248	1000	1000	1850	469	11674	1203	1653	
+
+G 634  3138	3738	8999	7070	4493	2230	*	3576	9397	2862	6262	8655	4971	7857	8943	3751	5073	2794	5656	*	634
+       91	4568	5717	1310	745	3267	158	11667	1544	1569	
+
+L 635  2821	4700	7563	8982	3913	3453	*	2838	7930	2387	5781	9067	5694	9517	7876	3748	4917	2634	10116	7527	635
+       42	6301	5983	1628	564	2368	311	11666	1063	1733	
+
+L 636  3217	5027	9362	9121	3370	4380	8318	2548	8499	2065	6067	8003	6783	8289	8433	4475	4122	2666	7975	*	636
+       82	4553	6269	1598	578	2650	250	11669	1586	1736	
+
+L 637  3853	4290	9306	8918	3359	5332	*	2949	9138	1720	6637	8809	5769	*	7361	4555	5057	2321	6693	*	637
+       15	10500	6732	0	*	3791	108	11664	1000	1901	
+
+L 638  3720	5762	9124	9422	3190	4817	*	2649	7604	1725	5771	7763	6673	9269	8673	5072	4432	2583	7485	7605	638
+       29	9603	5731	963	1038	1883	456	11669	1003	1989	
+
+L 639  3837	5502	*	9524	3985	5483	7976	2336	7923	1700	4569	8159	7935	9792	8373	4815	4452	2653	6647	8357	639
+       44	5704	6527	1388	695	702	1376	11618	1335	1842	
+
+T 640  3778	6532	9555	9389	4037	4003	8822	2313	8531	1831	5144	7526	6798	*	8334	4757	4615	2488	*	9776	640
+       100	4550	5353	11	7042	1324	735	11728	1491	1437	
+
+C 641  3303	3588	7892	9964	4177	4502	9795	2615	9120	2069	5778	6065	6143	9856	9431	4757	4423	2571	9191	8348	641
+       77	4542	6825	1292	757	406	2026	11752	2015	2092	
+
+L 642  3079	5605	*	8545	4234	4378	*	2208	8059	2055	4774	7261	6426	9750	*	4814	5013	2561	9919	8207	642
+       51	5971	5720	1594	580	1257	782	11731	1122	1504	
+
+C 643  3506	4045	8054	9590	3849	3498	9205	2742	8289	2186	5621	7248	7072	7992	9265	4687	4710	2390	*	7239	643
+       35	7064	5896	1141	872	2932	203	11758	1039	1623	
+
+G 644  3474	4741	5271	8657	3887	3915	8384	2647	8351	2271	5409	7273	7920	8186	7212	3754	4471	2674	6548	7261	644
+       72	6728	4671	2144	370	2010	412	11755	1070	1693	
+
+T 645  3010	5233	10122	9731	3511	4630	9062	2536	*	2206	5093	9978	7661	7905	7151	4695	4631	2615	7752	4839	645
+       46	6806	5498	1833	475	860	1155	11755	1073	1845	
+
+A 646  2926	4888	7904	8439	3487	4017	7249	2789	6669	2733	5148	9966	6032	8123	6180	4427	4600	2576	6231	4858	646
+       124	3784	6639	1709	527	1324	736	11688	1500	1602	
+
+W 647  5045	2131	9177	8384	3328	5429	7525	3384	6969	2510	5732	8368	7408	5883	5654	5352	5287	3301	5218	3537	647
+       33	8156	5730	890	1120	2512	278	11681	1030	1711	
+
+L 648  4987	4105	9974	8825	2184	5794	6319	3291	4749	2529	6359	7538	8208	6954	5063	5593	5626	3323	4939	3164	648
+       71	7516	4564	1383	697	2166	364	11692	1025	1890	
+
+C 649  5384	2918	7731	7713	3940	6172	6489	3144	5416	3111	5358	5477	6766	4789	3680	5080	5840	3235	4008	3235	649
+       106	4029	6692	626	1506	1914	445	11640	2359	2098	
+
+C 650  4974	3810	6843	6823	4635	5459	5515	4924	2260	3406	6413	5636	7392	5241	2357	4940	5320	4244	5554	3891	650
+       40	6047	6355	2206	353	959	1043	11650	1181	1877	
+
+S 651  5576	6010	6298	7820	5995	5515	4188	5373	2764	3505	6950	4441	9746	4779	1530	4208	6325	4900	6063	4586	651
+       13	7402	8464	1031	970	1803	487	11599	1048	1556	
+
+P 652  5710	5468	5606	5146	5969	5872	3935	6668	2254	4732	7363	3953	5322	4346	1796	4078	5555	6080	7021	5781	652
+       74	5217	5425	2539	272	1112	896	11675	2098	1449	
+
+N 653  5555	4088	7352	6620	5253	5579	5267	6098	2484	3556	6372	4894	5825	4447	1690	4341	6306	6280	5172	5035	653
+       85	4728	5704	1892	453	1127	883	11645	1294	1575	
+
+R 654  4338	6171	6503	5954	4620	4543	5654	3238	3325	2980	5247	4836	5986	4948	2483	4193	5419	3563	7340	5943	654
+       32	5898	7540	275	2528	775	1266	11661	1531	1550	
+
+K 655  4515	7855	6541	5635	7261	4241	4701	5599	1320	5058	6281	4653	4866	4120	3020	4355	5212	6696	6639	6834	655
+       29	6564	6715	1386	696	432	1950	11569	1075	1659	
+
+N 656  4599	7035	5864	4037	7738	5418	5139	5111	1772	4997	6699	3942	6310	3840	2870	4028	5072	5659	7569	4221	656
+       79	4349	7984	2100	383	1662	548	11517	1398	1275	
+
+P 657  4784	6013	5952	6184	4353	5564	3481	4635	3242	4094	6422	5254	4899	3937	3372	4057	4519	3834	4016	3552	657
+       47	6238	5735	1125	885	3900	100	11288	1053	1207	
+
+L 658  5431	3539	6816	6184	2327	7258	8873	3172	5128	2071	5165	5401	6629	6065	5316	5117	6109	3581	7020	4429	658
+       45	*	5039	*	*	2032	405	11158	0	1260	
+
+W 659  6057	3943	6596	5680	2511	5214	5252	6343	4566	4001	6306	6086	5799	5721	5056	3701	7390	6227	2054	3144	659
+       80	4452	6982	1862	464	860	1155	10946	1243	1353	
+
+P 660  5683	7515	5063	3538	6820	4123	6497	6000	3898	4806	*	6175	955	5554	4273	5197	6964	5846	*	6978	660
+       13	9141	7186	0	*	3196	167	10826	1000	1184	
+
+S 661  4737	9227	2963	3833	7456	5937	6782	6112	3322	5952	7435	3243	2866	4592	4688	2598	4758	4273	8675	6001	661
+       0	*	*	*	*	1408	682	10780	0	1190	
+
+V 662  4963	4531	5523	5887	6166	5032	9076	1968	7065	2981	5545	6476	5875	5664	6096	5770	6123	1700	7898	5561	662
+       8	8157	9098	0	*	2521	276	10749	1007	1117	
+
+P 663  5636	7436	6053	8548	5037	6072	7094	8718	3794	6231	*	7517	517	5277	6113	4785	6324	5912	*	7396	663
+       20	8451	6564	3000	193	3261	159	10580	1007	1119	
+
+D 664  5293	*	1424	5292	8271	5010	7077	7104	4152	4742	*	3002	3174	5591	6153	3400	4007	7303	*	*	664
+       3	8919	*	2000	415	2677	245	10411	1023	1127	
+
+P 665  5270	*	5357	7194	7437	6999	6271	6210	7634	4628	*	6505	411	5734	5602	4818	8288	6246	*	8286	665
+       11	*	7091	*	*	2217	349	10349	0	1106	
+
+A 666  1804	4451	5928	4641	6960	3729	8563	5639	4438	4230	6659	4464	7044	5953	4181	2418	5699	4455	8195	5925	666
+       7	*	7698	*	*	2878	211	10128	0	1118	
+
+H 667  4263	*	5235	4765	8026	4873	3825	5747	2481	4531	6849	1600	7157	4977	6517	3683	5433	4678	*	7200	667
+       11	7914	8172	3322	152	3570	127	10107	1084	1133	
+
+S 668  5490	5758	7294	7994	7025	5301	8428	3131	6781	7523	7709	*	4058	*	7791	642	4434	5644	*	6982	668
+       15	*	6632	*	*	1068	935	9729	0	1128	
+
+S 669  5343	8705	3784	3436	8578	5708	4226	6960	2962	5768	6210	3306	7130	5115	7163	1973	2709	6608	*	8558	669
+       82	5090	5270	1443	661	4012	92	9676	1215	1104	
+
+L 670  2711	6513	6717	3982	4885	4673	*	2786	7403	2441	5671	8222	*	6221	7046	4273	5188	3109	3192	7153	670
+       185	*	3057	*	*	3622	122	9531	0	1186	
+
+G 671  1921	7907	7781	5077	4965	2553	7053	3333	5139	3573	5613	6542	5743	5554	5167	3974	5619	3537	*	7183	671
+       6	7885	*	1585	585	959	1043	9337	1003	1590	
+
+S 672  6170	6928	4324	4083	5105	4597	6409	6056	2012	5037	7918	4737	6137	2345	4067	3444	4845	6490	8195	4650	672
+       141	*	3424	*	*	559	1638	9387	0	1287	
+
+W 673  *	*	7863	3924	1970	7063	*	6471	4477	3489	6087	5602	8064	7760	5790	6637	6836	5968	1256	7226	673
+       45	6098	5975	2096	385	2871	212	9046	1079	1388	
+
+V 674  5800	4417	5160	4457	4569	4091	5811	5381	5653	2902	5983	5441	3439	6332	4996	2340	4662	3961	7425	3580	674
+       287	2471	*	3219	164	2577	265	8970	2933	1416	
+
+P 675  3364	*	4764	2981	6964	3189	7983	6742	4090	5120	4934	5387	1903	4411	7580	4036	4086	5672	*	7557	675
+       9	*	7302	*	*	*	0	8877	0	3073	
+
+T 676  3911	8067	3722	4651	*	5654	4114	6353	3907	4220	6222	4319	3886	2050	5062	2684	4445	*	*	*	676
+       46	5002	*	3322	152	2964	198	8712	1033	3079	
+
+I 677  5116	6464	3175	3112	5650	6940	6590	3907	4396	4228	7597	5694	2601	3227	5802	3470	3784	4469	*	7523	677
+       288	5365	2674	1585	585	8109	5	8748	1044	2836	
+
+M 678  6288	5370	5872	6114	2724	3493	3597	5158	6975	2451	3476	8407	2990	6010	6313	4428	4537	5147	6810	5932	678
+       0	*	*	*	*	2449	292	8330	0	3240	
+
+E 679  3833	6380	5067	4386	5303	5580	6697	4771	2193	4801	4538	4197	4249	3650	5788	2894	5154	5152	4931	5526	679
+       11	6995	*	2601	260	691	1394	8476	1045	2867	
+
+E 680  *	6419	6410	2277	6807	4232	6114	4554	3208	5435	*	3119	6642	2642	3471	3306	4999	6390	*	*	680
+       116	5673	4122	0	*	1501	629	8345	1064	1748	
+
+D 681  5261	*	3815	2196	6287	4743	3224	5536	*	2912	5047	4130	2887	5723	6008	4790	6844	4041	*	6584	681
+       132	3772	6118	1426	672	1116	892	8252	1104	1711	
+
+A 682  4739	*	4141	4739	4583	8183	6702	5890	4287	2646	6905	2886	4313	5400	*	3636	3221	3625	6206	3542	682
+       22	*	6043	*	*	2918	205	8246	0	1464	
+
+F 683  8556	7263	6356	7225	1933	*	4751	4340	5376	2104	6528	5980	3182	5785	4808	4456	4449	4360	5637	5951	683
+       62	4715	8094	3180	169	2005	413	8308	1172	1495	
+
+Q 684  4379	5993	4862	5948	5699	5801	4938	5428	8813	4046	5211	3888	3748	1870	5707	2209	5274	5929	7627	7778	684
+       7	*	7619	*	*	*	0	8255	0	1431	
+
+L 685  3053	*	7045	7251	4845	6770	7525	5133	*	2702	6286	7610	3739	5913	7675	2977	2184	3390	4066	5848	685
+       1790	492	*	1440	663	2849	215	8286	4040	1491	
+
+P 686  8196	6123	4180	1633	*	6477	*	6546	2506	6298	7570	5345	4132	3065	3884	4307	5030	6443	5193	*	686
+       29	5639	*	3362	148	1663	547	8186	1030	1459	
+
+G 687  4635	7529	2195	1176	5670	6133	*	7223	4822	5912	8338	4883	3646	*	*	4644	5262	*	5795	*	687
+       41	6999	5613	1000	1000	3107	178	8312	1010	1314	
+
+L 688  6237	6046	5723	4855	*	4540	5002	4892	8283	3742	6159	7204	1166	2506	6426	5036	4747	6565	*	*	688
+       44	5053	*	2000	415	3628	122	8308	1044	1431	
+
+G 689  5019	6525	5057	2672	*	2985	7241	3617	4905	5561	4263	4125	4037	6633	5763	3507	2730	4063	*	7610	689
+       0	*	*	*	*	4403	70	8165	0	1396	
+
+T 690  8665	6295	3012	2287	6231	6058	8904	5981	*	2929	3049	6779	2802	6391	6891	5731	3548	6778	*	3810	690
+       0	*	*	*	*	1491	634	8152	0	1377	
+
+P 691  4329	*	7118	5497	5358	6454	*	4749	3773	2708	5183	3276	2473	4463	4333	3527	5107	3388	*	7763	691
+       528	1707	*	1000	1000	*	0	8107	1781	1242	
+
+P 692  4677	6360	4460	4264	*	5844	6431	2310	7809	3747	*	4647	2426	*	6971	3211	4459	3073	*	4817	692
+       0	*	*	*	*	*	0	8107	0	1242	
+
+I 693  7947	4668	7763	4389	3436	*	5489	1017	7435	3614	8615	6085	5336	5826	*	5464	4805	3664	*	6488	693
+       41	6481	5878	1585	585	*	0	8107	1013	1242	
+
+T 694  7036	*	6080	1760	*	*	6522	6592	5375	2910	*	5131	5830	6396	6161	2261	2487	5247	6368	7249	694
+       58	5028	6813	811	1217	3192	167	8089	1073	1273	
+
+K 695  5681	*	2445	2092	8363	5939	4569	6413	3026	7139	*	3095	4427	4867	6055	3820	4131	7161	*	6427	695
+       5	8264	*	1000	1000	3554	128	8137	1005	1265	
+
+L 696  5381	*	*	6500	4808	6597	*	2378	*	2657	5816	5822	6772	*	8335	4949	3578	1440	7328	5092	696
+       0	*	*	*	*	*	0	8105	0	1242	
+
+T 697  5505	6915	4999	2927	4871	5128	5834	3882	5817	3387	7629	4910	8780	6301	7862	1726	3135	4258	*	5684	697
+       362	2189	8531	2836	218	2373	309	8059	1478	1242	
+
+V 698  6026	7985	5381	2704	5083	6003	4185	4174	5705	4043	6100	5154	5739	2848	8354	6260	7183	1561	*	7447	698
+       98	4041	7596	0	*	1534	611	8022	1105	1221	
+
+L 699  6140	*	5283	4689	5444	5809	5832	2908	5151	2178	3871	6480	5265	4516	5302	4137	3972	2497	6908	*	699
+       85	4127	*	934	1069	1223	807	8085	1091	1180	
+
+E 700  5074	*	2189	1425	*	4005	*	6052	4469	*	6650	4898	5518	4271	6568	4729	5418	3894	*	*	700
+       10	*	7140	*	*	2758	231	8171	0	1184	
+
+E 701  4566	8191	4299	2432	3813	4459	7271	2414	4641	4260	5091	5540	6093	5519	4099	5131	3776	4029	7195	*	701
+       296	3042	3960	1376	702	326	2307	8138	1492	1174	
+
+D 702  4332	7029	2685	2240	*	4031	6673	*	3179	*	7161	3660	2862	6794	6654	3886	5340	5178	6286	5735	702
+       39	8482	5381	1000	1000	*	0	8155	1014	1493	
+
+E 703  4619	5495	2326	1785	*	8054	3957	7914	5201	4878	7202	4881	5349	5477	5329	5438	4435	3322	5947	5971	703
+       200	2950	*	0	*	2595	261	8131	2087	1589	
+
+K 704  5305	7629	3782	4004	*	6097	5073	5603	1336	5755	*	4440	6343	5710	3007	4335	5921	6357	*	3736	704
+       52	5703	5945	591	1572	*	0	8121	1037	1493	
+
+K 705  4712	*	4806	3561	*	4479	4959	6085	1272	5021	*	6532	5378	3485	4142	5438	4315	7338	*	4487	705
+       18	*	6335	*	*	171	3165	8076	0	1628	
+
+P 706  4060	4287	5501	6897	7180	5829	3352	*	*	3998	6296	6221	1525	*	5656	2937	4359	6754	*	3453	706
+       212	8117	2912	2585	263	*	0	8038	1014	1093	
+
+V 707  5301	4557	7331	4822	3322	3993	7209	3868	7983	3600	6858	4990	3785	4645	5976	2173	3990	3626	5541	6564	707
+       114	3722	*	0	*	4594	61	7589	1197	2008	
+
+P 708  3398	7703	5620	2831	*	6143	5341	*	2484	4163	5529	6779	2380	*	5498	2556	4853	5928	*	*	708
+       269	2709	5861	1000	1000	*	0	7588	1402	1968	
+
+W 709  6156	5820	*	4408	4925	3900	6402	4662	6884	2675	5646	*	8794	1925	*	5070	5768	3133	2807	6118	709
+       43	*	5102	0	*	4401	70	7562	1048	2080	
+
+E 710  3971	*	3179	2933	*	3766	5163	5337	2838	5819	*	4617	3723	5084	8282	2831	3042	*	*	*	710
+       33	7996	5732	1000	1000	2224	348	7546	1014	2186	
+
+S 711  *	7588	3836	4785	*	6352	6179	7333	3117	4388	5876	4865	3847	5760	*	1180	3671	4931	9611	*	711
+       8	*	7474	*	*	4038	91	7576	0	2014	
+
+H 712  6045	*	5310	3616	2290	5619	4921	5743	3957	4301	5254	6177	6484	2748	2848	4034	3872	5789	*	*	712
+       110	*	3770	*	*	5297	37	7570	0	1979	
+
+N 713  3711	*	847	3893	*	7883	*	5369	5101	4938	*	6348	4170	6363	6554	4341	4629	5058	*	*	713
+       299	2416	*	2838	217	3480	135	7453	1374	2299	
+
+S 714  7497	5680	6353	*	5988	3834	*	5001	2505	5248	7181	7455	4281	4216	5401	1131	5324	5631	*	*	714
+       0	*	*	*	*	3188	168	7492	0	2225	
+
+S 715  4278	*	6881	5478	5069	1607	2802	5855	6533	6042	4938	4512	7275	6743	5731	2547	4376	4919	*	6726	715
+       0	*	*	*	*	*	0	7518	0	2097	
+
+E 716  6642	*	*	3259	*	3362	5714	6771	4537	6056	6679	1728	4257	5797	*	5064	3490	2537	*	5113	716
+       473	1840	*	877	1134	529	1703	7518	2025	2097	
+
+T 717  2299	7636	4810	3061	5940	5036	4305	*	4674	5020	5239	7010	6148	6189	5441	2474	2522	5854	*	6322	717
+       64	*	4527	*	*	3359	148	6735	0	1581	
+
+C 718  4567	2679	2919	2069	*	3945	3682	*	4475	*	*	5083	7048	5067	5543	3288	5893	5714	*	5895	718
+       26	5829	*	0	*	*	0	6768	1030	1695	
+
+G 719  5917	*	3546	4348	*	2058	5285	*	*	2413	5875	4571	3135	6353	5439	2906	5926	4753	*	*	719
+       0	*	*	*	*	4308	75	6593	0	1695	
+
+L 720  *	5565	4351	6073	5271	*	1320	5977	4667	2224	*	4798	4167	5328	6897	5313	5064	5148	*	6474	720
+       561	1634	*	0	*	2047	400	6592	2433	1661	
+
+P 721  2737	5397	*	*	5880	*	*	6398	*	4056	5904	*	1554	4763	*	1982	4470	5122	*	5957	721
+       0	*	*	*	*	2036	403	6633	0	1503	
+
+T 722  4657	*	1818	3867	*	5098	5216	5521	4477	6403	*	4536	5340	6296	6641	2095	3118	5552	*	6309	722
+       69	*	4427	*	*	*	0	6658	0	1381	
+
+L 723  *	*	5303	5866	*	1265	*	6174	4251	2949	*	4315	5318	4959	4994	3775	3304	4945	*	*	723
+       823	1202	*	0	*	1507	626	6510	2339	1581	
+
+V 724  6981	*	5818	3156	*	4572	5301	1352	4830	*	*	4826	4518	3746	4997	3941	*	3082	*	*	724
+       41	5952	6425	557	1642	1076	928	6586	1096	1378	
+
+Q 725  *	*	3865	4609	6649	1050	*	6341	5317	*	*	4858	6028	2464	5686	3609	5978	*	*	6399	725
+       0	*	*	*	*	2244	342	6665	0	1251	
+
+T 726  3319	*	6314	*	2139	2218	4699	7432	*	4525	*	*	4504	4819	*	3637	3080	3654	*	*	726
+       28	5727	*	0	*	*	0	6658	1022	1197	
+
+Y 727  5800	*	5449	4171	3797	6408	5496	*	*	6030	*	*	*	3530	5076	1040	7105	*	*	2534	727
+       11	*	7034	*	*	*	0	6658	0	1197	
+
+V 728  4197	*	3169	3571	*	3342	*	4800	6004	6006	5038	5847	4459	*	6844	1922	4725	2553	*	6581	728
+       29	*	5644	*	*	*	0	5758	0	1243	
+
+L 729  3737	2013	*	5987	*	*	3350	*	4016	1665	*	5639	4705	5036	4567	5948	6146	6889	*	5935	729
+       726	1339	*	2133	373	1491	634	5748	2395	1335	
+
+Q 730  5823	2875	*	2935	*	*	*	*	3994	4778	2264	3842	5830	2122	4581	4344	*	*	*	*	730
+       9	*	7321	*	*	2193	356	5632	0	1412	
+
+G 731  6032	*	3339	6541	*	1680	4279	*	7291	4553	*	5068	5656	6855	5788	1447	*	5685	*	*	731
+       384	2917	3303	520	1723	2320	322	5697	1614	1346	
+
+D 732  4718	*	2766	3956	*	3212	*	6941	4902	6389	5822	5744	5815	*	5739	1047	*	4943	*	*	732
+       41	*	5160	*	*	3382	145	5501	0	1620	
+
+P 733  6386	*	3989	*	*	5721	5899	*	*	4679	*	*	652	*	*	2750	*	*	*	3936	733
+       0	*	*	*	*	3164	171	5504	0	1630	
+
+R 734  4894	*	6758	6021	3930	3911	4212	5747	5601	4518	6525	5917	3844	*	1122	3608	5297	*	6832	*	734
+       737	1797	3157	1811	484	1375	703	5298	1492	1561	
+
+A 735  1877	4498	*	3134	*	5353	*	5473	5778	4480	*	*	5175	7367	5353	1611	4891	4631	*	*	735
+       60	7367	4851	1585	585	4042	90	5225	1014	1711	
+
+V 736  2595	3922	2174	5457	*	6342	*	5713	*	3213	5313	*	4411	6953	5624	2352	5141	5766	*	4579	736
+       12	*	6953	*	*	490	1796	5273	0	1761	
+
+S 737  5866	4997	7965	*	*	5489	5401	4751	3839	*	5000	4015	5466	4979	4732	842	4276	*	*	*	737
+       44	*	5046	*	*	*	0	5628	0	1242	
+
+T 738  5100	*	2101	3270	5728	4519	*	6525	*	5450	*	5230	1554	5896	5564	5812	3122	*	*	*	738
+       207	*	2900	*	*	1944	434	5512	0	1382	
+
+Q 739  5045	5526	3732	2118	*	5280	*	*	7277	3832	*	4794	2780	2402	4050	4252	4518	*	6302	*	739
+       279	*	2508	*	*	3443	139	5358	0	1766	
+
+P 740  3356	6346	*	*	*	2450	*	5862	*	4576	*	4211	1982	5272	*	2276	5078	3666	*	*	740
+       938	1065	*	1743	512	122	3624	5138	2891	2138	
+
+Q 741  4832	6127	4826	1886	*	3257	4159	*	*	3120	*	*	4994	3203	4374	4047	3487	*	*	4999	741
+       131	*	3523	*	*	2588	262	5628	0	1252	
+
+S 742  7365	*	3566	5176	6541	4533	*	6122	5338	4572	7721	5841	2509	5315	5575	1822	2783	*	*	3741	742
+       53	*	4805	*	*	3052	185	5640	0	1495	
+
+Q 743  1920	*	4722	5566	*	5161	*	6265	*	4641	5602	3798	4313	3486	*	3264	3212	4596	*	3179	743
+       0	*	*	*	*	763	1284	5648	0	1548	
+
+S 744  4806	5145	7037	2419	*	3764	*	3961	*	4894	*	*	4578	2091	5472	2679	*	4700	*	3714	744
+       0	*	*	*	*	*	0	5653	0	1225	
+
+G 745  7160	*	*	6085	*	2905	4382	*	4901	4833	*	2106	3936	6017	4925	2260	2527	*	*	*	745
+       13	*	6834	*	*	2944	201	5653	0	1225	
+
+T 746  4518	3560	6011	6105	*	3805	5030	5979	*	4757	*	3440	4537	5014	4087	4038	1500	4974	*	6026	746
+       9	*	7312	*	*	*	0	5657	0	1222	
+
+S 747  3586	*	*	*	*	4894	6275	*	5658	5687	6023	5134	4188	2060	6101	1178	*	*	*	4797	747
+       188	*	3032	*	*	*	0	5660	0	1249	
+
+D 748  5098	*	1971	2878	*	6392	6191	*	*	4241	5828	4702	5306	5432	*	1631	4353	*	*	5332	748
+       43	*	5098	*	*	194	2990	5456	0	1885	
+
+Q 749  4456	*	*	6041	*	5381	*	6430	*	3634	*	4593	3452	2786	4892	2315	1828	5103	*	*	749
+       0	*	*	*	*	976	1024	5553	0	1168	
+
+V 750  5105	*	5061	6061	5665	4940	*	3755	*	*	*	*	*	*	6376	*	5569	514	*	3913	750
+       0	*	*	*	*	*	0	5576	0	1080	
+
+L 751  6408	*	3441	*	5296	*	*	4595	*	2575	*	5246	2483	1310	*	*	4610	*	*	6376	751
+       0	*	*	*	*	*	0	5576	0	1080	
+
+Y 752  *	6376	*	*	*	*	*	*	4033	2845	*	*	*	*	*	*	*	*	*	344	752
+       0	*	*	*	*	*	0	5576	0	1080	
+
+G 753  1759	*	*	*	*	2666	*	5569	4671	*	*	5665	*	*	*	1786	*	4721	*	2845	753
+       91	*	4033	*	*	*	0	5576	0	1080	
+
+Q 754  *	*	*	*	*	*	*	5679	1652	*	*	*	6307	2658	4713	8999	1148	*	*	*	754
+       0	*	*	*	*	2080	389	5447	0	1239	
+
+L 755  4687	*	*	*	*	*	*	6612	*	4042	3919	*	*	*	*	5343	*	323	*	*	755
+       0	*	*	*	*	1031	970	5451	0	1182	
+
+L 756  4274	*	5534	*	5438	6045	*	2943	*	1644	4055	*	*	*	*	*	5241	1507	*	*	756
+       13	*	6804	*	*	*	0	5585	0	1090	
+
+G 757  4634	5785	6055	4734	2797	1696	3827	5040	*	3072	*	*	5721	*	6892	3111	4329	5388	*	*	757
+       12	*	6926	*	*	626	1507	5579	0	1142	
+
+S 758  5030	*	3575	4113	*	2597	4008	7123	*	*	*	3198	*	*	*	1082	*	*	*	6404	758
+       70	6045	4952	0	*	2673	246	5622	1015	1056	
+
+P 759  4507	5864	3958	4623	*	1342	*	*	5925	*	*	5923	3000	4931	3449	3317	4873	6124	*	6901	759
+       72	7642	4507	0	*	2277	333	5552	1014	1168	
+
+T 760  4845	*	5418	7022	6295	3325	*	*	*	6320	*	*	2665	*	6465	3879	2454	*	*	1360	760
+       2585	263	*	2036	403	*	0	5407	3292	1224	
+
+S 761  4998	*	5744	6357	*	6025	3635	4603	3732	6161	6051	*	3147	3021	5657	2316	3592	2672	*	*	761
+       0	*	*	*	*	*	0	5067	0	1991	
+
+P 762  3722	*	5019	5101	*	5002	*	*	5008	*	*	5864	936	4860	*	3225	4955	3500	*	*	762
+       205	4240	3652	1456	654	2120	377	5067	1048	1991	
+
+G 763  3364	*	6306	3864	*	2491	*	4486	4704	4561	*	5849	2903	4994	6175	2478	2947	7695	6957	*	763
+       40	*	5201	*	*	4055	90	5306	0	1932	
+
+P 764  3150	6085	*	*	*	4116	5461	*	*	*	*	*	1324	4476	*	3430	4853	2181	*	*	764
+       120	7439	3756	1000	1000	6711	14	5223	1014	1972	
+
+G 765  4956	6324	*	*	*	2807	3001	*	*	5222	5563	*	1905	2270	4148	*	3503	5600	*	*	765
+       16	*	6517	*	*	*	0	5018	0	2124	
+
+H 766  2610	*	6923	*	5344	3863	2844	5035	*	2803	*	*	6906	4494	6571	4606	6146	1722	*	*	766
+       0	*	*	*	*	2169	363	5020	0	2149	
+
+Y 767  5259	*	*	*	2010	*	4866	5821	*	*	*	*	5405	*	*	3604	4592	*	*	926	767
+       0	*	*	*	*	128	3561	5404	0	1903	
+
+L 768  3963	*	4018	6355	7249	*	*	3568	3060	1544	7095	*	6793	*	*	2467	5902	3751	*	5649	768
+       18	*	6326	*	*	*	0	5608	0	1074	
+
+R 769  6975	6089	*	*	*	*	6265	*	*	4915	*	*	3515	5596	448	3813	5726	*	*	*	769
+       47	*	4971	*	*	*	0	5538	0	1130	
+
+C 770  5023	3028	*	4821	*	3469	*	*	*	*	*	6172	6362	*	5534	585	*	7243	*	*	770
+       0	*	*	*	*	1953	431	5478	0	1210	
+
+D 771  4725	6429	1998	1379	*	4685	5885	*	6093	*	*	3351	*	*	*	3237	*	*	*	4602	771
+       79	4222	*	4676	58	2542	272	5491	1120	1155	
+
+S 772  *	*	*	6899	*	4439	5292	3905	*	3946	*	*	3888	*	5781	509	*	*	*	*	772
+       0	*	*	*	*	*	0	5485	0	1127	
+
+T 773  3010	*	*	*	*	7168	*	*	4846	5962	*	*	4795	*	4196	6054	514	6364	*	*	773
+       0	*	*	*	*	*	0	5485	0	1127	
+
+Q 774  *	7081	*	*	*	7071	7797	6216	*	5900	*	4485	*	393	*	3342	5506	5385	*	*	774
+       0	*	*	*	*	*	0	5525	0	1127	
+
+P 775  5900	5385	*	*	*	*	7224	*	*	*	*	*	233	6216	*	4754	4279	*	*	*	775
+       0	*	*	*	*	*	0	5525	0	1127	
+
+L 776  5506	*	*	*	*	*	*	7215	*	270	5900	*	6733	*	*	3495	*	5648	7081	*	776
+       0	*	*	*	*	*	0	5525	0	1127	
+
+L 777  6733	*	*	*	*	*	*	*	*	441	6144	*	6914	*	5228	5506	2897	4364	*	*	777
+       0	*	*	*	*	1577	589	5525	0	1127	
+
+A 778  3369	6157	1681	3321	6141	3020	*	6775	*	5603	*	4048	5405	5971	5864	4006	6412	3072	*	*	778
+       0	*	*	*	*	*	0	5570	0	1083	
+
+G 779  4479	4705	2665	3960	*	3110	*	4851	*	3319	6275	4930	5112	*	6310	2095	3231	5938	*	*	779
+       819	1207	*	1446	660	0	*	5570	2738	1083	
+
+L 780  *	*	5391	1454	7204	*	*	6101	*	2851	5705	*	3896	*	6165	6737	4680	5273	*	1854	780
+       213	*	2863	*	*	*	*	5590	0	0	
+
+T 781  *	*	*	5076	*	7342	*	4838	*	1822	*	*	2736	*	*	2136	1895	*	*	*	781
+       21	*	6125	*	*	*	0	5138	0	1307	
+
+P 782  *	*	*	*	3388	4458	*	*	*	*	*	*	445	*	*	3006	*	*	*	*	782
+       0	*	*	*	*	*	0	5064	0	1336	
+
+S 783  4074	*	*	7116	*	4936	*	*	*	*	*	*	*	*	*	561	2165	*	*	*	783
+       15	*	6563	*	*	3517	132	5064	0	1336	
+
+P 784  5285	*	*	*	*	6292	2413	*	*	*	*	5451	532	4932	*	7119	6432	*	*	7016	784
+       0	*	*	*	*	3889	101	5064	0	1329	
+
+K 785  5295	*	4539	2247	*	*	*	5590	1172	4439	5271	*	4343	2890	*	*	*	*	*	*	785
+       34	5417	*	0	*	*	0	4933	1045	1307	
+
+S 786  *	3258	3638	5806	*	2334	*	*	*	4962	*	*	1680	5418	7495	2812	4362	5800	*	5896	786
+       0	*	*	*	*	*	0	4933	0	1307	
+
+Y 787  *	*	*	*	*	4659	*	*	*	*	*	*	*	*	*	*	*	*	*	58	787
+       89	*	4069	*	*	*	0	4933	0	1307	
+
+E 788  *	*	*	948	*	*	4466	*	*	1955	*	*	*	2667	5582	*	*	*	*	*	788
+       11	7037	*	0	*	*	0	4897	1152	1423	
+
+N 789  *	*	*	4712	*	*	*	*	*	*	*	605	2079	5230	*	6193	*	5177	*	*	789
+       0	*	*	*	*	*	0	4897	0	1423	
+
+L 790  4780	*	*	3926	*	*	*	3927	*	1591	2524	*	7037	*	*	2179	6209	3568	*	*	790
+       0	*	*	*	*	*	0	4897	0	1423	
+
+W 791  3935	*	5615	4712	*	4939	5177	*	*	5386	*	2189	4531	*	*	5966	*	4606	1106	7037	791
+       32	*	5519	*	*	*	0	4897	0	1423	
+
+F 792  *	*	*	4694	1109	*	*	3035	*	3896	4780	4037	3502	*	4923	*	4142	4900	*	*	792
+       0	*	*	*	*	3637	121	4875	0	1460	
+
+Q 793  5827	*	2266	3717	*	3253	1760	*	*	*	*	6094	*	2429	5200	3823	*	*	*	*	793
+       40	*	5177	*	*	*	0	4897	0	1423	
+
+A 794  5188	5851	3438	3532	*	2048	*	6153	5729	*	5652	5781	5901	*	5266	2646	3618	5929	*	2613	794
+       0	*	*	*	*	170	3171	4846	0	1476	
+
+S 795  3195	*	5717	4969	6656	5535	*	3784	*	2169	3272	4504	4653	*	4617	2554	4171	4071	*	*	795
+       40	*	5201	*	*	*	0	5254	0	1048	
+
+P 796  4513	*	*	4931	*	6430	*	*	4623	6118	*	5558	1005	4394	*	2427	5817	3539	*	*	796
+       34	*	5430	*	*	*	0	5206	0	1090	
+
+L 797  5936	*	*	2926	*	5780	*	*	5865	3542	*	*	2862	2994	*	1330	5009	*	6087	5355	797
+       0	*	*	*	*	1726	519	5217	0	1173	
+
+G 798  2989	7234	4045	1809	*	3930	2960	5816	4979	*	*	3963	6188	4543	3912	4711	5394	5123	*	*	798
+       0	*	*	*	*	1601	577	5256	0	1119	
+
+T 799  3992	4543	3846	2221	*	3096	*	4122	*	5586	4703	*	6141	3148	5076	3947	3139	4587	*	*	799
+       235	*	2731	*	*	*	0	5305	0	1078	
+
+L 800  2455	3083	4721	3883	4403	6392	5698	*	*	2451	*	4136	4349	5239	4724	3517	*	3739	*	*	800
+       287	*	2473	*	*	*	0	5011	0	1372	
+
+V 801  4548	*	5862	3678	2883	3502	3572	4200	*	*	*	*	2205	*	5051	4434	*	2418	5699	*	801
+       0	*	*	*	*	4424	69	4561	0	1751	
+
+T 802  5306	4158	5040	*	1597	5534	*	3971	*	3698	*	*	2211	*	3899	3834	5904	5295	*	*	802
+       466	*	1857	*	*	979	1021	4568	0	1717	
+
+P 803  *	*	5710	4681	*	2583	4083	*	*	4615	*	*	1968	3142	5413	2487	3732	5094	*	*	803
+       0	*	*	*	*	*	0	4790	0	1930	
+
+A 804  2887	*	5373	4542	*	3157	*	*	*	5063	*	*	2077	5308	*	1542	*	4323	*	*	804
+       0	*	*	*	*	3728	113	4790	0	1930	
+
+P 805  4076	3519	4717	*	3643	3568	4001	5218	*	3935	*	3926	2270	4172	*	3643	5146	4068	*	*	805
+       447	*	1907	*	*	*	0	4808	0	1862	
+
+S 806  4931	*	5204	*	3789	*	3798	4751	*	5103	2947	3198	3121	2722	*	3316	3527	4740	*	*	806
+       2075	391	*	2706	240	368	2150	4836	2914	2235	
+
+Q 807  *	*	4227	1616	*	4138	5278	*	4561	6061	*	*	5706	1491	4044	4483	*	*	*	*	807
+       62	*	4569	*	*	4181	82	4319	0	1833	
+
+E 808  *	5145	1749	2625	*	3738	2186	*	*	*	5386	*	4929	*	4150	4442	*	*	*	4096	808
+       1999	569	3725	1612	572	219	2830	4422	2453	1837	
+
+D 809  3565	5024	3667	3431	*	3094	*	*	*	5380	5525	5314	5651	*	4644	1228	*	4702	*	*	809
+       237	*	2725	*	*	0	*	5154	0	1207	
+
+D 810  4726	*	2599	4579	3353	3305	6013	2803	*	3621	*	*	*	*	5773	5598	4076	2318	*	5849	810
+       0	*	*	*	*	0	*	5074	0	1323	
+
+C 811  *	2437	3943	3616	1247	3758	*	5632	*	4275	*	*	*	5282	*	6146	*	4509	5784	*	811
+       0	*	*	*	*	*	*	5288	0	0	
+
+V 812  5572	5606	*	5419	*	4768	*	*	5632	2942	6662	4468	1326	5222	5784	4708	3566	3150	6163	*	812
+       26	*	5807	*	*	*	*	5288	0	0	
+
+F 813  4400	5958	3589	2371	2835	6165	*	*	3434	*	*	*	*	4981	*	1826	3556	6081	*	*	813
+       0	*	*	*	*	0	*	5295	0	1067	
+
+G 814  5606	*	4588	2487	*	2266	3284	3311	5632	*	*	5178	5784	*	6339	2580	3700	5282	*	*	814
+       28	*	5704	*	*	*	*	5288	0	0	
+
+P 815  3972	*	4976	*	*	*	5457	*	*	2827	*	3300	1907	6076	*	1619	5996	5919	*	*	815
+       0	*	*	*	*	0	*	5264	0	1051	
+
+L 816  *	*	*	*	2482	*	*	5286	*	1069	*	*	3907	*	*	4961	*	*	2184	*	816
+       37	5286	*	0	*	*	*	5288	1038	0	
+
+L 817  3662	6163	2695	5615	5243	5450	3183	3593	5282	1872	*	*	5887	3713	4971	4522	*	5483	*	*	817
+       0	*	*	*	*	*	*	5288	0	0	
+
+N 818  *	*	1056	4428	*	*	*	*	*	*	4366	4171	2088	*	6163	*	3065	*	*	*	818
+       42	*	5133	*	*	*	*	5288	0	0	
+
+F 819  *	*	6139	3483	742	*	*	*	*	2462	*	*	3597	*	*	*	*	4866	*	*	819
+       0	*	*	*	*	*	0	5227	0	1052	
+
+P 820  5537	*	*	5665	*	6294	*	5056	*	*	5248	6615	541	*	*	4683	3468	3990	*	*	820
+       44	*	5050	*	*	0	*	5227	0	1052	
+
+L 821  *	*	*	6131	1675	6247	*	*	*	873	3357	*	*	*	*	*	*	5967	*	*	821
+       717	1352	*	2788	226	0	*	5273	2232	1086	
+
+L 822  *	*	*	*	4211	*	*	*	*	80	*	*	*	*	*	*	*	*	*	*	822
+       0	*	*	*	*	*	*	5288	0	0	
+
+Q 823  5564	5938	1510	*	*	*	*	*	*	*	6163	5050	*	1621	2687	4031	*	*	5282	*	823
+       0	*	*	*	*	*	*	5288	0	0	
+
+G 824  1558	*	*	*	*	1644	6656	*	*	*	*	*	*	3475	2682	3931	5704	*	*	*	824
+       0	*	*	*	*	*	*	5288	0	0	
+
+I 825  *	*	*	*	*	*	*	4360	*	469	*	*	*	*	*	*	*	2218	6163	*	825
+       0	*	*	*	*	*	*	5288	0	0	
+
+R 826  3668	*	*	3239	*	*	*	*	1157	*	5606	*	*	3562	2036	5814	*	*	*	*	826
+       51	4842	*	3122	176	*	*	5288	1101	0	
+
+V 827  6121	*	*	*	*	*	*	1002	*	4437	2036	*	*	*	*	*	*	2348	*	*	827
+       0	*	*	*	*	*	0	5274	0	1045	
+
+H 828  *	*	2235	3602	*	2416	3118	*	5582	*	*	2289	*	4497	4965	3593	*	*	*	5791	828
+       0	*	*	*	*	*	0	5274	0	1045	
+
+G 829  *	1714	2937	3612	*	1556	5585	*	*	*	*	5421	*	4997	*	4439	*	*	*	5554	829
+       0	*	*	*	*	0	*	5274	0	1045	
+
+M 830  2882	*	2684	4878	*	2876	*	4123	*	*	6383	3797	*	*	*	2245	3938	3048	*	*	830
+       0	*	*	*	*	*	*	5288	0	0	
+
+E 831  3622	5854	3199	1306	*	5389	*	*	*	5681	*	5409	3874	5924	4097	2489	*	*	*	*	831
+       0	*	*	*	*	*	*	5267	0	0	
+
+A 832  6366	*	4968	2336	2794	3244	5256	5866	5924	2207	*	3530	4588	*	6144	3924	*	5404	*	*	832
+       0	*	*	*	*	*	*	5267	0	0	
+
+L 833  4745	*	4244	5763	4842	*	5631	3649	5733	1572	2689	5787	5070	2913	6604	*	5780	4738	*	*	833
+       0	*	*	*	*	*	*	5199	0	0	
+
+G 834  4951	5188	*	4209	3991	1867	3400	*	*	2447	*	*	4244	3461	*	3419	4882	*	*	*	834
+       0	*	*	*	*	*	*	4518	0	0	
+
+S 835  3403	*	2679	*	*	2079	*	*	*	4363	*	2082	*	*	*	2621	*	3938	*	*	835
+       0	*	*	*	*	*	*	4119	0	0	
+
+F 836  *	5213	*	3368	917	*	*	4144	*	4907	*	*	3736	*	3944	3102	*	*	*	*	836
+       0	*	*	0	*	*	*	3789	0	0	
+
+//
