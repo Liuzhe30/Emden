@@ -30,7 +30,6 @@ DPYD,V335L,rs72549306,fluorouracil,Other
 DPYD,Y186C,rs115232898,fluorouracil,Other
 DPYD,V995F,rs1801268,fluorouracil,Other
 DPYD,R235W,rs1801266,fluorouracil,Other
-F5,R534L,rs6025,hormonal contraceptives for systemic use,Toxicity
 CACNA1S,R1086H,rs1800559,desflurane,Toxicity
 CACNA1S,R174W,rs772226819,desflurane,Toxicity
 CACNA1S,R174W,rs772226819,enflurane,Toxicity
@@ -97,7 +96,6 @@ CYP2B6,Q172H,rs3745274,nevirapine,Metabolism/PK
 ABCG2,Q141K,rs2231142,rosuvastatin,Efficacy
 CYP4F2,V433M,rs2108622,acenocoumarol,Dosage
 CYP2B6,I328T,rs28399499,nevirapine,Toxicity
-SLCO1B1,V174A,rs4149056,hmg coa reductase inhibitors,Toxicity
 VKORC1,D36Y,rs61742245,warfarin,Dosage
 MTHFR,A222V,rs1801133,methotrexate,Toxicity
 XRCC1,Q399R,rs25487,Platinum compounds,Efficacy
@@ -106,7 +104,6 @@ CHRNA5,D398N,rs16969968,nicotine,Toxicity
 APOE,R176C,rs7412,atorvastatin,Efficacy
 ADD1,G460W,rs4961,hydrochlorothiazide,Efficacy
 EGFR,T790M,rs121434569,gefitinib,Efficacy
-ADD1,G460W,rs4961,diuretics,Efficacy
 DRD3,G9S,rs6280,clozapine,Efficacy
 ABCB1,I1145M,rs1045642,phenytoin,Dosage
 ABCB1,I1145M,rs1045642,dicloxacillin,Other
@@ -114,7 +111,6 @@ ABCB1,I1145M,rs1045642,capecitabine,Toxicity
 ABCC2,V1188E,rs17222723,tenofovir,Toxicity
 ABCB1,S893A,rs2032582,doxorubicin,Other
 ABCB1,S893A,rs2032582,digoxin,Other
-ERBB2,I655V,rs1136201,trastuzumab,Toxicity
 VKORC1,V29L,rs104894539,warfarin,Dosage
 VKORC1,V45A,rs104894540,warfarin,Dosage
 VKORC1,R58G,rs104894541,warfarin,Dosage
@@ -129,7 +125,6 @@ CYP3A,T185S,rs12721627,paclitaxel,Dosage
 UGT1A9,D256N,rs58597806,propofol,Toxicity
 SLCO1B1,N130H,rs2306283,repaglinide,Other
 CYP2C8,R139K,rs11572080,paclitaxel,Other
-TLR3,L412V,rs3775291,Measles vaccines,Efficacy
 CYP2B6,K262R,rs2279343,cyclophosphamide,Toxicity
 DRD3,G9S,rs6280,risperidone,Efficacy
 GSTP1,I105V,rs1695,fluorouracil,Toxicity
@@ -149,10 +144,8 @@ EPHX1,H139R,rs2234922,docetaxel,Dosage
 CYP2B6,R22C,rs8192709,cyclophosphamide,Toxicity
 GRK4,A142V,rs1024323,metoprolol,Efficacy
 CYP2A6,L160H,rs1801272,coumarin,Other
-COMT,V158M,rs4680,antipsychotics,Toxicity
 CYP2A6,R485L,rs28399468,nicotine,Other
 CYP2B6,Q172H,rs3745274,cyclophosphamide,Toxicity
-COMT,V158M,rs4680,antipsychotics,Other
 SHMT1,L474F,rs1979277,methotrexate,Toxicity
 CYP2C8,R139K,rs11572080,repaglinide,Dosage
 GABRQ,I478L,rs3810651,venlafaxine,Efficacy
@@ -221,8 +214,6 @@ PEAR1,N848K,rs822442,prasugrel,Efficacy
 CDA,A70T,rs60369023,cytarabine,Other
 TBXT,G177D,rs2305089,flunisolide,Efficacy
 DCK,I24F,rs66878317,gemcitabine,Other
-IL4R,I75L,rs1805010,pitrakinra,Efficacy
-TGFB1,R25Q,rs1800471,rituximab,Efficacy
 SLCO1B1,V174A,rs4149056,SN-38,Dosage
 SLC22A2,S270A,rs316019,l-tryptophan,Other
 ABCB1,I1145M,rs1045642,talinolol,Other
@@ -231,7 +222,6 @@ SLCO1B1,N130H,rs2306283,irinotecan,Efficacy
 ABCB1,I1145M,rs1045642,tamoxifen,Efficacy
 UGT1A1,G71R,rs4148323,indinavir,Toxicity
 UGT1A1,G71R,rs4148323,carvedilol,Other
-BDNF,V66M,rs6265,antipsychotics,Efficacy
 SLCO1B3,M233I,rs7311358,docetaxel,Other
 G6PD,S188F,rs5030868,glyburide,Toxicity
 ABCB1,I1145M,rs1045642,morphine,Efficacy
@@ -253,7 +243,6 @@ ADH1B,H48R,rs1229984,ethanol,Metabolism/PK
 SLCO1B1,V174A,rs4149056,mycophenolate mofetil,Toxicity
 ABCB1,I1145M,rs1045642,olanzapine,Other
 DRD3,G9S,rs6280,methylphenidate,Efficacy
-EGFR,R521K,rs2227983,egfr inhibitors,Toxicity
 ABCC2,V417I,rs2273697,deferasirox,Metabolism/PK
 GGH,T151I,rs11545078,pemetrexed,Toxicity
 FOLR3,R98C,rs61734430,pemetrexed,Efficacy
@@ -265,16 +254,13 @@ HLA-DPB1,M105V,rs1042151,aspirin,Toxicity
 ABCC4,G187W,rs11568658,latanoprost,Efficacy
 SOD2,V16A,rs4880,valproic acid,Toxicity
 SLC22A4,L503F,rs1050152,imatinib,Efficacy
-TNFRSF10A,R209T,rs20575,Tumor necrosis factor alpha (TNF-alpha) inhibitors,Efficacy
 UGT1A6,T181A,rs2070959,irinotecan,Toxicity
 COMT,V158M,rs4680,haloperidol,Toxicity
-CR1,H1658R,rs2274567,eculizumab,Efficacy
 CYP2C9,R144C,rs1799853,busulfan,Metabolism/PK
 CYP2B6,Q172H,rs3745274,imatinib,"Efficacy,Toxicity"
 ABCG2,Q141K,rs2231142,sulfasalazine,Efficacy
 SLC22A1,L160F,rs683369,imatinib,"Efficacy,Metabolism/PK"
 ABCB1,I1145M,rs1045642,tacrolimus,Toxicity
-ABCB1,I1145M,rs1045642,hmg coa reductase inhibitors,Other
 CYP4F2,V433M,rs2108622,vitamin e,Metabolism/PK
 BCHE,T271M,rs28933389,succinylcholine,Toxicity
 TAPBP,T260R,rs2071888,aspirin,Toxicity
@@ -314,7 +300,6 @@ GSTP1,A114V,rs1138272,cisplatin,Efficacy
 MTHFR,A222V,rs1801133,benazepril,Efficacy
 ABCB1,I1145M,rs1045642,daptomycin,Metabolism/PK
 BDNF,V66M,rs6265,olanzapine,Efficacy
-BDNF,V66M,rs6265,antipsychotics,Toxicity
 POLG,Q1236H,rs3087374,valproic acid,Toxicity
 GLP1R,P7L,rs10305420,liraglutide,Efficacy
 GLP1R,G168S,rs6923761,liraglutide,Efficacy
@@ -331,12 +316,10 @@ NQO1,P187S,rs1800566,warfarin,Dosage
 ABCB1,I1145M,rs1045642,sorafenib,Toxicity
 ABCB1,I1145M,rs1045642,agomelatine,Efficacy
 ABCB1,I1145M,rs1045642,venlafaxine,Efficacy
-ABCB1,I1145M,rs1045642,Selective serotonin reuptake inhibitors,Efficacy
 DRD3,G9S,rs6280,quetiapine,Metabolism/PK
 ABCB1,I1145M,rs1045642,modafinil,Efficacy
 ABCB1,I1145M,rs1045642,silibinin,Metabolism/PK
 ABCB1,I1145M,rs1045642,sunitinib,Toxicity
-ARMS2,A69S,rs10490924,bevacizumab,Efficacy
 TLR7,Q11P,rs179008,imiquimod,Efficacy
 ADAMTS1,A227S,rs428785,pravastatin,Efficacy
 HTR2A,H452Y,rs6314,olanzapine,Efficacy
@@ -354,7 +337,6 @@ AGT,M268T,rs699,quinapril,Efficacy
 TCF19,P241L,rs2073724,nevirapine,Toxicity
 TAS2R16,N172K,rs846664,ethanol,Toxicity
 CYP3A4,M445T,rs4986910,fluvastatin,Efficacy
-TBX21,H33Q,rs2240017,corticosteroids,Efficacy
 FAAH,P129T,rs324420,cannabinoids,Toxicity
 ABCB1,S893A,rs2032582,cyclosporine,Dosage
 PPARG,P12A,rs1801282,olanzapine,Toxicity
@@ -362,13 +344,10 @@ NOS3,D298E,rs1799983,sorafenib,Efficacy
 CYP2A6,L8V,rs8192720,tegafur,Other
 OR52E2,N5S,rs16909440,lithium,Efficacy
 CYP2D6,T107N,rs28371706,nevirapine,Metabolism/PK
-CFH,V62I,rs800292,bevacizumab,Efficacy
 UGT2B7,Y268H,rs7439366,methadone,"Efficacy,Toxicity"
 AKR1C3,R258C,rs62621365,exemestane,Metabolism/PK
 AKR1C4,G135E,rs11253043,exemestane,Metabolism/PK
 GSTP1,I105V,rs1695,dimethyl fumarate,Efficacy
-ABCB1,I1145M,rs1045642,antipsychotics,Dosage
-ABCB1,S893A,rs2032582,antipsychotics,Dosage
 UGT1A9,M33T,rs72551330,sulfinpyrazone,Metabolism/PK
 UGT2B7,R124S,rs28365063,carbamazepine,Metabolism/PK
 BCHE,A567T,rs1803274,rivastigmine,Efficacy
@@ -382,8 +361,6 @@ SLCO1B1,N130H,rs2306283,rifampin,Metabolism/PK
 CYP2C8,R139K,rs11572080,paclitaxel,Toxicity
 CDA,K27Q,rs2072671,cytarabine,Toxicity
 COMT,V158M,rs4680,opioids,Other
-HTR2A,H452Y,rs6314,antidepressants,Efficacy
-F13A1,V35L,rs5985,photodynamic therapy,Efficacy
 SLCO1B3,S112P,rs4149117,mycophenolate mofetil,"Dosage,Toxicity"
 CTLA4,T17S,rs231775,cyclosporine,Toxicity
 SERPINE1,A15T,rs6092,dexamethasone,Toxicity
@@ -396,7 +373,6 @@ NCOA1,P1272S,rs1804645,tamoxifen,Toxicity
 SLC6A12,C10R,rs557881,aspirin,Toxicity
 APOB,P2739Q,rs676210,fenofibrate,Efficacy
 CHRNA5,D398N,rs16969968,cotinine,Metabolism/PK
-CHRNA5,D398N,rs16969968,Opium alkaloids and derivatives,Toxicity
 DRD3,G9S,rs6280,methamphetamine,Toxicity
 ABCB1,S893A,rs2032582,atorvastatin,Toxicity
 HSPA1A,I74M,rs1043620,carbamazepine,Toxicity
@@ -418,16 +394,12 @@ UGT1A8,A173G,rs1042597,raloxifene,Efficacy
 B4GALT2,I303M,rs1061781,clopidogrel,Efficacy
 CYP4F2,V433M,rs2108622,warfarin,Efficacy
 GGCX,R325Q,rs699664,warfarin,Efficacy
-LGALS3,Q201H,rs11125,Antibiotics,Toxicity
 SLCO1B1,V174A,rs4149056,rosiglitazone,Efficacy
-IL23R,R381Q,rs11209026,Tumor necrosis factor alpha (TNF-alpha) inhibitors,Toxicity
-EDN1,K198N,rs5370,bevacizumab,Efficacy
 ABCB1,I1145M,rs1045642,clozapine,Toxicity
 ABCB1,I1145M,rs1045642,dabigatran,Metabolism/PK
 ABCB1,I1145M,rs1045642,rivaroxaban,Metabolism/PK
 ABCB1,S893A,rs2032582,dabigatran,Metabolism/PK
 ABCB1,S893A,rs2032582,rivaroxaban,Metabolism/PK
-EGFR,R521K,rs2227983,cetuximab,Efficacy
 GSTP1,I105V,rs1695,Platinum compounds,Efficacy
 ABCB1,S893A,rs2032582,tacrolimus,Efficacy
 ABCB1,I1145M,rs1045642,tacrolimus,Efficacy
@@ -439,9 +411,7 @@ ABCB1,S893A,rs2032582,anastrozole,Metabolism/PK
 TPMT,Y240C,rs1142345,cisplatin,Toxicity
 TPMT,A154T,rs1800460,cisplatin,Toxicity
 ABCB1,S893A,rs2032582,atazanavir,Toxicity
-CD33,G304R,rs35112940,gemtuzumab ozogamicin,Efficacy
 ABCB1,S893A,rs2032582,clopidogrel,Toxicity
-ADRB1,S49G,rs1801252,Beta Blocking Agents,Toxicity
 NUDT15,R34T,rs766023281,mercaptopurine,"Dosage,Toxicity"
 ABCB1,S893A,rs2032582,everolimus,Toxicity
 ABCB1,I1145M,rs1045642,everolimus,Toxicity
@@ -451,12 +421,8 @@ ABCG2,Q141K,rs2231142,tenofovir,Metabolism/PK
 CYP2C19,M1L,rs28399504,mephenytoin,Metabolism/PK
 ABCG2,Q141K,rs2231142,dolutegravir,Metabolism/PK
 CYP2B6,M46L,rs35303484,efavirenz,Metabolism/PK
-SLCO1B1,N130H,rs2306283,hmg coa reductase inhibitors,Toxicity
 CES1,E220G,rs200707504,oseltamivir,Metabolism/PK
-KNG1,I581T,rs710446,hormonal contraceptives for systemic use,Toxicity
-CYP2C9,R144C,rs1799853,hormonal contraceptives for systemic use,Toxicity
 SLC6A3,N38K,rs6350,ethanol,Toxicity
-HLA-B,Y91S,rs1071816,Antithyroid Preparations,Toxicity
 ADRB2,T164I,rs1800888,salbutamol,Other
 ABCB1,I1145M,rs1045642,clopidogrel,"Efficacy,Toxicity,Metabolism/PK"
 CES1,S75N,rs2307240,clopidogrel,Efficacy
@@ -466,15 +432,12 @@ ABCB1,I1145M,rs1045642,imatinib,Efficacy
 XPC,A499V,rs2228000,Platinum compounds,Toxicity
 SLCO1B3,S112P,rs4149117,sunitinib,Efficacy
 BCHE,A567T,rs1803274,cocaine,Other
-TIRAP,S180L,rs8177374,ustekinumab,Efficacy
-TLR5,F616L,rs5744174,ustekinumab,Efficacy
 ABCB1,S893A,rs2032582,sunitinib,Toxicity
 ABCB1,S893A,rs2032582,sunitinib,Efficacy
 KDR,C482R,rs34231037,pazopanib,"Efficacy,Metabolism/PK"
 XRCC3,T241M,rs861539,Platinum compounds,Efficacy
 CYP2C9,R144C,rs1799853,irbesartan,Efficacy
 FMO3,E308G,rs2266780,nicotine,Metabolism/PK
-IRS1,G971R,rs1801278,Drugs Used In Diabetes,Efficacy
 SLC22A1,L160F,rs683369,imatinib,Toxicity
 ABCG2,Q141K,rs2231142,methotrexate,Toxicity
 SLC22A1,R61C,rs12208357,metformin,Metabolism/PK
@@ -499,7 +462,6 @@ ABCB1,I1145M,rs1045642,granisetron,Efficacy
 CYP2B6,R22C,rs8192709,methadone,Metabolism/PK
 CYP2B6,R487S,rs3211371,methadone,Metabolism/PK
 ABCC2,I1324M,rs3740066,tacrolimus,Metabolism/PK
-ABCB1,I1145M,rs1045642,antineoplastic agents,Toxicity
 CFTR,G970R,rs397508453,ivacaftor,Efficacy
 ABCB1,N21H,rs9282564,methadone,Metabolism/PK
 UGT2B7,Y268H,rs7439366,oxycodone,Efficacy
@@ -547,7 +509,6 @@ SULT1A3,K234N,rs1328799050,tapentadol,Metabolism/PK
 ABCB1,I1145M,rs1045642,oxcarbazepine,"Efficacy,Metabolism/PK"
 ANKK1,E713K,rs1800497,bupropion,Efficacy
 ABCB1,I1145M,rs1045642,losartan,Efficacy
-TNFRSF1B,M196R,rs1061622,etanercept,Efficacy
 ABCB1,I1145M,rs1045642,fentanyl,Toxicity
 ABCB1,S893A,rs2032582,fentanyl,Toxicity
 ABCB1,N21H,rs9282564,tacrolimus,Metabolism/PK
@@ -645,7 +606,6 @@ SULT1A1,P47S,rs544820732,desmethylnaproxen,Metabolism/PK
 SULT1A1,P47S,rs544820732,tapentadol,Metabolism/PK
 AQP1,G165D,rs28362731,cisplatin,Toxicity
 ADRB1,S49G,rs1801252,metoprolol,Efficacy
-HSD3B1,T367I,rs1047303,glucocorticoids,Efficacy
 SLC15A2,L350V,rs2257212,sorafenib,Efficacy
 ADH1B,H48R,rs1229984,acetaldehyde,Metabolism/PK
 CCL11,A23P,rs1129844,methadone,Toxicity
@@ -667,7 +627,6 @@ PAH,Y414C,rs5030860,carbocisteine,Metabolism/PK
 PAH,Y414C,rs5030860,l-phenylalanine,Metabolism/PK
 PAH,R68S,rs76394784,l-phenylalanine,Metabolism/PK
 SLC22A2,S270A,rs316019,Platinum compounds,Toxicity
-APOE,C130R,rs429358,hmg coa reductase inhibitors,Efficacy
 APOE,R176C,rs7412,pravastatin,Efficacy
 APOE,R176C,rs7412,fluvastatin,Efficacy
 APOE,R176C,rs7412,fenofibrate,Efficacy
@@ -677,7 +636,6 @@ APOE,C130R,rs429358,simvastatin,Efficacy
 ABCB1,I1145M,rs1045642,atorvastatin,Efficacy
 SLCO1B3,S112P,rs4149117,mycophenolic acid,Efficacy
 SLCO1B3,M233I,rs7311358,mycophenolic acid,Efficacy
-TRPV1,P91S,rs222749,botulinum toxin type a,Efficacy
 SLCO1B1,V174A,rs4149056,letermovir,Metabolism/PK
 UGT1A1,G71R,rs4148323,letermovir,Metabolism/PK
 APOB,A618V,rs679899,warfarin,Toxicity
@@ -738,7 +696,6 @@ ABCB1,I1145M,rs1045642,digoxin,Metabolism/PK
 UGT2B10,D67Y,rs61750900,nicotine,Metabolism/PK
 SOD2,V16A,rs4880,cyclophosphamide,Efficacy
 FLT3,T227M,rs1933437,sunitinib,Toxicity
-CBR3,V244M,rs1056892,anthracyclines and related substances,Toxicity
 SLCO1B1,V174A,rs4149056,cerivastatin,Toxicity
 ABCB1,S893A,rs2032582,simvastatin,Efficacy
 OPRM1,N40D,rs1799971,naloxone,Efficacy
@@ -793,7 +750,6 @@ CFTR,S1235R,rs34911792,ivacaftor,Efficacy
 CFTR,T338I,rs77409459,ivacaftor,Efficacy
 CFTR,L927P,rs397508435,ivacaftor,Efficacy
 CFTR,A561E,rs121909047,ivacaftor,Efficacy
-RYR1,R614C,rs118192172,hmg coa reductase inhibitors,Toxicity
 COMT,V158M,rs4680,opioids,Dosage
 OPRM1,R181C,rs79910351,fentanyl,Efficacy
 OPRM1,R181C,rs79910351,remifentanil,Efficacy
@@ -805,7 +761,6 @@ SLCO1B1,V174A,rs4149056,simvastatin,Efficacy
 COMT,V158M,rs4680,propranolol,Efficacy
 ADRB1,S49G,rs1801252,carvedilol,Efficacy
 CFTR,G542R,rs113993959,ataluren,Other
-KRAS,G13V,rs112445441,cetuximab,Efficacy
 APOA5,S19L,rs3135506,fenofibrate,Efficacy
 ABCB1,I1145M,rs1045642,methadone,Metabolism/PK
 CYP2A7P1,Q172H,rs3745274,opioids,Toxicity
@@ -902,7 +857,6 @@ MTHFR,A222V,rs1801133,methotrexate,Metabolism/PK
 MTHFR,A222V,rs1801133,folic acid,Metabolism/PK
 MTHFR,A222V,rs1801133,methotrexate,Efficacy
 ABCC4,K1116N,rs1751034,tenofovir,Metabolism/PK
-ABCB1,I1145M,rs1045642,highly active antiretroviral therapy (haart),Efficacy
 ABCB1,I1145M,rs1045642,tramadol,Toxicity
 SLCO1B1,V174A,rs4149056,Glucarpidase,Toxicity
 VEGFB,D136E,rs12366035,sorafenib,Toxicity
