@@ -13,11 +13,11 @@ protein_dict = {'C':eyes[0], 'D':eyes[1], 'S':eyes[2], 'Q':eyes[3], 'K':eyes[4],
 fingerprint_dict = {'1':1,'0':0}
 
 # feature coding & dataset generate
-window_len = 30
+window_len = 25
 
 merged_dataset = pd.read_csv('../datasets/merged_evidence.csv')
-civic_drug_table = pd.read_csv('../datasets/middlefile/civic_drug_table_fpfixed_smilenum.csv')
-pharmgkb_drug_table = pd.read_csv('../datasets/middlefile/pharmgkb_drug_table_fpfixed_smilenum.csv')
+civic_drug_table = pd.read_pickle('../datasets/middlefile/civic_drug_table_fpfixed_smilenum.pkl')
+pharmgkb_drug_table = pd.read_pickle('../datasets/middlefile/pharmgkb_drug_table_fpfixed_smilenum.pkl')
 dataset_feature = pd.DataFrame(columns=['gene', 'uniprotac', 'variant', 'drug', 
                                         'smile', 'smile_num' ,'cactvs_fingerprint', 'molecular_weight', # drug features
                                         'fasta_before', 'fasta_after', 'onehot_before', 'onehot_after', 'hhm_before', 'hhm_after', 'ss', 'rasa', # sequence features
@@ -30,18 +30,24 @@ for i in tqdm(range(merged_dataset.shape[0])):
     smile = merged_dataset['smile'][i]
     label = merged_dataset['label'][i]
     source = merged_dataset['source'][i]
+    smile_array = np.zeros(shape=(85,))
     # drug features from file
     if(source == 'civic'):
         smile_num = civic_drug_table[civic_drug_table['drugname'] == drug]['smile_array'].values[0]
+        for j in range(min(85, smile_num.shape[0])):
+            smile_array[j] = smile_num[j]
         cactvs_fingerprint_str = civic_drug_table[civic_drug_table['drugname'] == drug]['cactvs_fingerprint'].values[0]
         molecular_weight = civic_drug_table[civic_drug_table['drugname'] == drug]['molecular_weight'].values[0]
     else:
         smile_num = pharmgkb_drug_table[pharmgkb_drug_table['drugname'] == drug]['smile_array'].values[0]
+        for j in range(min(85, smile_num.shape[0])):
+            smile_array[j] = smile_num[j]
         cactvs_fingerprint_str = pharmgkb_drug_table[pharmgkb_drug_table['drugname'] == drug]['cactvs_fingerprint'].values[0]
         molecular_weight = pharmgkb_drug_table[pharmgkb_drug_table['drugname'] == drug]['molecular_weight'].values[0]
     cactvs_fingerprint = []
     for strr in cactvs_fingerprint_str:
         cactvs_fingerprint.append(fingerprint_dict[strr])
+    cactvs_fingerprint = np.array(cactvs_fingerprint)
     # sequence features from file
     pos = int(variant[1:-1])
     pos_after = variant[-1]
@@ -53,6 +59,7 @@ for i in tqdm(range(merged_dataset.shape[0])):
         onehot_before = []
         for strr in fasta_before:
             onehot_before.append(protein_dict[strr])
+    onehot_before = np.array(onehot_before)
     # fasta after
     with open('../datasets/middlefile/fasta/' + gene + '_' + variant + '.fasta') as file:
         fasta_file = file.readlines()
@@ -62,6 +69,7 @@ for i in tqdm(range(merged_dataset.shape[0])):
         for strr in fasta_after:
             onehot_after.append(protein_dict[strr])
     fasta_len = len(fasta_full)
+    onehot_after = np.array(onehot_after)
     # hhm before
     with open('../datasets/middlefile/hhm/' + uniprotac + '.hhm') as hhm_file:     
         hhm_matrix = np.zeros([fasta_len, 30], float)
@@ -81,25 +89,19 @@ for i in tqdm(range(merged_dataset.shape[0])):
                     if(s == '*'):
                         each_item[idx] = '99999'                            
                 for j in range(0, 20):
-                    try:
-                        hhm_matrix[idxx - 1, j] = int(each_item[j])
-                        #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j])/2000))                                              
-                    except IndexError:
-                        pass
+                    hhm_matrix[idxx - 1, j] = int(each_item[j])
+                    #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j])/2000))                                              
             elif(len(hhm_line.split()) == 10):
                 each_item = hhm_line.split()[0:10]
                 for idx, s in enumerate(each_item):
                     if(s == '*'):
                         each_item[idx] = '99999'                             
                 for j in range(20, 30):
-                    try:
-                        hhm_matrix[idxx - 1, j] = int(each_item[j - 20]) 
-                        #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j - 20])/2000))                                               
-                    except IndexError:
-                        pass                            
+                    hhm_matrix[idxx - 1, j] = int(each_item[j - 20]) 
+                    #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j - 20])/2000))                                                               
             hhm_line = hhm_file.readline()
         hhm_before_array = hhm_matrix[pos-window_len-1:pos+window_len, :]
-        hhm_before = hhm_before_array.tolist()
+        #hhm_before = hhm_before_array.tolist()
     # hhm after
     with open('../datasets/middlefile/hhm/' + gene + '_' + variant + '.hhm') as hhm_file:     
         hhm_matrix = np.zeros([fasta_len, 30], float)
@@ -119,36 +121,30 @@ for i in tqdm(range(merged_dataset.shape[0])):
                     if(s == '*'):
                         each_item[idx] = '99999'                            
                 for j in range(0, 20):
-                    try:
-                        hhm_matrix[idxx - 1, j] = int(each_item[j])
-                        #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j])/2000))                                              
-                    except IndexError:
-                        pass
+                    hhm_matrix[idxx - 1, j] = int(each_item[j])
+                    #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j])/2000))                                              
             elif(len(hhm_line.split()) == 10):
                 each_item = hhm_line.split()[0:10]
                 for idx, s in enumerate(each_item):
                     if(s == '*'):
                         each_item[idx] = '99999'                             
                 for j in range(20, 30):
-                    try:
-                        hhm_matrix[idxx - 1, j] = int(each_item[j - 20]) 
-                        #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j - 20])/2000))                                               
-                    except IndexError:
-                        pass                            
+                    hhm_matrix[idxx - 1, j] = int(each_item[j - 20]) 
+                    #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j - 20])/2000))                                                                        
             hhm_line = hhm_file.readline()
         hhm_after_array = hhm_matrix[pos-window_len-1:pos+window_len, :]
-        hhm_after = hhm_after_array.tolist()
+        #hhm_after = hhm_after_array.tolist()
     # rasa
     rasa_array = np.loadtxt('../datasets/middlefile/rASA/' + uniprotac + '.rasa')
     rasa_array = rasa_array[pos-window_len-1:pos+window_len]
-    rasa = rasa_array.tolist()
+    #rasa = rasa_array.tolist()
     # ss
     ss_array = np.loadtxt('../datasets/middlefile/SS/' + uniprotac + '.ss')
     ss_array = ss_array[pos-window_len-1:pos+window_len, :]
-    ss = ss_array.tolist()
+    #ss = ss_array.tolist()
     dataset_feature = dataset_feature.append([{'gene': gene, 'uniprotac': uniprotac, 'variant': variant, 'drug': drug, 
-                                        'smile': smile, 'smile_num':smile_num, 'cactvs_fingerprint': cactvs_fingerprint, 'molecular_weight': molecular_weight, 
+                                        'smile': smile, 'smile_num':smile_array, 'cactvs_fingerprint': cactvs_fingerprint, 'molecular_weight': molecular_weight, 
                                         'fasta_before':fasta_before, 'fasta_after':fasta_after, 'onehot_before':onehot_before, 'onehot_after':onehot_after, 
-                                        'hhm_before': hhm_before, 'hhm_after': hhm_after, 'ss': ss, 'rasa': rasa, 
+                                        'hhm_before': hhm_before_array, 'hhm_after': hhm_after_array, 'ss': ss_array, 'rasa': rasa_array, 
                                         'label': label, 'source':source}], ignore_index=True)
-dataset_feature.to_csv('../datasets/dataset_featurecode.csv', index=None)
+dataset_feature.to_pickle('../datasets/dataset_featurecode.dataset')

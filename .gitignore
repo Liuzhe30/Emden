@@ -1,6 +1,10 @@
+# middle protein feature files
 *.pdb
 *.fasta
 *.hhm
 *.dssp
 *.rasa
 *.ss
+
+# 
+*.pyc
