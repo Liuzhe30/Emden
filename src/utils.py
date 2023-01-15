@@ -7,7 +7,7 @@ import torch
 
 class PyDataset(InMemoryDataset):
     def __init__(self, root='/tmp', dataset='train', 
-                 xs=None, xfp=None, xv=None, y=None, transform=None,
+                 xs=None, xfp=None, xsb=None, xsa=None, xv=None, y=None, transform=None,
                  pre_transform=None,smile_graph=None):
 
         #root is required for save preprocessed data, default is '/tmp'
@@ -20,7 +20,7 @@ class PyDataset(InMemoryDataset):
             self.data, self.slices = torch.load(self.processed_paths[0])
         else:
             print('Pre-processed data {} not found, doing pre-processing...'.format(self.processed_paths[0]))
-            self.process(xs, xfp, xv, y, smile_graph)
+            self.process(xs, xfp, xsb, xsa, xv, y, smile_graph)
             self.data, self.slices = torch.load(self.processed_paths[0])
 
     @property
@@ -46,14 +46,16 @@ class PyDataset(InMemoryDataset):
     # xs - list of SMILES, xfp: list of fingerprint, xv: variants features 
     # y: list of labels
     # Return: PyTorch-Geometric format processed data
-    def process(self, xs, xfp, xv, y, smile_graph):
-        assert (len(xs) == len(xfp) and len(xs) == len(xv) and len(xs) == len(y)), "The four lists must be the same length!"
+    def process(self, xs, xfp, xsb, xsa, xv, y, smile_graph):
+        assert (len(xs) == len(xfp) and len(xs) == len(xv) and len(xs) == len(y)), "The six lists must be the same length!"
         data_list = []
         data_len = len(xs)
         for i in range(data_len):
             print('Converting SMILES to graph: {}/{}'.format(i+1, data_len))
             smiles = xs[i]
             fingerprint = xfp[i]
+            seqbefore = xsb[i]
+            seqafter = xsa[i]
             variant = xv[i]
             labels = y[i]
             # convert SMILES to molecular representation using rdkit
@@ -63,6 +65,8 @@ class PyDataset(InMemoryDataset):
                                 edge_index=torch.LongTensor(edge_index).transpose(1, 0),
                                 y=torch.FloatTensor([labels]))
             GCNData.fingerprint = torch.LongTensor([fingerprint])
+            GCNData.seqbefore = torch.LongTensor([seqbefore])
+            GCNData.seqafter = torch.LongTensor([seqafter])
             GCNData.variant = torch.LongTensor([variant])
             GCNData.__setitem__('c_size', torch.LongTensor([c_size]))
             # append graph, label and target sequence to data list
@@ -79,8 +83,11 @@ class PyDataset(InMemoryDataset):
         torch.save((data, slices), self.processed_paths[0])
 
 def rmse(y,f):
-    rmse = sqrt(((y - f)**2).mean(axis=0))
-    return rmse
+    return sqrt(((y - f)**2).mean(axis=0))
+
 def mse(y,f):
-    mse = ((y - f)**2).mean(axis=0)
-    return mse
+    return ((y - f)**2).mean(axis=0)
+
+def cee(y,t): # cross_entropy_error
+    delta = 1e-7  
+    return -np.sum(t * np.log(y + delta))

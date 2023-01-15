@@ -77,16 +77,20 @@ def split_dataset(filename):
 def flatten_dataset(df):
     new_columns = ['smile', 'fingerprint', 'variantfeature', 'label']
     new_data = pd.DataFrame(columns=new_columns)
+    print(df.shape[0])
     for i in range(df.shape[0]): # df.shape[0]
         variantfeature_list = []
+        seqbefore_list = []
+        seqafter_list = []
         smile = df['smile'][i]
         fingerprint = df['cactvs_fingerprint'][i] # array (881,)
         onehot_before = df['onehot_before'][i]
+        # print(onehot_before.shape) (61, 20)
         for item in np.nditer(onehot_before):
-            variantfeature_list.append(int(item))
+            seqbefore_list.append(int(item))
         onehot_after = df['onehot_after'][i]
         for item in np.nditer(onehot_after):
-            variantfeature_list.append(int(item))
+            seqafter_list.append(int(item))
         hhm_before = df['hhm_before'][i]
         for item in np.nditer(hhm_before):
             variantfeature_list.append(int(item))
@@ -99,11 +103,13 @@ def flatten_dataset(df):
         ss = df['ss'][i]
         for item in np.nditer(ss):
             variantfeature_list.append(int(item))
-        variantfeature = np.array(variantfeature_list)
+        variantfeature = np.array(variantfeature_list) # 3904
+        seqbefore = np.array(seqbefore_list) # 1220
+        seqafter = np.array(seqafter_list) #1220
         label = df['label'][i]
-        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 
+        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':seqbefore, 'seqafter':seqafter,
                                             'variantfeature': variantfeature, 'label': label}], ignore_index=True)
-        return new_data
+    return new_data
 
 def generate_5fold_dataset():
 
@@ -122,19 +128,21 @@ def generate_5fold_dataset():
     
     for i in range(5): # 5-fold
         flatten_folds_train[i].to_pickle('../datasets/fivefold/'+str(i+1)+'fold_train_evidence.dataset')
-        smile, fp, variant, Y = np.asarray(list(flatten_folds_train[i]['smile'])),np.asarray(list(flatten_folds_train[i]['fingerprint'])), \
+        smile, fp, sb, sa, variant, Y = np.asarray(list(flatten_folds_train[i]['smile'])),np.asarray(list(flatten_folds_train[i]['fingerprint'])), \
+                                                        np.asarray(list(flatten_folds_train[i]['seqbefore'])), np.asarray(list(flatten_folds_train[i]['seqafter'])), \
                                                         np.asarray(list(flatten_folds_train[i]['variantfeature'])),np.asarray(list(flatten_folds_train[i]['label']))
         # make data PyTorch Geometric ready
         print('preparing '+str(i+1)+'fold_train.pt in pytorch format!')
-        fold_data = PyDataset(root='../datasets/fivefold', dataset=str(i+1)+'fold_train', xs=smile, xfp=fp, xv=variant, y=Y, smile_graph=smile_graph)
+        fold_data = PyDataset(root='../datasets/fivefold', dataset=str(i+1)+'fold_train', xs=smile, xfp=fp, xsb=sb, xsa=sa, xv=variant, y=Y, smile_graph=smile_graph)
         print('created')
 
         flatten_folds_valid[i].to_pickle('../datasets/fivefold/'+str(i+1)+'fold_valid_evidence.dataset')
-        smile, fp, variant, Y = np.asarray(list(flatten_folds_valid[i]['smile'])),np.asarray(list(flatten_folds_valid[i]['fingerprint'])), \
+        smile, fp, sb, sa, variant, Y = np.asarray(list(flatten_folds_valid[i]['smile'])),np.asarray(list(flatten_folds_valid[i]['fingerprint'])), \
+                                                        np.asarray(list(flatten_folds_valid[i]['seqbefore'])), np.asarray(list(flatten_folds_valid[i]['seqafter'])), \
                                                         np.asarray(list(flatten_folds_valid[i]['variantfeature'])),np.asarray(list(flatten_folds_valid[i]['label']))
         # make data PyTorch Geometric ready
         print('preparing '+str(i+1)+'fold_valid.pt in pytorch format!')
-        fold_data = PyDataset(root='../datasets/fivefold', dataset=str(i+1)+'fold_valid', xs=smile, xfp=fp, xv=variant, y=Y, smile_graph=smile_graph)
+        fold_data = PyDataset(root='../datasets/fivefold', dataset=str(i+1)+'fold_valid', xs=smile, xfp=fp, xsb=sb, xsa=sa, xv=variant, y=Y, smile_graph=smile_graph)
         print('created')
         
 
@@ -167,17 +175,19 @@ def generate_dataset():
     if ((not os.path.isfile(processed_data_file_train)) or (not os.path.isfile(processed_data_file_test))):
         df = pd.read_pickle(evidence_data_file_train)
         
-        train_smile, train_fp, train_variant,  train_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
+        train_smile, train_fp, train_sb, train_sa, train_variant,  train_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
+                                                        np.asarray(list(df['seqbefore'])), np.asarray(list(df['seqafter'])), \
                                                         np.asarray(list(df['variantfeature'])),np.asarray(list(df['label']))
         df = pd.read_pickle(evidence_data_file_test)
-        test_smile, test_fp, test_variant,  test_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
+        test_smile, test_fp, test_sb, test_sa, test_variant,  test_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
+                                                        np.asarray(list(df['seqbefore'])), np.asarray(list(df['seqafter'])), \
                                                         np.asarray(list(df['variantfeature'])),np.asarray(list(df['label']))
 
         # make data PyTorch Geometric ready
         print('preparing train_data.pt in pytorch format!')
-        train_data = PyDataset(root='../datasets', dataset='train', xs=train_smile, xfp=train_fp, xv=train_variant, y=train_Y, smile_graph=smile_graph)
+        train_data = PyDataset(root='../datasets', dataset='train', xs=train_smile, xfp=train_fp, xsb=train_sb, xsa=train_sa, xv=train_variant, y=train_Y, smile_graph=smile_graph)
         print('preparing test_data.pt in pytorch format!')
-        test_data = PyDataset(root='../datasets', dataset='test', xs=test_smile, xfp=test_fp, xv=test_variant, y=test_Y,smile_graph=smile_graph)
+        test_data = PyDataset(root='../datasets', dataset='test', xs=test_smile, xfp=test_fp, xsb=test_sb, xsa=test_sa, xv=test_variant, y=test_Y,smile_graph=smile_graph)
         print(processed_data_file_train, ' and ', processed_data_file_test, ' have been created')        
     else:
         print(processed_data_file_train, ' and ', processed_data_file_test, ' have already existed') 
@@ -186,7 +196,7 @@ def generate_dataset():
 
 if __name__=='__main__':
 
-    # generate_dataset() # prepare dataset (train/test)
+    #generate_dataset() # prepare dataset (train/test)
     generate_5fold_dataset() # prepare dataset (5fold-train/test)
         
         
