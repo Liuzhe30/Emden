@@ -13,14 +13,14 @@ protein_dict = {'C':eyes[0], 'D':eyes[1], 'S':eyes[2], 'Q':eyes[3], 'K':eyes[4],
 fingerprint_dict = {'1':1,'0':0}
 
 # feature coding & dataset generate
-window_len = 25
+window_len = 30
 
 merged_dataset = pd.read_csv('../datasets/merged_evidence.csv')
 civic_drug_table = pd.read_pickle('../datasets/middlefile/civic_drug_table_fpfixed_smilenum.pkl')
 pharmgkb_drug_table = pd.read_pickle('../datasets/middlefile/pharmgkb_drug_table_fpfixed_smilenum.pkl')
 dataset_feature = pd.DataFrame(columns=['gene', 'uniprotac', 'variant', 'drug', 
                                         'smile', 'smile_num' ,'cactvs_fingerprint', 'molecular_weight', # drug features
-                                        'fasta_before', 'fasta_after', 'onehot_before', 'onehot_after', 'hhm_before', 'hhm_after', 'ss', 'rasa', # sequence features
+                                        'onehot_before', 'onehot_after', 'hhm_before', 'hhm_after', 'ss', 'rasa', # sequence features
                                         'label', 'source'])
 for i in tqdm(range(merged_dataset.shape[0])):
     gene = merged_dataset['gene'][i]
@@ -55,19 +55,41 @@ for i in tqdm(range(merged_dataset.shape[0])):
     with open('../datasets/middlefile/fasta/' + uniprotac + '.fasta') as file:
         fasta_file = file.readlines()
         fasta_full = fasta_file[1]
-        fasta_before = fasta_full[pos-window_len-1:pos+window_len]
+        seq_len = len(fasta_full)
         onehot_before = []
-        for strr in fasta_before:
-            onehot_before.append(protein_dict[strr])
+        if(pos <= window_len - 1):
+            for j in range(window_len-pos+1): # padding head
+                onehot_before.append(np.zeros(20))
+            for strr in fasta_full[0:pos+window_len]:
+                onehot_before.append(protein_dict[strr])
+        elif(seq_len - pos < window_len):
+            for strr in fasta_full[pos-window_len-1:]:
+                onehot_before.append(protein_dict[strr])
+            for j in range(window_len-seq_len+pos): # padding end
+                onehot_before.append(np.zeros(20))
+        else:        
+            for strr in fasta_full[pos-window_len-1:pos+window_len]:
+                onehot_before.append(protein_dict[strr])
     onehot_before = np.array(onehot_before)
     # fasta after
     with open('../datasets/middlefile/fasta/' + gene + '_' + variant + '.fasta') as file:
         fasta_file = file.readlines()
         fasta_full = fasta_file[1]
-        fasta_after = fasta_full[pos-window_len-1:pos+window_len]
+        #fasta_after = fasta_full[pos-window_len-1:pos+window_len]
         onehot_after = []
-        for strr in fasta_after:
-            onehot_after.append(protein_dict[strr])
+        if(pos <= window_len - 1):
+            for j in range(window_len-pos+1): # padding head
+                onehot_after.append(np.zeros(20))
+            for strr in fasta_full[0:pos+window_len]:
+                onehot_after.append(protein_dict[strr])
+        elif(seq_len - pos < window_len):
+            for strr in fasta_full[pos-window_len-1:]:
+                onehot_after.append(protein_dict[strr])
+            for j in range(window_len-seq_len+pos): # padding end
+                onehot_after.append(np.zeros(20))
+        else:        
+            for strr in fasta_full[pos-window_len-1:pos+window_len]:
+                onehot_after.append(protein_dict[strr])
     fasta_len = len(fasta_full)
     onehot_after = np.array(onehot_after)
     # hhm before
@@ -100,7 +122,14 @@ for i in tqdm(range(merged_dataset.shape[0])):
                     hhm_matrix[idxx - 1, j] = int(each_item[j - 20]) 
                     #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j - 20])/2000))                                                               
             hhm_line = hhm_file.readline()
-        hhm_before_array = hhm_matrix[pos-window_len-1:pos+window_len, :]
+        if(pos <= window_len - 1):
+            padding = np.zeros(shape=[window_len-pos+1,30])
+            hhm_before_array = np.vstack((padding,hhm_matrix[0:pos+window_len, :])) 
+        elif(seq_len - pos < window_len):
+            padding = np.zeros(shape=[window_len-seq_len+pos,30])
+            hhm_before_array = np.vstack((hhm_matrix[pos-window_len-1:, :],padding))
+        else:
+            hhm_before_array = hhm_matrix[pos-window_len-1:pos+window_len, :]
         #hhm_before = hhm_before_array.tolist()
     # hhm after
     with open('../datasets/middlefile/hhm/' + gene + '_' + variant + '.hhm') as hhm_file:     
@@ -132,19 +161,45 @@ for i in tqdm(range(merged_dataset.shape[0])):
                     hhm_matrix[idxx - 1, j] = int(each_item[j - 20]) 
                     #hhm_matrix[idxx - 1, j] = 10/(1 + math.exp(-1 * int(each_item[j - 20])/2000))                                                                        
             hhm_line = hhm_file.readline()
-        hhm_after_array = hhm_matrix[pos-window_len-1:pos+window_len, :]
+        if(pos <= window_len - 1):
+            padding = np.zeros(shape=[window_len-pos+1,30])
+            hhm_after_array = np.vstack((padding,hhm_matrix[0:pos+window_len, :])) 
+        elif(seq_len - pos < window_len):
+            padding = np.zeros(shape=[window_len-seq_len+pos,30])
+            hhm_after_array = np.vstack((hhm_matrix[pos-window_len-1:, :],padding))
+        else:
+            hhm_after_array = hhm_matrix[pos-window_len-1:pos+window_len, :]
         #hhm_after = hhm_after_array.tolist()
     # rasa
     rasa_array = np.loadtxt('../datasets/middlefile/rASA/' + uniprotac + '.rasa')
-    rasa_array = rasa_array[pos-window_len-1:pos+window_len]
+    if(pos <= window_len - 1):
+        padding = np.zeros(window_len-pos+1)
+        rasa_array = np.append(padding,rasa_array[0:pos+window_len])
+    elif(seq_len - pos < window_len):
+        padding = np.zeros(window_len-seq_len+pos)
+        rasa_array = np.append(rasa_array[pos-window_len-1:],padding)
+    else:
+        rasa_array = rasa_array[pos-window_len-1:pos+window_len]
     #rasa = rasa_array.tolist()
     # ss
     ss_array = np.loadtxt('../datasets/middlefile/SS/' + uniprotac + '.ss')
-    ss_array = ss_array[pos-window_len-1:pos+window_len, :]
+    if(pos <= window_len - 1):
+        padding = np.zeros(shape=[window_len-pos+1,3])
+        ss_array = np.vstack((padding,ss_array[0:pos+window_len]))
+    elif(seq_len - pos < window_len):
+        padding = np.zeros(shape=[window_len-seq_len+pos,3])
+        ss_array = np.vstack((ss_array[pos-window_len-1:],padding))
+    else:
+        ss_array = ss_array[pos-window_len-1:pos+window_len, :]
     #ss = ss_array.tolist()
     dataset_feature = dataset_feature.append([{'gene': gene, 'uniprotac': uniprotac, 'variant': variant, 'drug': drug, 
                                         'smile': smile, 'smile_num':smile_array, 'cactvs_fingerprint': cactvs_fingerprint, 'molecular_weight': molecular_weight, 
-                                        'fasta_before':fasta_before, 'fasta_after':fasta_after, 'onehot_before':onehot_before, 'onehot_after':onehot_after, 
+                                        'onehot_before':onehot_before, 'onehot_after':onehot_after, 
                                         'hhm_before': hhm_before_array, 'hhm_after': hhm_after_array, 'ss': ss_array, 'rasa': rasa_array, 
                                         'label': label, 'source':source}], ignore_index=True)
-dataset_feature.to_pickle('../datasets/dataset_featurecode.dataset')
+
+filtered_dataset_feature = dataset_feature.copy()
+filtered_dataset_feature['smile'] = filtered_dataset_feature['smile'].replace('[Pt]', '[Pt]=[Pt]')
+print(filtered_dataset_feature.shape)
+filtered_dataset_feature = filtered_dataset_feature.reset_index(drop=True)
+filtered_dataset_feature.to_pickle('../datasets/dataset_featurecode.dataset')

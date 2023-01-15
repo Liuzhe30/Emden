@@ -82,14 +82,6 @@ def split_flatten_dataset(filename):
         ss = train_df['ss'][i]
         for item in np.nditer(ss):
             variantfeature_list.append(int(item))
-        # print(len(variantfeature_list)) 5304
-        if(len(variantfeature_list) != 5304):
-            print(train_df['gene'][i])
-            print(train_df['variant'][i])
-            print(onehot_before.shape)
-            print(onehot_after.shape)
-            print(hhm_before.shape)
-            print(hhm_after.shape)
         variantfeature = np.array(variantfeature_list)
         label = train_df['label'][i]
         train_data = train_data.append([{'smile': smile, 'fingerprint': fingerprint, 

@@ -59,7 +59,6 @@ class PyDataset(InMemoryDataset):
             # convert SMILES to molecular representation using rdkit
             c_size, features, edge_index = smile_graph[smiles]
             # make the graph ready for PyTorch Geometrics GCN algorithms:
-            print(smiles)
             GCNData = DATA.Data(x=torch.Tensor(features),
                                 edge_index=torch.LongTensor(edge_index).transpose(1, 0),
                                 y=torch.FloatTensor([labels]))
