@@ -50,88 +50,103 @@ def smile_to_graph(smile):
         
     return c_size, features, edge_index
 
-def split_flatten_dataset(filename):
+def split_5fold_dataset(filename):
+    dataset_feature = pd.read_pickle(filename) # have been shuffled
+    fold_dfs = [dataset_feature[idx*120:(idx+1)*120] for idx in range(5)] # 5-fold datasets
+    flatten_folds_valid = [df.reset_index(drop=True) for df in fold_dfs]
+    print(dataset_feature[0:120],dataset_feature[240:])
+    flatten_folds_train = [dataset_feature[120:],pd.concat([dataset_feature[0:120],dataset_feature[240:]]),
+                            pd.concat([dataset_feature[0:240],dataset_feature[360:]]),
+                            pd.concat([dataset_feature[0:360],dataset_feature[480:]]),dataset_feature[0:480]]
+    flatten_folds_train = [df.reset_index(drop=True) for df in flatten_folds_train]
+    return flatten_folds_train, flatten_folds_valid
+
+def split_dataset(filename):
     dataset_feature = pd.read_pickle(filename)
     shuffled_dataset = shuffle(dataset_feature)
     shuffled_dataset = shuffled_dataset.reset_index(drop=True)
     train_df = shuffled_dataset[0:600] # 600 for 5-fold
     test_df = shuffled_dataset[600:753].reset_index(drop=True) # 153
-    
-    new_columns = ['smile', 'fingerprint', 'variantfeature', 'label']
 
-    train_data = pd.DataFrame(columns=new_columns)
-    for i in range(train_df.shape[0]): # train_df.shape[0]
-        variantfeature_list = []
-        smile = train_df['smile'][i]
-        fingerprint = train_df['cactvs_fingerprint'][i] # array (881,)
-        onehot_before = train_df['onehot_before'][i]
-        for item in np.nditer(onehot_before):
-            variantfeature_list.append(int(item))
-        onehot_after = train_df['onehot_after'][i]
-        for item in np.nditer(onehot_after):
-            variantfeature_list.append(int(item))
-        hhm_before = train_df['hhm_before'][i]
-        for item in np.nditer(hhm_before):
-            variantfeature_list.append(int(item))
-        hhm_after = train_df['hhm_after'][i]
-        for item in np.nditer(hhm_after):
-            variantfeature_list.append(int(item))
-        rasa = train_df['rasa'][i]
-        for item in rasa:
-            variantfeature_list.append(item)
-        ss = train_df['ss'][i]
-        for item in np.nditer(ss):
-            variantfeature_list.append(int(item))
-        variantfeature = np.array(variantfeature_list)
-        label = train_df['label'][i]
-        train_data = train_data.append([{'smile': smile, 'fingerprint': fingerprint, 
-                                            'variantfeature': variantfeature, 'label': label}], ignore_index=True)
-
-    test_data = pd.DataFrame(columns=new_columns)
-    for i in range(test_df.shape[0]): # test_df.shape[0]
-        variantfeature_list = []
-        smile = test_df['smile'][i]
-        fingerprint = test_df['cactvs_fingerprint'][i] # array (881,)
-        onehot_before = test_df['onehot_before'][i]
-        for item in np.nditer(onehot_before):
-            variantfeature_list.append(int(item))
-        onehot_after = test_df['onehot_after'][i]
-        for item in np.nditer(onehot_after):
-            variantfeature_list.append(int(item))
-        hhm_before = test_df['hhm_before'][i]
-        for item in np.nditer(hhm_before):
-            variantfeature_list.append(int(item))
-        hhm_after = test_df['hhm_after'][i]
-        for item in np.nditer(hhm_after):
-            variantfeature_list.append(int(item))
-        rasa = test_df['rasa'][i]
-        for item in rasa:
-            variantfeature_list.append(item)
-        ss = test_df['ss'][i]
-        for item in np.nditer(ss):
-            variantfeature_list.append(int(item))
-        # print(len(variantfeature_list)) 5304
-        variantfeature = np.array(variantfeature_list)
-        label = test_df['label'][i]
-        test_data = test_data.append([{'smile': smile, 'fingerprint': fingerprint, 
-                                            'variantfeature': variantfeature, 'label': label}], ignore_index=True)
+    train_data = flatten_dataset(train_df)
+    test_data = flatten_dataset(test_df)
 
     print(test_data['label'].value_counts())
     return train_data, test_data
 
-if __name__=='__main__':
+def flatten_dataset(df):
+    new_columns = ['smile', 'fingerprint', 'variantfeature', 'label']
+    new_data = pd.DataFrame(columns=new_columns)
+    for i in range(df.shape[0]): # df.shape[0]
+        variantfeature_list = []
+        smile = df['smile'][i]
+        fingerprint = df['cactvs_fingerprint'][i] # array (881,)
+        onehot_before = df['onehot_before'][i]
+        for item in np.nditer(onehot_before):
+            variantfeature_list.append(int(item))
+        onehot_after = df['onehot_after'][i]
+        for item in np.nditer(onehot_after):
+            variantfeature_list.append(int(item))
+        hhm_before = df['hhm_before'][i]
+        for item in np.nditer(hhm_before):
+            variantfeature_list.append(int(item))
+        hhm_after = df['hhm_after'][i]
+        for item in np.nditer(hhm_after):
+            variantfeature_list.append(int(item))
+        rasa = df['rasa'][i]
+        for item in rasa:
+            variantfeature_list.append(item)
+        ss = df['ss'][i]
+        for item in np.nditer(ss):
+            variantfeature_list.append(int(item))
+        variantfeature = np.array(variantfeature_list)
+        label = df['label'][i]
+        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 
+                                            'variantfeature': variantfeature, 'label': label}], ignore_index=True)
+        return new_data
 
+def generate_5fold_dataset():
+
+    evidence_data_file_train = '../datasets/middlefile/train_data_evidence.dataset' # (600,16)
+    train_data = pd.read_pickle(evidence_data_file_train)
+    
+    # smile graph encoding
+    compound_iso_smiles = set(list(train_data['smile']))
+    smile_graph = {}
+    for smile in compound_iso_smiles:
+        g = smile_to_graph(smile)
+        smile_graph[smile] = g
+
+    # split train set to 5 parts
+    flatten_folds_train, flatten_folds_valid = split_5fold_dataset(evidence_data_file_train)
+    
+    for i in range(5): # 5-fold
+        flatten_folds_train[i].to_pickle('../datasets/fivefold/'+str(i+1)+'fold_train_evidence.dataset')
+        smile, fp, variant, Y = np.asarray(list(flatten_folds_train[i]['smile'])),np.asarray(list(flatten_folds_train[i]['fingerprint'])), \
+                                                        np.asarray(list(flatten_folds_train[i]['variantfeature'])),np.asarray(list(flatten_folds_train[i]['label']))
+        # make data PyTorch Geometric ready
+        print('preparing '+str(i+1)+'fold_train.pt in pytorch format!')
+        fold_data = PyDataset(root='../datasets/fivefold', dataset=str(i+1)+'fold_train', xs=smile, xfp=fp, xv=variant, y=Y, smile_graph=smile_graph)
+        print('created')
+
+        flatten_folds_valid[i].to_pickle('../datasets/fivefold/'+str(i+1)+'fold_valid_evidence.dataset')
+        smile, fp, variant, Y = np.asarray(list(flatten_folds_valid[i]['smile'])),np.asarray(list(flatten_folds_valid[i]['fingerprint'])), \
+                                                        np.asarray(list(flatten_folds_valid[i]['variantfeature'])),np.asarray(list(flatten_folds_valid[i]['label']))
+        # make data PyTorch Geometric ready
+        print('preparing '+str(i+1)+'fold_valid.pt in pytorch format!')
+        fold_data = PyDataset(root='../datasets/fivefold', dataset=str(i+1)+'fold_valid', xs=smile, xfp=fp, xv=variant, y=Y, smile_graph=smile_graph)
+        print('created')
+        
+
+def generate_dataset():
     # split and flatten evidence
     evidence_data_file_train = '../datasets/middlefile/train_data_evidence.dataset'
     evidence_data_file_test = '../datasets/middlefile/test_data_evidence.dataset'
     if ((not os.path.isfile(evidence_data_file_train)) or (not os.path.isfile(evidence_data_file_test))):
         feature_dataset_path = '../datasets/dataset_featurecode.dataset'
-        train_data, test_data = split_flatten_dataset(feature_dataset_path)
+        train_data, test_data = split_dataset(feature_dataset_path)
         train_data.to_pickle(evidence_data_file_train)
         test_data.to_pickle(evidence_data_file_test)
-
-    # generate 5-fold dataset
-
 
     # smile graph encoding
     compound_iso_smiles = []
@@ -166,5 +181,12 @@ if __name__=='__main__':
         print(processed_data_file_train, ' and ', processed_data_file_test, ' have been created')        
     else:
         print(processed_data_file_train, ' and ', processed_data_file_test, ' have already existed') 
+        
+
+
+if __name__=='__main__':
+
+    # generate_dataset() # prepare dataset (train/test)
+    generate_5fold_dataset() # prepare dataset (5fold-train/test)
         
         
