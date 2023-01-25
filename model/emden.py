@@ -7,15 +7,15 @@ from torch_geometric.nn import GENConv, GCNConv, HypergraphConv
 from torch_geometric.nn import global_max_pool as gmp, global_add_pool as gap
 
 class Emden(torch.nn.Module):
-    def __init__(self, n_output=2, num_features_xd=78, num_features_xf=801,num_features_xv=3904,num_features_xs=1220,
+    def __init__(self, n_output=1, num_features_xd=78, num_features_xf=881,num_features_xv=3904,num_features_xs=1220,
                  n_filters=32, embed_dim=128, output_dim=128, dropout=0.2):
 
         super(Emden, self).__init__()
 
         # smile branch
         self.n_output = n_output
-        self.conv1 = HypergraphConv(num_features_xd, num_features_xd, use_attention=True)
-        self.conv2 = HypergraphConv(num_features_xd, num_features_xd*4, use_attention=True)
+        self.conv1 = HypergraphConv(num_features_xd, num_features_xd, use_attention=False)
+        self.conv2 = HypergraphConv(num_features_xd, num_features_xd*4, use_attention=False)
         self.conv3 = GCNConv(num_features_xd*4, num_features_xd*10)
         self.fc_g1 = torch.nn.Linear(num_features_xd*10*2, 1500)
         self.fc_g2 = torch.nn.Linear(1500, output_dim)
@@ -35,17 +35,16 @@ class Emden(torch.nn.Module):
         self.fc_xv = nn.Linear(num_features_xv, output_dim*3)
 
         # combined layers
-        self.fc0 = nn.Linear(output_dim*2, 1024)
         self.fc1 = nn.Linear(output_dim*7, 1024)
         self.fc2 = nn.Linear(1024, 512)
         self.out = nn.Linear(512, self.n_output)        # n_output = 2 for classification
 
     def forward(self, data):
         x, edge_index, batch = data.x, data.edge_index, data.batch
-        fingerprint = data.fingerprint
-        seqbefore = data.seqbefore
-        seqafter = data.seqafter
-        variant = data.variant
+        fingerprint = data.fingerprint.float()
+        seqbefore = data.seqbefore.float()
+        seqafter = data.seqafter.float()
+        variant = data.variant.float()
         # print('x shape = ', x.shape)
         x = self.conv1(x, edge_index)
         x = self.relu(x)
@@ -59,15 +58,19 @@ class Emden(torch.nn.Module):
         x = self.dropout(x)
         x = self.fc_g2(x)
 
+        # test FC
         fc_f = self.fc_f(fingerprint)
+        fc_sb = self.fc_xsb(seqbefore)
+        fc_sa = self.fc_xsa(seqafter)
+        fc_v = self.fc_xv(variant)
 
         # flatten
         #xf = fc_f.view(-1, 32 * 121)
 
         # concat
-        xc = torch.cat((x, fc_f), 1)
+        xc = torch.cat((x, fc_f, fc_sb, fc_sa, fc_v), 1)
         # add some dense layers
-        xc = self.fc0(xc)
+        xc = self.fc1(xc)
         xc = self.relu(xc)
         xc = self.dropout(xc)
         xc = self.fc2(xc)
