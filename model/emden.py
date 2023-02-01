@@ -35,9 +35,9 @@ class Emden(torch.nn.Module):
         self.fc_xv = nn.Linear(num_features_xv, output_dim*3)
 
         # combined layers
-        self.fc1 = nn.Linear(output_dim*7, 1024)
-        self.fc2 = nn.Linear(1024, 512)
-        self.out = nn.Linear(512, self.n_output)        # n_output = 2 for classification
+        self.fc1 = nn.Linear(output_dim*7, 512)
+        self.fc2 = nn.Linear(512, 128)
+        self.out = nn.Linear(128, self.n_output)        # n_output = 1 for classification
 
     def forward(self, data):
         x, edge_index, batch = data.x, data.edge_index, data.batch

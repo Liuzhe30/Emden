@@ -91,3 +91,12 @@ def mse(y,f):
 def cee(y,t): # cross_entropy_error
     delta = 1e-7  
     return -np.sum(t * np.log(y + delta))
+
+def get_acc(outputs, labels):
+    
+    _, predict = torch.max(outputs.data, 1)
+    total_num = labels.shape[0]*1.0
+    correct_num = (labels == predict).sum().item()
+    acc = correct_num / total_num
+
+    return acc
