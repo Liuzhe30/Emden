@@ -11,6 +11,8 @@ import json
 import warnings
 warnings.filterwarnings('ignore')
 
+label_dict = {1: [0,1], 0: [1,0]}
+
 # ref: https://www.blopig.com/blog/2022/02/how-to-turn-a-smiles-string-into-a-molecular-graph-for-pytorch-geometric/
 def atom_features(atom):
     return np.array(one_of_k_encoding_unk(atom.GetSymbol(), ['C', 'N', 'O', 'S', 'F', 'Si', 'P', 'Cl', 'Br', 'Mg', 'Na','Ca', 'Fe', 'As', 'Al', 'I', 'B', 'V', 'K', 'Tl', 'Yb','Sb', 'Sn', 'Ag', 'Pd', 'Co', 'Se', 'Ti', 'Zn', 'H','Li', 'Ge', 'Cu', 'Au', 'Ni', 'Cd', 'In', 'Mn', 'Zr','Cr', 'Pt', 'Hg', 'Pb', 'Unknown']) +
@@ -106,6 +108,7 @@ def flatten_dataset(df):
         variantfeature = np.array(variantfeature_list) # 3904
         seqbefore = np.array(seqbefore_list) # 1220
         seqafter = np.array(seqafter_list) #1220
+        #label = label_dict[df['label'][i]] # onehot
         label = df['label'][i]
         new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':seqbefore, 'seqafter':seqafter,
                                             'variantfeature': variantfeature, 'label': label}], ignore_index=True)
@@ -196,7 +199,6 @@ def generate_dataset():
 
 if __name__=='__main__':
 
-    #generate_dataset() # prepare dataset (train/test)
+    generate_dataset() # prepare dataset (train/test)
     generate_5fold_dataset() # prepare dataset (5fold-train/test)
-        
         

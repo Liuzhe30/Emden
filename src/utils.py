@@ -63,7 +63,7 @@ class PyDataset(InMemoryDataset):
             # make the graph ready for PyTorch Geometrics GCN algorithms:
             GCNData = DATA.Data(x=torch.Tensor(features),
                                 edge_index=torch.LongTensor(edge_index).transpose(1, 0),
-                                y=torch.FloatTensor([labels]))
+                                y=torch.LongTensor([labels]))
             GCNData.fingerprint = torch.LongTensor([fingerprint])
             GCNData.seqbefore = torch.LongTensor([seqbefore])
             GCNData.seqafter = torch.LongTensor([seqafter])
