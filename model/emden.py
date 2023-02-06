@@ -7,7 +7,7 @@ from torch_geometric.nn import GENConv, GCNConv, HypergraphConv
 from torch_geometric.nn import global_max_pool as gmp, global_add_pool as gap
 
 class Emden(torch.nn.Module):
-    def __init__(self, n_output=1, num_features_xd=78, num_features_xf=881,num_features_xv=3904,num_features_xs=1220,
+    def __init__(self, n_output=2, num_features_xd=78, num_features_xf=881,num_features_xv=3904,num_features_xs=1220,
                  n_filters=32, embed_dim=128, output_dim=128, dropout=0.2):
 
         super(Emden, self).__init__()
@@ -20,6 +20,7 @@ class Emden(torch.nn.Module):
         self.fc_g1 = torch.nn.Linear(num_features_xd*10*2, 1500)
         self.fc_g2 = torch.nn.Linear(1500, output_dim)
         self.relu = nn.ReLU()
+        self.softmax = nn.LogSoftmax()
         self.dropout = nn.Dropout(dropout)
 
         # 1D fingerprint
@@ -37,7 +38,7 @@ class Emden(torch.nn.Module):
         # combined layers
         self.fc1 = nn.Linear(output_dim*7, 512)
         self.fc2 = nn.Linear(512, 128)
-        self.out = nn.Linear(128, self.n_output)        # n_output = 1 for classification
+        self.out = nn.Linear(128, self.n_output)        # n_output = 2 for CrossEntropyLoss (https://blog.csdn.net/Penta_Kill_5/article/details/118085718)
 
     def forward(self, data):
         x, edge_index, batch = data.x, data.edge_index, data.batch
@@ -76,5 +77,6 @@ class Emden(torch.nn.Module):
         xc = self.fc2(xc)
         xc = self.relu(xc)
         xc = self.dropout(xc)
+        #xc = self.softmax(xc)
         out = self.out(xc)
         return out

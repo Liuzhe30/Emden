@@ -23,8 +23,10 @@ def train_emden(model, device, train_loader, optimizer, epoch, loss_fn, LOG_INTE
         
         optimizer.zero_grad()
         output = model(data)
-        loss = loss_fn(output, data.y.view(-1, 1).float().to(device))
+        #loss = loss_fn(output, data.y.view(-1, 1).float())
         #print(output)
+        #print(data.y)
+        loss = loss_fn(output, data.y)
         loss.backward()
         #print([x.grad for x in optimizer.param_groups[0]['params']])
         optimizer.step()
@@ -57,12 +59,12 @@ def train_5fold():
         cuda_name = ["cuda:0","cuda:1"][int(sys.argv[3])]
     print('cuda_name:', cuda_name)
 
-    TRAIN_BATCH_SIZE = 60
+    TRAIN_BATCH_SIZE = 120
     VALID_BATCH_SIZE = 256
     TEST_BATCH_SIZE = 256
     LR = 0.05
     LOG_INTERVAL = 5
-    NUM_EPOCHS = 100
+    NUM_EPOCHS = 10
 
     print('Learning rate: ', LR)
     print('Epochs: ', NUM_EPOCHS)
@@ -91,6 +93,8 @@ def train_5fold():
         model = Emden().to(device)
         print(model)
         loss_fn = nn.CrossEntropyLoss() # nn.logSoftmax() and nn.NLLLoss()
+        #loss_fn = nn.MSELoss()
+        #loss_fn = nn.NLLLoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=LR)
         best_cee = 1000
         best_valid_cee = 1000
