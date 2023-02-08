@@ -70,18 +70,22 @@ def train_5fold():
     print('Epochs: ', NUM_EPOCHS)
 
     fold = 1
-    processed_data_file_train = '../datasets/fivefold/train_data.pt'
+    processed_data_file_train = '../datasets/fivefold/processed/' + str(fold) + 'fold_train_data.pt'
+    processed_data_file_valid = '../datasets/fivefold/processed/' + str(fold) + 'fold_valid_data.pt'
     processed_data_file_test = '../datasets/processed/test_data.pt'
-    if ((not os.path.isfile(processed_data_file_train)) or (not os.path.isfile(processed_data_file_test))):
+    if ((not os.path.isfile(processed_data_file_train)) or (not os.path.isfile(processed_data_file_valid)) or (not os.path.isfile(processed_data_file_test))):
         print('please run prepareData.py to prepare data in pytorch format!')
     else:
-        train_data = PyDataset(root='../datasets/', dataset='train')
+        train_data = PyDataset(root='../datasets/fivefold', dataset=str(fold)+'fold_train')
+        valid_data = PyDataset(root='../datasets/fivefold', dataset=str(fold)+'fold_valid')
         test_data = PyDataset(root='../datasets', dataset='test')
         print(train_data)
+        print(valid_data)
         print(test_data)
 
         # make data PyTorch mini-batch processing ready
         train_loader = DataLoader(train_data, batch_size=TRAIN_BATCH_SIZE, shuffle=True)
+        valid_loader = DataLoader(valid_data, batch_size=VALID_BATCH_SIZE, shuffle=False)
         test_loader = DataLoader(test_data, batch_size=TEST_BATCH_SIZE, shuffle=False)
 
         # training the model
@@ -95,7 +99,7 @@ def train_5fold():
         best_cee = 1000
         best_valid_cee = 1000
         best_epoch = -1
-        model_file_name = '../model/weights/weights.model'
+        model_file_name = '../model/weights/' + str(fold) + 'fold_weights.model'
 
         for epoch in range(NUM_EPOCHS):
             train_emden(model, device, train_loader, optimizer, epoch+1, loss_fn, LOG_INTERVAL)
