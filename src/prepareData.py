@@ -110,7 +110,8 @@ def flatten_dataset(df):
         seqafter = np.array(seqafter_list) #1220
         #label = label_dict[df['label'][i]] # onehot
         label = df['label'][i]
-        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':seqbefore, 'seqafter':seqafter,
+        #new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':seqbefore, 'seqafter':seqafter,
+        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':onehot_before, 'seqafter':onehot_after,
                                             'variantfeature': variantfeature, 'label': label}], ignore_index=True)
     return new_data
 
@@ -132,7 +133,7 @@ def generate_5fold_dataset():
     for i in range(5): # 5-fold
         flatten_folds_train[i].to_pickle('../datasets/fivefold/'+str(i+1)+'fold_train_evidence.dataset')
         smile, fp, sb, sa, variant, Y = np.asarray(list(flatten_folds_train[i]['smile'])),np.asarray(list(flatten_folds_train[i]['fingerprint'])), \
-                                                        np.asarray(list(flatten_folds_train[i]['seqbefore'])), np.asarray(list(flatten_folds_train[i]['seqafter'])), \
+                                                        np.asarray(flatten_folds_train[i]['seqbefore']), np.asarray(flatten_folds_train[i]['seqafter']), \
                                                         np.asarray(list(flatten_folds_train[i]['variantfeature'])),np.asarray(list(flatten_folds_train[i]['label']))
         # make data PyTorch Geometric ready
         print('preparing '+str(i+1)+'fold_train.pt in pytorch format!')
@@ -141,7 +142,7 @@ def generate_5fold_dataset():
 
         flatten_folds_valid[i].to_pickle('../datasets/fivefold/'+str(i+1)+'fold_valid_evidence.dataset')
         smile, fp, sb, sa, variant, Y = np.asarray(list(flatten_folds_valid[i]['smile'])),np.asarray(list(flatten_folds_valid[i]['fingerprint'])), \
-                                                        np.asarray(list(flatten_folds_valid[i]['seqbefore'])), np.asarray(list(flatten_folds_valid[i]['seqafter'])), \
+                                                        np.asarray(flatten_folds_valid[i]['seqbefore']), np.asarray(flatten_folds_valid[i]['seqafter']), \
                                                         np.asarray(list(flatten_folds_valid[i]['variantfeature'])),np.asarray(list(flatten_folds_valid[i]['label']))
         # make data PyTorch Geometric ready
         print('preparing '+str(i+1)+'fold_valid.pt in pytorch format!')
@@ -179,11 +180,11 @@ def generate_dataset():
         df = pd.read_pickle(evidence_data_file_train)
         
         train_smile, train_fp, train_sb, train_sa, train_variant,  train_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
-                                                        np.asarray(list(df['seqbefore'])), np.asarray(list(df['seqafter'])), \
+                                                        np.asarray(df['seqbefore']), np.asarray(df['seqafter']), \
                                                         np.asarray(list(df['variantfeature'])),np.asarray(list(df['label']))
         df = pd.read_pickle(evidence_data_file_test)
         test_smile, test_fp, test_sb, test_sa, test_variant,  test_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
-                                                        np.asarray(list(df['seqbefore'])), np.asarray(list(df['seqafter'])), \
+                                                        np.asarray(df['seqbefore']), np.asarray(df['seqafter']), \
                                                         np.asarray(list(df['variantfeature'])),np.asarray(list(df['label']))
 
         # make data PyTorch Geometric ready
