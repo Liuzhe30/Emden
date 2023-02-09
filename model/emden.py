@@ -10,7 +10,7 @@ import math
 
 class Emden(torch.nn.Module):
     def __init__(self, n_output=2, num_features_xd=78,num_features_xv=3904,num_features_xf=881,num_features_xs=61,
-                 n_filters=32, embed_dim=128, output_dim=128, dropout=0.2):
+                 n_filters=32, embed_dim=128, output_dim=128, dropout=0.3):
 
         super(Emden, self).__init__()
 
@@ -28,6 +28,7 @@ class Emden(torch.nn.Module):
         # 1D fingerprint (881, transformer encoder) num_hidden_layers, ori_feature_dim, embed_dim, num_heads, middle_dim
         self.trans_f = TransformerEncoder(1, 1, 64, 8, 64, 1) 
         self.flat_fc = nn.Linear(num_features_xf*64, num_features_xf)
+        #self.fc_f = nn.Linear(num_features_xf, 256) # test FC of fingerprint
 
         # 1D protein sequence before (61*20, transformer encoder)
         self.trans_xsb = TransformerEncoder(1, 20, 20, 4, 32, 1)
@@ -37,13 +38,14 @@ class Emden(torch.nn.Module):
         self.trans_xsa = TransformerEncoder(1, 20, 20, 4, 32, 1)
 
         # 1D protein features (hhm profiles, secondary structure, rASA)
-        self.fc_xv = nn.Linear(num_features_xv, output_dim*3)
+        self.fc_xv = nn.Linear(num_features_xv, output_dim*6)
 
         # FC layers
-        self.fc2_1 = nn.Linear(num_features_xf + output_dim*3, 256)
+        self.fc2_1 = nn.Linear(num_features_xf + output_dim*6, 1024)
         self.fc2_2 = nn.Linear(num_features_xs*2, 128)
-        self.fc_3 = nn.Linear(output_dim + 256 + 128, 128)
-        self.fc_4 = nn.Linear(128, 32)
+        self.fc_3 = nn.Linear(output_dim + 1024 + 128, 256)
+        self.fc_4 = nn.Linear(256, 128)
+        self.fc_5 = nn.Linear(128, 32)
         self.out = nn.Linear(32, self.n_output)        # n_output = 2 for CrossEntropyLoss (https://blog.csdn.net/Penta_Kill_5/article/details/118085718)
 
     def forward(self, data):
@@ -68,16 +70,14 @@ class Emden(torch.nn.Module):
         # first layers
         fingerprint = fingerprint.unsqueeze(-1)
         trans_f = self.trans_f(fingerprint)
-        trans_sb = self.trans_xsb(seqbefore)
-        trans_sa = self.trans_xsa(seqafter)
-
         flatten_trans_f = torch.flatten(trans_f, start_dim=1, end_dim=2)
         flat_fc = self.flat_fc(flatten_trans_f)
+        trans_sb = self.trans_xsb(seqbefore)
+        trans_sa = self.trans_xsa(seqafter)
         flatten_trans_sb = torch.flatten(trans_sb, start_dim=1, end_dim=2)
         flat_xsb = self.flat_xs(flatten_trans_sb)
         flatten_trans_sa = torch.flatten(trans_sa, start_dim=1, end_dim=2)
         flat_xsa = self.flat_xs(flatten_trans_sa)
-
         fc_v = self.fc_xv(variant)
         fc_v = self.relu(fc_v)
         fc_v = self.dropout(fc_v)
@@ -105,6 +105,9 @@ class Emden(torch.nn.Module):
         xc = self.relu(xc)
         xc = self.dropout(xc)
         xc = self.fc_4(xc)
+        xc = self.relu(xc)
+        xc = self.dropout(xc)
+        xc = self.fc_5(xc)
         xc = self.relu(xc)
         xc = self.dropout(xc)
         #xc = self.softmax(xc)
