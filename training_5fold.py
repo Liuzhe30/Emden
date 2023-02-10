@@ -48,19 +48,34 @@ def train_emden(model, device, train_loader, optimizer, epoch, loss_fn, LOG_INTE
                                                                            loss.item(),
                                                                            get_acc(output, data.y.view(-1, 1).float())))
                                                                            
+def softmax(vec):
+    """Compute the softmax in a numerically stable way."""
+    vec = vec - np.max(vec)  # softmax(x) = softmax(x+c)
+    exp_x = np.exp(vec)
+    softmax_x = exp_x / np.sum(exp_x)
+    return softmax_x
 
 def predicting(model, device, loader):
     model.eval()
     total_preds = torch.Tensor()
     total_labels = torch.Tensor()
+    total_probs = torch.Tensor()
     print('Make prediction for {} samples...'.format(len(loader.dataset)))
     with torch.no_grad():
         for data in loader:
             data = data.to(device)
             output = model(data)
-            total_preds = torch.cat((total_preds, output.cpu()), 0).argmax(dim=1)
+            total_preds = torch.cat((total_preds, output.cpu()), 0)
             total_labels = torch.cat((total_labels, data.y.cpu()), 0)
-    return total_labels.numpy().flatten(),total_preds.numpy().flatten()
+            total_probs = torch.cat((total_probs, output.cpu()), 0)
+    
+    total_probs = total_probs.numpy()
+    total_preds = total_preds.argmax(dim=1).numpy()
+    for i in range(total_probs.shape[0]):
+        total_probs[i] = softmax(total_probs[i])
+    total_probs = total_probs[:,1]
+
+    return total_labels.numpy().flatten(),total_preds.flatten(),total_probs.flatten()
 
 def train_5fold():
     cuda_name = "cuda:0"
@@ -73,7 +88,7 @@ def train_5fold():
     TEST_BATCH_SIZE = 256
     LR = 0.001
     LOG_INTERVAL = 5
-    NUM_EPOCHS = 150
+    NUM_EPOCHS = 250
 
     print('Learning rate: ', LR)
     print('Epochs: ', NUM_EPOCHS)
@@ -105,25 +120,25 @@ def train_5fold():
         #loss_fn = nn.MSELoss()
         #loss_fn = nn.NLLLoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=LR)
-        best_cee = -1
-        best_valid_cee = 1000
+        best_auc = -1
+        best_valid_cee = -1
         best_epoch = -1
         model_file_name = '../model/weights/' + str(fold) + 'fold_weights.model'
 
         for epoch in range(NUM_EPOCHS):
             train_emden(model, device, train_loader, optimizer, epoch+1, loss_fn, LOG_INTERVAL)
             print('predicting for valid data')
-            G,P = predicting(model, device, valid_loader)
+            G,P,T = predicting(model, device, valid_loader)
             #print(G) # int labels
-            #print(P) # predictions           
-            val = roc_auc_score(G,P)
-            if val > best_cee:
-                ret = [epoch, accuracy_score(G,P), precision_score(G,P),recall_score(G,P), f1_score(G,P), roc_auc_score(G,P)]
-                best_cee = val
+            #print(T) # predictions           
+            val = roc_auc_score(G,T)
+            if val > best_auc:
+                ret = [epoch, accuracy_score(G,P), precision_score(G,P),recall_score(G,P), f1_score(G,P), roc_auc_score(G,T)]
+                best_auc = val
                 best_epoch = epoch+1
                 torch.save(model.state_dict(), model_file_name)
                 print('predicting for test data')
-                G,P = predicting(model, device, test_loader)
+                G,P,T = predicting(model, device, test_loader)
                 print('auc increased at epoch ', best_epoch, '; best_test_acc, best_test_precision, best_test_recall, best_test_f1, best_test_auc:', ret[1], ret[2], ret[3], ret[4], ret[5])
             else:
                 print(ret[1],'No improvement since epoch ', best_epoch, '; best_test_acc, best_test_precision, best_test_recall, best_test_f1, best_test_auc:', ret[1], ret[2], ret[3], ret[4], ret[5])
