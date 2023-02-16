@@ -76,6 +76,11 @@ def split_dataset(filename):
     print(test_data['label'].value_counts())
     return train_data, test_data
 
+def alldata(filename):
+    dataset_feature = pd.read_pickle(filename)
+    all_data = flatten_dataset(dataset_feature)
+    return all_data
+
 def flatten_dataset(df):
     new_columns = ['smile', 'fingerprint', 'variantfeature', 'label']
     new_data = pd.DataFrame(columns=new_columns)
@@ -195,11 +200,84 @@ def generate_dataset():
         print(processed_data_file_train, ' and ', processed_data_file_test, ' have been created')        
     else:
         print(processed_data_file_train, ' and ', processed_data_file_test, ' have already existed') 
-        
 
+def generate_all():
+    feature_dataset_path = '../datasets/dataset_featurecode.dataset'
+    all_data = alldata(feature_dataset_path)
+    evidence_data_file_all = '../datasets/middlefile/all_evidence.dataset'
+    all_data.to_pickle(evidence_data_file_all)
+
+    # smile graph encoding
+    compound_iso_smiles = []
+    options = ['train','test']
+    for option in options:
+        df = pd.read_pickle('../datasets/middlefile/' + option + '_data_evidence.dataset')
+        compound_iso_smiles += list( df['smile'] )
+    compound_iso_smiles = set(compound_iso_smiles)
+    smile_graph = {}
+    for smile in compound_iso_smiles:
+        g = smile_to_graph(smile)
+        smile_graph[smile] = g
+    # print(smile_graph)
+
+    processed_data_file_all = '../datasets/processed/all_data.pt'
+    if ((not os.path.isfile(processed_data_file_all))):
+        df = pd.read_pickle(evidence_data_file_all)
+        
+        train_smile, train_fp, train_sb, train_sa, train_variant,  train_Y = np.asarray(list(df['smile'])),np.asarray(list(df['fingerprint'])), \
+                                                        np.asarray(df['seqbefore']), np.asarray(df['seqafter']), \
+                                                        np.asarray(list(df['variantfeature'])),np.asarray(list(df['label']))
+        # make data PyTorch Geometric ready
+        print('preparing all_data.pt in pytorch format!')
+        train_data = PyDataset(root='../datasets', dataset='all', xs=train_smile, xfp=train_fp, xsb=train_sb, xsa=train_sa, xv=train_variant, y=train_Y, smile_graph=smile_graph)
+        print(processed_data_file_all, ' have been created')        
+    else:
+        print(processed_data_file_all, ' have already existed') 
+ 
+def data_augmentation():
+    pass
+
+def create_onehot(filepath,filename,targetpath,rootpath):
+    datasetfile = pd.read_pickle(filepath+filename)
+
+    # smile graph encoding
+    compound_iso_smiles = list(datasetfile['smile'])
+    compound_iso_smiles = set(compound_iso_smiles)
+    smile_graph = {}
+    for smile in compound_iso_smiles:
+        g = smile_to_graph(smile)
+        smile_graph[smile] = g
+    # print(smile_graph)
+
+    processed_data_file = targetpath + filename.split('.')[0] + '_onehot_data.pt'
+    if ((not os.path.isfile(processed_data_file))):
+        new_label = []
+        for i in range(datasetfile.shape[0]):
+            new_label.append(label_dict[datasetfile['label'][i]])
+
+        train_smile, train_fp, train_sb, train_sa, train_variant,  train_Y = np.asarray(list(datasetfile['smile'])),np.asarray(list(datasetfile['fingerprint'])), \
+                                                        np.asarray(datasetfile['seqbefore']), np.asarray(datasetfile['seqafter']), \
+                                                        np.asarray(list(datasetfile['variantfeature'])),np.asarray(new_label)
+        # make data PyTorch Geometric ready
+        print('preparing all_data.pt in pytorch format!')
+        train_data = PyDataset(root=rootpath, dataset=filename.split('.')[0]+'_onehot', xs=train_smile, xfp=train_fp, xsb=train_sb, xsa=train_sa, xv=train_variant, y=train_Y, smile_graph=smile_graph)
 
 if __name__=='__main__':
 
     generate_dataset() # prepare dataset (train/test)
     generate_5fold_dataset() # prepare dataset (5fold-train/test)
-        
+    generate_all()
+
+    ''' # if need onehot labels
+    create_onehot('../datasets/middlefile/','all_evidence.dataset','../datasets/processed/','../datasets')
+    create_onehot('../datasets/middlefile/','test_data_evidence.dataset','../datasets/processed/','../datasets')
+    create_onehot('../datasets/middlefile/','train_data_evidence.dataset','../datasets/processed/','../datasets')
+
+    for i in range(5):
+        create_onehot('../datasets/fivefold/',str(i+1)+'fold_train_evidence.dataset','../datasets/fivefold/processed/','../datasets/fivefold')
+        create_onehot('../datasets/fivefold/',str(i+1)+'fold_valid_evidence.dataset','../datasets/fivefold/processed/','../datasets/fivefold')
+
+    '''
+
+    #data_augmentation() # prepare data augmentation dataset (5fold-train/test)
+    
