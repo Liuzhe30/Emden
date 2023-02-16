@@ -10,7 +10,7 @@ import math
 
 class Emden(torch.nn.Module):
     def __init__(self, n_output=2, num_features_xd=78,num_features_xv=3904,num_features_xf=881,num_features_xs=61,
-                 n_filters=32, embed_dim=128, output_dim=128, dropout=0.3):
+                 n_filters=32, embed_dim=128, output_dim=128, dropout=0.01):
 
         super(Emden, self).__init__()
 
@@ -22,8 +22,16 @@ class Emden(torch.nn.Module):
         self.fc_g1 = nn.Linear(num_features_xd*10*2, 1500)
         self.fc_g2 = nn.Linear(1500, output_dim)
         self.relu = nn.ReLU()
-        self.softmax = nn.LogSoftmax()
+        self.logsoftmax = nn.LogSoftmax()
+        #self.softmax = nn.functional.softmax()
+        self.sigmoid = nn.Sigmoid()
         self.dropout = nn.Dropout(dropout)
+        self.n1024 = nn.BatchNorm1d(1024)
+        self.n256 = nn.BatchNorm1d(256)
+        self.n128 = nn.BatchNorm1d(128)
+        self.nxv = nn.BatchNorm1d(output_dim*6)
+        self.nxf = nn.BatchNorm1d(num_features_xf)
+        self.nxs = nn.BatchNorm1d(num_features_xs)
 
         # 1D fingerprint (881, transformer encoder) num_hidden_layers, ori_feature_dim, embed_dim, num_heads, middle_dim
         self.trans_f = TransformerEncoder(1, 1, 64, 8, 64, 1) 
@@ -72,15 +80,22 @@ class Emden(torch.nn.Module):
         trans_f = self.trans_f(fingerprint)
         flatten_trans_f = torch.flatten(trans_f, start_dim=1, end_dim=2)
         flat_fc = self.flat_fc(flatten_trans_f)
+        #flat_fc = self.relu(flat_fc)
+        #flat_fc = self.nxf(flat_fc)
         trans_sb = self.trans_xsb(seqbefore)
         trans_sa = self.trans_xsa(seqafter)
         flatten_trans_sb = torch.flatten(trans_sb, start_dim=1, end_dim=2)
         flat_xsb = self.flat_xs(flatten_trans_sb)
+        #flat_xsb = self.relu(flat_xsb)
+        #flat_xsb = self.nxs(flat_xsb)
         flatten_trans_sa = torch.flatten(trans_sa, start_dim=1, end_dim=2)
         flat_xsa = self.flat_xs(flatten_trans_sa)
+        #flat_xsa = self.relu(flat_xsa)
+        #flat_xsa = self.nxs(flat_xsa)
         fc_v = self.fc_xv(variant)
         fc_v = self.relu(fc_v)
         fc_v = self.dropout(fc_v)
+        fc_v = self.nxv(fc_v)
 
         # flatten
         #xf = fc_f.view(-1, 32 * 121)
@@ -93,9 +108,10 @@ class Emden(torch.nn.Module):
         fc2_1 = self.fc2_1(concat1)
         fc2_1 = self.relu(fc2_1)
         fc2_1 = self.dropout(fc2_1)
+        fc2_1 = self.n1024(fc2_1)
         fc2_2 = self.fc2_2(concat2)
         fc2_2= self.relu(fc2_2)
-        fc2_2 = self.dropout(fc2_2)
+        fc2_2 = self.n128(fc2_2)
 
         # merge
         concat3 = torch.cat((fc2_1, fc2_2, x), 1)
@@ -103,16 +119,14 @@ class Emden(torch.nn.Module):
         # last layers
         xc = self.fc_3(concat3)
         xc = self.relu(xc)
-        xc = self.dropout(xc)
         xc = self.fc_4(xc)
         xc = self.relu(xc)
-        xc = self.dropout(xc)
         xc = self.fc_5(xc)
         xc = self.relu(xc)
-        xc = self.dropout(xc)
-        #xc = self.softmax(xc)
-        out = self.out(xc)
-        return out
+        xc = self.out(xc)
+        
+        #return nn.functional.log_softmax(xc)
+        return xc
 
 def scaled_dot_product_attention(query, key, value, query_mask=None, key_mask=None, mask=None):
     dim_k = query.size(-1)
@@ -158,7 +172,7 @@ class FeedForward(nn.Module):
         self.linear_1 = nn.Linear(embed_dim, middle_dim)
         self.linear_2 = nn.Linear(middle_dim, embed_dim)
         self.gelu = nn.GELU()
-        self.dropout = nn.Dropout(0.2)
+        self.dropout = nn.Dropout(0.01)
 
     def forward(self, x):
         x = self.linear_1(x)
@@ -241,7 +255,7 @@ class Embeddings(nn.Module):
         # self.token_embeddings = nn.Embedding(vocab_size, embed_dim)
         self.token_embeddings = nn.Linear(ori_feature_dim, embed_dim) # change embedding into linear for onehot
         self.layer_norm = nn.LayerNorm(embed_dim, eps=1e-12)
-        self.dropout = nn.Dropout()
+        self.dropout = nn.Dropout(0.02)
 
     def forward(self, inputs, input_dim):
         #inputs = torch.tensor(inputs).to(inputs.device).long()
