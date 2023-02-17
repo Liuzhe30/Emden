@@ -9,3 +9,5 @@
 # 
 *.pyc
 *.model
+*.npy
+experiment/images/

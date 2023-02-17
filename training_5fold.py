@@ -32,21 +32,27 @@ def train_emden(model, device, train_loader, optimizer, epoch, loss_fn, LOG_INTE
         
         optimizer.zero_grad()
         output = model(data)
-        #loss = loss_fn(output, data.y.view(-1, 1).float())
         #print(output)
-        #print(data.y)
+
+        #n = data.y.size(0)
+        #label = torch.zeros(n,2,device=device).long()
+        #label = label.scatter_(dim=1, index=data.y.long().view(-1, 1), src=torch.ones(n, 2,device=device).long())
+        #loss = loss_fn(output, label.float())
+        #loss = loss_fn(output, data.y.view(-1, 1).float())
         loss = loss_fn(output, data.y)
+        #loss = loss_fn(output, data.y.float())
+        
         loss.backward()
         #print([x.grad for x in optimizer.param_groups[0]['params']])
         optimizer.step()
         #print(optimizer.param_groups[0])
         if batch_idx % LOG_INTERVAL == 0:
-            print('Train epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\tACC: {:.3f}'.format(epoch,
+            print('Train epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}\t'.format(epoch,
                                                                            batch_idx,
                                                                            len(train_loader.dataset),
                                                                            100. * batch_idx / len(train_loader),
                                                                            loss.item(),
-                                                                           get_acc(output, data.y.view(-1, 1).float())))
+                                                                           ))
                                                                            
 def softmax(vec):
     """Compute the softmax in a numerically stable way."""
@@ -60,40 +66,49 @@ def predicting(model, device, loader):
     total_preds = torch.Tensor()
     total_labels = torch.Tensor()
     total_probs = torch.Tensor()
+    total_raw_preds = torch.Tensor()
     print('Make prediction for {} samples...'.format(len(loader.dataset)))
     with torch.no_grad():
         for data in loader:
             data = data.to(device)
+            #n = data.y.size(0)
+            #label = torch.zeros(n,2)
+            #label = label.scatter_(dim=1, index=data.y.cpu().view(-1, 1), src=torch.ones(n, 2))
             output = model(data)
             total_preds = torch.cat((total_preds, output.cpu()), 0)
             total_labels = torch.cat((total_labels, data.y.cpu()), 0)
             total_probs = torch.cat((total_probs, output.cpu()), 0)
+            total_raw_preds = torch.cat((total_raw_preds, output.cpu()), 0)
     
     total_probs = total_probs.numpy()
+    #total_labels = total_labels.argmax(dim=1).numpy()
     total_preds = total_preds.argmax(dim=1).numpy()
+    
     for i in range(total_probs.shape[0]):
         total_probs[i] = softmax(total_probs[i])
     total_probs = total_probs[:,1]
+    
+    #print(total_raw_preds)
+    #print(total_labels)
+    #print(total_preds)
+    return total_labels.flatten().numpy(),total_preds.flatten(),total_probs.flatten(),total_raw_preds.numpy()
 
-    return total_labels.numpy().flatten(),total_preds.flatten(),total_probs.flatten()
-
-def train_5fold():
+def train_5fold(fold):
     cuda_name = "cuda:0"
     if len(sys.argv)>3:
         cuda_name = ["cuda:0","cuda:1"][int(sys.argv[3])]
     print('cuda_name:', cuda_name)
 
     TRAIN_BATCH_SIZE = 128
-    VALID_BATCH_SIZE = 256
-    TEST_BATCH_SIZE = 256
+    VALID_BATCH_SIZE = 128
+    TEST_BATCH_SIZE = 128
     LR = 0.001
     LOG_INTERVAL = 5
-    NUM_EPOCHS = 250
+    NUM_EPOCHS = 120
 
     print('Learning rate: ', LR)
     print('Epochs: ', NUM_EPOCHS)
 
-    fold = 1
     processed_data_file_train = '../datasets/fivefold/processed/' + str(fold) + 'fold_train_data.pt'
     processed_data_file_valid = '../datasets/fivefold/processed/' + str(fold) + 'fold_valid_data.pt'
     processed_data_file_test = '../datasets/processed/test_data.pt'
@@ -103,6 +118,19 @@ def train_5fold():
         train_data = PyDataset(root='../datasets/fivefold', dataset=str(fold)+'fold_train')
         valid_data = PyDataset(root='../datasets/fivefold', dataset=str(fold)+'fold_valid')
         test_data = PyDataset(root='../datasets', dataset='test')
+    
+        ''' # if need onehot labels
+    processed_data_file_train = '../datasets/fivefold/processed/' + str(fold) + 'fold_train_evidence_onehot_data.pt'
+    processed_data_file_valid = '../datasets/fivefold/processed/' + str(fold) + 'fold_valid_evidence_onehot_data.pt'
+    processed_data_file_test = '../datasets/processed/test_data_evidence_onehot_data.pt'
+    if ((not os.path.isfile(processed_data_file_train)) or (not os.path.isfile(processed_data_file_valid)) or (not os.path.isfile(processed_data_file_test))):
+        print('please run prepareData.py to prepare data in pytorch format!')
+    else:
+        train_data = PyDataset(root='../datasets/fivefold', dataset=str(fold)+'fold_train_evidence_onehot')
+        valid_data = PyDataset(root='../datasets/fivefold', dataset=str(fold)+'fold_valid_evidence_onehot')
+        test_data = PyDataset(root='../datasets', dataset='test_data_evidence_onehot')
+        '''
+
         print(train_data)
         print(valid_data)
         print(test_data)
@@ -117,8 +145,9 @@ def train_5fold():
         model = Emden().to(device)
         print(model)
         loss_fn = nn.CrossEntropyLoss() # nn.logSoftmax() and nn.NLLLoss()
-        #loss_fn = nn.MSELoss()
         #loss_fn = nn.NLLLoss()
+        #loss_fn = nn.BCELoss()
+        #loss_fn = nn.BCEWithLogitsLoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=LR)
         best_auc = -1
         best_valid_cee = -1
@@ -128,7 +157,7 @@ def train_5fold():
         for epoch in range(NUM_EPOCHS):
             train_emden(model, device, train_loader, optimizer, epoch+1, loss_fn, LOG_INTERVAL)
             print('predicting for valid data')
-            G,P,T = predicting(model, device, valid_loader)
+            G,P,T,R = predicting(model, device, valid_loader)
             #print(G) # int labels
             #print(T) # predictions           
             val = roc_auc_score(G,T)
@@ -138,7 +167,7 @@ def train_5fold():
                 best_epoch = epoch+1
                 torch.save(model.state_dict(), model_file_name)
                 print('predicting for test data')
-                G,P,T = predicting(model, device, test_loader)
+                G,P,T,R = predicting(model, device, test_loader)
                 print('auc increased at epoch ', best_epoch, '; best_test_acc, best_test_precision, best_test_recall, best_test_f1, best_test_auc:', ret[1], ret[2], ret[3], ret[4], ret[5])
             else:
                 print(ret[1],'No improvement since epoch ', best_epoch, '; best_test_acc, best_test_precision, best_test_recall, best_test_f1, best_test_auc:', ret[1], ret[2], ret[3], ret[4], ret[5])
@@ -147,5 +176,30 @@ def train_5fold():
 def train():
     pass
 
+def generate_pred():
+
+    cuda_name = "cuda:0"
+    if len(sys.argv)>3:
+        cuda_name = ["cuda:0","cuda:1"][int(sys.argv[3])]
+    print('cuda_name:', cuda_name)
+    device = torch.device(cuda_name if torch.cuda.is_available() else "cpu")
+    #processed_data_file_test = '../datasets/processed/test_data.pt'
+    test_data = PyDataset(root='../datasets', dataset='test')
+    test_loader = DataLoader(test_data, batch_size=128, shuffle=False)
+
+    for i in range(5):
+        fold = i+1
+        model_file_name = '../model/weights/' + str(fold) + 'fold_weights.model'
+        model = Emden().to(device)
+        model.load_state_dict(torch.load(model_file_name))
+        print('predicting for test data')
+        G,P,T,R = predicting(model, device, test_loader)
+        np.save('../model/pred_results/' + str(fold) + 'fold_label.npy',G)
+        np.save('../model/pred_results/' + str(fold) + 'fold_pred.npy',P)
+        np.save('../model/pred_results/' + str(fold) + 'fold_pred_prob.npy',T)
+        np.save('../model/pred_results/' + str(fold) + 'fold_pred_raw.npy',R)
+
 if __name__=='__main__':
-    train_5fold()
+    for i in range(5):
+        train_5fold(fold=i+1)
+    generate_pred() # for real performance calculation
