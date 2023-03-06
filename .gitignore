@@ -6,8 +6,10 @@
 *.rasa
 *.ss
 
-# 
+# middle output
 *.pyc
 *.model
 *.npy
 experiment/images/
+
+# middle scripts
