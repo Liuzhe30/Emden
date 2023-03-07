@@ -175,6 +175,32 @@ def generate_da_test():
     non_mutant_entries(test_path,evidence_path)
     generate_dataset(evidence_path,processed_data_path,'../datasets','da_non_test')
 
+def generate_5fold_train():
+    for i in range(5):
+        train_path = '../datasets/fivefold/'+str(i+1)+'fold_train_evidence.dataset'
+        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.dataset'
+        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.pt'
+        reverse_entries(train_path,evidence_path) 
+        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_rev_train')
+
+        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.dataset'
+        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.pt'
+        non_mutant_entries(train_path,evidence_path)
+        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_non_train')
+
+def generate_5fold_valid():
+    for i in range(5):
+        valid_path = '../datasets/fivefold/'+str(i+1)+'fold_valid_evidence.dataset'
+        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_valid.dataset'
+        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_valid.pt'
+        reverse_entries(valid_path,evidence_path) 
+        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_rev_valid')
+
+        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_valid.dataset'
+        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_valid.pt'
+        non_mutant_entries(valid_path,evidence_path)
+        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_non_valid')
+        
 if __name__=='__main__':
 
     # generate DA train set
@@ -184,3 +210,5 @@ if __name__=='__main__':
     generate_da_test()
 
     # prepare 5fold-train/valid
+    generate_5fold_train()
+    generate_5fold_valid()
