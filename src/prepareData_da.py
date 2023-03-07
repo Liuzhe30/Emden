@@ -7,6 +7,7 @@ from rdkit import Chem
 import networkx as nx
 from utils import PyDataset
 import json
+pd.set_option('display.max_columns', None)
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -52,19 +53,134 @@ def smile_to_graph(smile):
         
     return c_size, features, edge_index
 
-def reverse_entries(dataset_path):
+def reverse_entries(dataset_path,evidence_path):
 
-    pass
+    new_columns = ['smile', 'fingerprint', 'variantfeature', 'label']
+    new_data = pd.DataFrame(columns=new_columns)
+    dataset = pd.read_pickle(dataset_path)
+    #print(dataset)
+    print(len(dataset['variantfeature'][0])) # 3904, 61d seq
 
-def non_mutant_entries(dataset_path):
+    for i in range(dataset.shape[0]): 
+        variantfeature_list = []
+        smile = dataset['smile'][i]
+        fingerprint = dataset['fingerprint'][i]
 
-    pass
+        # reverse label
+        labelori = dataset['label'][i]
+        if(labelori == 1):
+            label = 0
+        elif(labelori == 0):
+            label = 1
+
+        # reverse onehot sequence
+        seqbefore = dataset['seqafter'][i]
+        seqafter = dataset['seqbefore'][i]
+
+        # reverse variant features
+        hmm_before_list = dataset['variantfeature'][i][0:1830]
+        hmm_after_list = dataset['variantfeature'][i][1830:3660]
+        other_list = dataset['variantfeature'][i][3660:]
+        for item in hmm_after_list:
+            variantfeature_list.append(item)
+        for item in hmm_before_list:
+            variantfeature_list.append(item)
+        for item in other_list:
+            variantfeature_list.append(item)
+        variantfeature = np.array(variantfeature_list) # 3904
+        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':seqbefore, 'seqafter':seqafter,
+                                            'variantfeature': variantfeature, 'label': label}], ignore_index=True)
+
+    new_data.to_pickle(evidence_path)
+
+
+def non_mutant_entries(dataset_path,evidence_path):
+
+    new_columns = ['smile', 'fingerprint', 'variantfeature', 'label']
+    new_data = pd.DataFrame(columns=new_columns)
+    dataset = pd.read_pickle(dataset_path)
+    #print(dataset)
+    print(len(dataset['variantfeature'][0])) # 3904, 61d seq
+
+    for i in range(dataset.shape[0]): 
+        variantfeature_list = []
+        smile = dataset['smile'][i]
+        fingerprint = dataset['fingerprint'][i]
+
+        # no mutation label
+        label = 0
+
+        # no mutation onehot sequence
+        seqbefore = dataset['seqbefore'][i]
+        seqafter = dataset['seqbefore'][i]
+
+        # no mutation variant features
+        hmm_before_list = dataset['variantfeature'][i][0:1830]
+        other_list = dataset['variantfeature'][i][3660:]
+        for item in hmm_before_list:
+            variantfeature_list.append(item)
+        for item in hmm_before_list:
+            variantfeature_list.append(item)
+        for item in other_list:
+            variantfeature_list.append(item)
+        variantfeature = np.array(variantfeature_list) # 3904
+        new_data = new_data.append([{'smile': smile, 'fingerprint': fingerprint, 'seqbefore':seqbefore, 'seqafter':seqafter,
+                                            'variantfeature': variantfeature, 'label': label}], ignore_index=True)
+
+    new_data.to_pickle(evidence_path)
+
+def generate_dataset(evidence_path, processed_data_path, root, dataset):
+
+    new_data = pd.read_pickle(evidence_path)
+
+    # smile graph encoding
+    compound_iso_smiles = set(list(new_data['smile']))
+    smile_graph = {}
+    for smile in compound_iso_smiles:
+        g = smile_to_graph(smile)
+        smile_graph[smile] = g
+
+    # convert to PyTorch data format
+    if (not os.path.isfile(processed_data_path)):
+        train_smile, train_fp, train_sb, train_sa, train_variant,  train_Y = np.asarray(list(new_data['smile'])),np.asarray(list(new_data['fingerprint'])), \
+                                                        np.asarray(new_data['seqbefore']), np.asarray(new_data['seqafter']), \
+                                                        np.asarray(list(new_data['variantfeature'])),np.asarray(list(new_data['label']))
+        print('preparing .pt in pytorch format!')
+        train_data = PyDataset(root=root, dataset=dataset, xs=train_smile, xfp=train_fp, xsb=train_sb, xsa=train_sa, xv=train_variant, y=train_Y, smile_graph=smile_graph)         
+    else:
+        print('already exits!')
+
+
+def generate_da_train():
+    train_path = '../datasets/middlefile/train_data_evidence.dataset'
+    evidence_path = '../datasets/middlefile/da_rev_train_data_evidence.dataset'
+    processed_data_path = '../datasets/processed/da_rev_train_data.pt'
+    reverse_entries(train_path,evidence_path) 
+    generate_dataset(evidence_path,processed_data_path,'../datasets','da_rev_train')
+
+    evidence_path = '../datasets/middlefile/da_non_train_data_evidence.dataset'
+    processed_data_path = '../datasets/processed/da_non_train_data.pt'
+    non_mutant_entries(train_path,evidence_path)
+    generate_dataset(evidence_path,processed_data_path,'../datasets','da_non_train')
+
+def generate_da_test():
+    test_path = '../datasets/middlefile/test_data_evidence.dataset'
+    evidence_path = '../datasets/middlefile/da_rev_test_data_evidence.dataset'
+    processed_data_path = '../datasets/processed/da_rev_test_data.pt'
+    reverse_entries(test_path,evidence_path) 
+    generate_dataset(evidence_path,processed_data_path,'../datasets','da_rev_test')
+
+    evidence_path = '../datasets/middlefile/da_non_test_data_evidence.dataset'
+    processed_data_path = '../datasets/processed/da_non_test_data.pt'
+    non_mutant_entries(test_path,evidence_path)
+    generate_dataset(evidence_path,processed_data_path,'../datasets','da_non_test')
 
 if __name__=='__main__':
 
+    # generate DA train set
+    generate_da_train()
+
     # generate DA test set
-    test_path = '../datasets/middlefile/test_data_evidence.dataset'
-    reverse_entries(test_path) 
-    #non_mutant_entries(test_path)
+    generate_da_test()
 
     # prepare 5fold-train/valid
