@@ -225,12 +225,14 @@ def generate_5fold_valid():
         
 if __name__=='__main__':
 
-    # generate DA train set
+    # generate DA train set and split
     generate_da_train()
 
     # generate DA test set
-    #generate_da_test()
+    generate_da_test()
 
-    # prepare 5fold-train/valid
+    '''
+    # prepare 5fold-train/valid dataset (removed)
     generate_5fold_train()
     generate_5fold_valid()
+    '''
