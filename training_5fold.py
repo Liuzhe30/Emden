@@ -194,10 +194,10 @@ def generate_pred():
         model.load_state_dict(torch.load(model_file_name))
         print('predicting for test data')
         G,P,T,R = predicting(model, device, test_loader)
-        np.save('../model/pred_results/' + str(fold) + 'fold_label.npy',G)
-        np.save('../model/pred_results/' + str(fold) + 'fold_pred.npy',P)
-        np.save('../model/pred_results/' + str(fold) + 'fold_pred_prob.npy',T)
-        np.save('../model/pred_results/' + str(fold) + 'fold_pred_raw.npy',R)
+        np.save('../model/pred_results_5fold/' + str(fold) + 'fold_label.npy',G)
+        np.save('../model/pred_results_5fold/' + str(fold) + 'fold_pred.npy',P)
+        np.save('../model/pred_results_5fold/' + str(fold) + 'fold_pred_prob.npy',T)
+        np.save('../model/pred_results_5fold/' + str(fold) + 'fold_pred_raw.npy',R)
 
 if __name__=='__main__':
     for i in range(5):
