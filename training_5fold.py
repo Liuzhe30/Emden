@@ -152,7 +152,7 @@ def train_5fold(fold):
         best_auc = -1
         best_valid_cee = -1
         best_epoch = -1
-        model_file_name = '../model/weights/' + str(fold) + 'fold_weights.model'
+        model_file_name = '../model/weights_5fold/' + str(fold) + 'fold_weights.model'
 
         for epoch in range(NUM_EPOCHS):
             train_emden(model, device, train_loader, optimizer, epoch+1, loss_fn, LOG_INTERVAL)
@@ -189,7 +189,7 @@ def generate_pred():
 
     for i in range(5):
         fold = i+1
-        model_file_name = '../model/weights/' + str(fold) + 'fold_weights.model'
+        model_file_name = '../model/weights_5fold/' + str(fold) + 'fold_weights.model'
         model = Emden().to(device)
         model.load_state_dict(torch.load(model_file_name))
         print('predicting for test data')
