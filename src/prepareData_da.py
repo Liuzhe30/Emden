@@ -7,6 +7,7 @@ from rdkit import Chem
 import networkx as nx
 from utils import PyDataset
 import json
+from sklearn.utils import shuffle
 pd.set_option('display.max_columns', None)
 
 import warnings
@@ -150,18 +151,41 @@ def generate_dataset(evidence_path, processed_data_path, root, dataset):
     else:
         print('already exits!')
 
+def generate_dataset_withformer(evidence_path, old_evidence_path, processed_data_path, root, dataset):
+
+    da_data = pd.read_pickle(evidence_path)
+    old_data = pd.read_pickle(old_evidence_path)
+    new_data = pd.concat([da_data,old_data])
+    new_data = shuffle(new_data)
+
+    # smile graph encoding
+    compound_iso_smiles = set(list(new_data['smile']))
+    smile_graph = {}
+    for smile in compound_iso_smiles:
+        g = smile_to_graph(smile)
+        smile_graph[smile] = g
+
+    # convert to PyTorch data format
+    if (not os.path.isfile(processed_data_path)):
+        train_smile, train_fp, train_sb, train_sa, train_variant,  train_Y = np.asarray(list(new_data['smile'])),np.asarray(list(new_data['fingerprint'])), \
+                                                        np.asarray(new_data['seqbefore']), np.asarray(new_data['seqafter']), \
+                                                        np.asarray(list(new_data['variantfeature'])),np.asarray(list(new_data['label']))
+        print('preparing .pt in pytorch format!')
+        train_data = PyDataset(root=root, dataset=dataset, xs=train_smile, xfp=train_fp, xsb=train_sb, xsa=train_sa, xv=train_variant, y=train_Y, smile_graph=smile_graph)         
+    else:
+        print('already exits!')
 
 def generate_da_train():
     train_path = '../datasets/middlefile/train_data_evidence.dataset'
     evidence_path = '../datasets/middlefile/da_rev_train_data_evidence.dataset'
     processed_data_path = '../datasets/processed/da_rev_train_data.pt'
     reverse_entries(train_path,evidence_path) 
-    generate_dataset(evidence_path,processed_data_path,'../datasets','da_rev_train')
+    generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets','da_rev_train')
 
     evidence_path = '../datasets/middlefile/da_non_train_data_evidence.dataset'
     processed_data_path = '../datasets/processed/da_non_train_data.pt'
     non_mutant_entries(train_path,evidence_path)
-    generate_dataset(evidence_path,processed_data_path,'../datasets','da_non_train')
+    generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets','da_non_train')
 
 def generate_da_test():
     test_path = '../datasets/middlefile/test_data_evidence.dataset'
@@ -181,12 +205,12 @@ def generate_5fold_train():
         evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.dataset'
         processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.pt'
         reverse_entries(train_path,evidence_path) 
-        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_rev_train')
+        generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_rev_train')
 
         evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.dataset'
         processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.pt'
         non_mutant_entries(train_path,evidence_path)
-        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_non_train')
+        generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_non_train')
 
 def generate_5fold_valid():
     for i in range(5):
