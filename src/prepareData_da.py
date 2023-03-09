@@ -151,11 +151,12 @@ def generate_dataset(evidence_path, processed_data_path, root, dataset):
     else:
         print('already exits!')
 
-def generate_dataset_withformer(evidence_path, old_evidence_path, processed_data_path, root, dataset):
+def generate_dataset_withformer(evidence_path_rev,evidence_path_non, old_evidence_path, processed_data_path, root, dataset):
 
-    da_data = pd.read_pickle(evidence_path)
+    rev_data = pd.read_pickle(evidence_path_rev)
+    non_data = pd.read_pickle(evidence_path_non)
     old_data = pd.read_pickle(old_evidence_path)
-    new_data = pd.concat([da_data,old_data])
+    new_data = pd.concat([rev_data,non_data,old_data])
     new_data = shuffle(new_data)
 
     # smile graph encoding
@@ -177,15 +178,14 @@ def generate_dataset_withformer(evidence_path, old_evidence_path, processed_data
 
 def generate_da_train():
     train_path = '../datasets/middlefile/train_data_evidence.dataset'
-    evidence_path = '../datasets/middlefile/da_rev_train_data_evidence.dataset'
-    processed_data_path = '../datasets/processed/da_rev_train_data.pt'
-    reverse_entries(train_path,evidence_path) 
-    generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets','da_rev_train')
 
-    evidence_path = '../datasets/middlefile/da_non_train_data_evidence.dataset'
-    processed_data_path = '../datasets/processed/da_non_train_data.pt'
-    non_mutant_entries(train_path,evidence_path)
-    generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets','da_non_train')
+    evidence_path_rev = '../datasets/middlefile/da_rev_train_data_evidence.dataset'
+    reverse_entries(train_path,evidence_path_rev) 
+    evidence_path_non = '../datasets/middlefile/da_non_train_data_evidence.dataset'
+    non_mutant_entries(train_path,evidence_path_non)
+
+    processed_data_path = '../datasets/processed/da_train_data.pt'
+    generate_dataset_withformer(evidence_path_rev,evidence_path_non,train_path,processed_data_path,'../datasets','da_train')
 
 def generate_da_test():
     test_path = '../datasets/middlefile/test_data_evidence.dataset'
@@ -202,28 +202,26 @@ def generate_da_test():
 def generate_5fold_train():
     for i in range(5):
         train_path = '../datasets/fivefold/'+str(i+1)+'fold_train_evidence.dataset'
-        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.dataset'
-        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.pt'
-        reverse_entries(train_path,evidence_path) 
-        generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_rev_train')
 
-        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.dataset'
-        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.pt'
-        non_mutant_entries(train_path,evidence_path)
-        generate_dataset_withformer(evidence_path,train_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_non_train')
+        evidence_path_rev = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_train.dataset'
+        reverse_entries(train_path,evidence_path_rev)
+        evidence_path_non = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_train.dataset'
+        non_mutant_entries(train_path,evidence_path_non)
+
+        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_da_train.pt'
+        generate_dataset_withformer(evidence_path_rev,evidence_path_non,train_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_da_train')
 
 def generate_5fold_valid():
     for i in range(5):
         valid_path = '../datasets/fivefold/'+str(i+1)+'fold_valid_evidence.dataset'
-        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_valid.dataset'
-        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_valid.pt'
-        reverse_entries(valid_path,evidence_path) 
-        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_rev_valid')
 
-        evidence_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_valid.dataset'
-        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_valid.pt'
-        non_mutant_entries(valid_path,evidence_path)
-        generate_dataset(evidence_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_non_valid')
+        evidence_path_rev = '../datasets/fivefold_da/'+str(i+1)+ 'fold_rev_valid.dataset'
+        reverse_entries(valid_path,evidence_path_rev)
+        evidence_path_non = '../datasets/fivefold_da/'+str(i+1)+ 'fold_non_valid.dataset'
+        non_mutant_entries(valid_path,evidence_path_non)
+
+        processed_data_path = '../datasets/fivefold_da/'+str(i+1)+ 'fold_da_valid.pt'
+        generate_dataset_withformer(evidence_path_rev,evidence_path_non,valid_path,processed_data_path,'../datasets/fivefold_da',str(i+1)+'fold_da_valid')
         
 if __name__=='__main__':
 
@@ -231,7 +229,7 @@ if __name__=='__main__':
     generate_da_train()
 
     # generate DA test set
-    generate_da_test()
+    #generate_da_test()
 
     # prepare 5fold-train/valid
     generate_5fold_train()

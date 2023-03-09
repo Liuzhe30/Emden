@@ -11,5 +11,7 @@
 *.model
 *.npy
 experiment/images/
+da_train_data.pt
+
 
 # middle scripts
