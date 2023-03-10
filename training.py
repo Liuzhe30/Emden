@@ -113,7 +113,7 @@ def train():
     processed_data_file_train = '../datasets/processed/train_data.pt'
     processed_data_file_test = '../datasets/processed/test_data.pt'
     if ((not os.path.isfile(processed_data_file_train)) or (not os.path.isfile(processed_data_file_test))):
-        print('please run prepareData.py and prepareData_da.py to prepare data in pytorch format!')
+        print('please run prepareData.py to prepare data in pytorch format!')
     else:
         #train_data = PyDataset(root='../datasets/fivefold_da', dataset=str(fold)+'fold_da_train')
         train_data = PyDataset(root='../datasets', dataset='train')
