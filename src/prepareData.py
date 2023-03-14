@@ -265,8 +265,8 @@ def create_onehot(filepath,filename,targetpath,rootpath):
 if __name__=='__main__':
 
     generate_dataset() # prepare dataset (train/test)
-    generate_5fold_dataset() # prepare dataset (5fold-train/test)
-    generate_all()
+    #generate_5fold_dataset() # prepare dataset (5fold-train/test)
+    #generate_all()
 
     ''' # if need onehot labels
     create_onehot('../datasets/middlefile/','all_evidence.dataset','../datasets/processed/','../datasets')
