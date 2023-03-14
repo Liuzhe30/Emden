@@ -68,7 +68,7 @@ def split_dataset(filename):
     shuffled_dataset = shuffle(dataset_feature)
     shuffled_dataset = shuffled_dataset.reset_index(drop=True)
     train_df = shuffled_dataset[0:600] # 600 for 5-fold
-    test_df = shuffled_dataset[600:753].reset_index(drop=True) # 153
+    test_df = shuffled_dataset[600:712].reset_index(drop=True) # 112
 
     train_data = flatten_dataset(train_df)
     test_data = flatten_dataset(test_df)
@@ -176,7 +176,6 @@ def generate_dataset():
     for smile in compound_iso_smiles:
         g = smile_to_graph(smile)
         smile_graph[smile] = g
-    # print(smile_graph)
 
     # convert to PyTorch data format
     processed_data_file_train = '../datasets/processed/train_data.pt'
