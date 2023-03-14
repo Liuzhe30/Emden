@@ -11,6 +11,7 @@
 *.model
 *.npy
 experiment/images/
+datasets/fivefold/
 
 # middle scripts
 middle_output.py

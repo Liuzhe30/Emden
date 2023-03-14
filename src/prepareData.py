@@ -54,12 +54,12 @@ def smile_to_graph(smile):
 
 def split_5fold_dataset(filename):
     dataset_feature = pd.read_pickle(filename) # have been shuffled
-    fold_dfs = [dataset_feature[idx*120:(idx+1)*120] for idx in range(5)] # 5-fold datasets
+    fold_dfs = [dataset_feature[idx*110:(idx+1)*110] for idx in range(5)] # 5-fold datasets
     flatten_folds_valid = [df.reset_index(drop=True) for df in fold_dfs]
-    print(dataset_feature[0:120],dataset_feature[240:])
-    flatten_folds_train = [dataset_feature[120:],pd.concat([dataset_feature[0:120],dataset_feature[240:]]),
-                            pd.concat([dataset_feature[0:240],dataset_feature[360:]]),
-                            pd.concat([dataset_feature[0:360],dataset_feature[480:]]),dataset_feature[0:480]]
+    print(dataset_feature[0:110],dataset_feature[220:])
+    flatten_folds_train = [dataset_feature[110:],pd.concat([dataset_feature[0:110],dataset_feature[220:]]),
+                            pd.concat([dataset_feature[0:220],dataset_feature[330:]]),
+                            pd.concat([dataset_feature[0:330],dataset_feature[440:]]),dataset_feature[0:440]]
     flatten_folds_train = [df.reset_index(drop=True) for df in flatten_folds_train]
     return flatten_folds_train, flatten_folds_valid
 
@@ -67,8 +67,8 @@ def split_dataset(filename):
     dataset_feature = pd.read_pickle(filename)
     shuffled_dataset = shuffle(dataset_feature)
     shuffled_dataset = shuffled_dataset.reset_index(drop=True)
-    train_df = shuffled_dataset[0:600] # 600 for 5-fold
-    test_df = shuffled_dataset[600:712].reset_index(drop=True) # 112
+    train_df = shuffled_dataset[0:550] # 550 for 5-fold
+    test_df = shuffled_dataset[550:712].reset_index(drop=True) # 160
 
     train_data = flatten_dataset(train_df)
     test_data = flatten_dataset(test_df)
@@ -122,7 +122,7 @@ def flatten_dataset(df):
 
 def generate_5fold_dataset():
 
-    evidence_data_file_train = '../datasets/middlefile/train_data_evidence.dataset' # (600,16)
+    evidence_data_file_train = '../datasets/middlefile/train_data_evidence.dataset' # (550,16)
     train_data = pd.read_pickle(evidence_data_file_train)
     
     # smile graph encoding
