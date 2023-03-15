@@ -100,7 +100,7 @@ def train():
         cuda_name = ["cuda:0","cuda:1"][int(sys.argv[3])]
     print('cuda_name:', cuda_name)
 
-    TRAIN_BATCH_SIZE = 128
+    TRAIN_BATCH_SIZE = 64
     VALID_BATCH_SIZE = 128
     TEST_BATCH_SIZE = 128
     LR = 0.0005
