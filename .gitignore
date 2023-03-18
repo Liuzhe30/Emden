@@ -12,7 +12,8 @@
 *.npy
 experiment/images/
 datasets/fivefold/
+testset.csv
 
 # middle scripts
 middle_output.py
-testset.csv
+training_5fold.py

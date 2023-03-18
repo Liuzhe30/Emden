@@ -9,7 +9,7 @@ Predicting the effect of mutations on clinical drug response using deep learning
 - Scikit-learn == 1.1
 
 ## Evaluate model
-We provide the test dataset used in this study,  you can use [test_data.pt](https://github.com/Liuzhe30/Emden/tree/main/datasets/processed/test_data.pt) and download the model weights from [OneDrive url](https://1drv.ms/u/s!AjoZI2sogng553wU_LCYhCqVVgC6?e=iJ5dhV) to evaluate our method.
+We provide the test dataset used in this study,  you can use [test_data.pt](https://github.com/Liuzhe30/Emden/tree/main/datasets/processed/test_data.pt) and download the model weights from [OneDrive url](https://1drv.ms/u/s!AjoZI2sogng56AGLbcxX5F_40RRo?e=HEwpOh) to evaluate our method.
 ```
 python evaluation.py
 ```

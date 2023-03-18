@@ -54,12 +54,12 @@ def smile_to_graph(smile):
 
 def split_5fold_dataset(filename):
     dataset_feature = pd.read_pickle(filename) # have been shuffled
-    fold_dfs = [dataset_feature[idx*110:(idx+1)*110] for idx in range(5)] # 5-fold datasets
+    fold_dfs = [dataset_feature[idx*116:(idx+1)*116] for idx in range(5)] # 5-fold datasets
     flatten_folds_valid = [df.reset_index(drop=True) for df in fold_dfs]
-    print(dataset_feature[0:110],dataset_feature[220:])
-    flatten_folds_train = [dataset_feature[110:],pd.concat([dataset_feature[0:110],dataset_feature[220:]]),
-                            pd.concat([dataset_feature[0:220],dataset_feature[330:]]),
-                            pd.concat([dataset_feature[0:330],dataset_feature[440:]]),dataset_feature[0:440]]
+    print(dataset_feature[0:116],dataset_feature[232:])
+    flatten_folds_train = [dataset_feature[116:],pd.concat([dataset_feature[0:116],dataset_feature[232:]]),
+                            pd.concat([dataset_feature[0:232],dataset_feature[348:]]),
+                            pd.concat([dataset_feature[0:348],dataset_feature[464:]]),dataset_feature[0:464]]
     flatten_folds_train = [df.reset_index(drop=True) for df in flatten_folds_train]
     return flatten_folds_train, flatten_folds_valid
 
@@ -67,8 +67,8 @@ def split_dataset(filename):
     dataset_feature = pd.read_pickle(filename)
     shuffled_dataset = shuffle(dataset_feature)
     shuffled_dataset = shuffled_dataset.reset_index(drop=True)
-    train_df = shuffled_dataset[0:550] # 550 for 5-fold
-    test_df = shuffled_dataset[550:712].reset_index(drop=True) # 160
+    train_df = shuffled_dataset[0:580] # 550 for 5-fold
+    test_df = shuffled_dataset[580:710].reset_index(drop=True) # 130
 
     train_data = flatten_dataset(train_df)
     test_data = flatten_dataset(test_df)
