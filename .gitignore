@@ -12,7 +12,6 @@
 *.npy
 experiment/images/
 datasets/fivefold/
-testset.csv
 
 # middle scripts
 middle_output.py
