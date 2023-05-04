@@ -1,5 +1,5 @@
 # Emden
-Predicting the effect of mutations on clinical drug response using deep learning
+Predicting the Effect of Mutations on Clinical Drug Response using Graph Representation and Transformer Encoders
 
 <p align="center"><img width="100%" src="model/Emden_structure.png" /></p>
 
