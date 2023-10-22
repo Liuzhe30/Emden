@@ -1,0 +1,18 @@
+# middle protein feature files
+*.pdb
+*.fasta
+*.hhm
+*.dssp
+*.rasa
+*.ss
+
+# middle output
+*.pyc
+*.model
+*.npy
+experiment/images/
+datasets/fivefold/
+
+# middle scripts
+middle_output.py
+training_5fold.py

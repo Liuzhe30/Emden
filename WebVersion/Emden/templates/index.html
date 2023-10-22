@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+
+    <!-- loading css -->
+    <link rel="stylesheet" href="Emden/static/css/bootstrap.css">
+    <link rel="stylesheet" href="Emden/static/css/component.css">
+    <link rel="stylesheet" href="Emden/static/css/jQueryButtonHover.css" />
+    <link rel='stylesheet' href='Emden/static/css/css.css?family=serif:800'>
+<!--    <link rel="stylesheet" href="Emden/static/css/span_style_v2.css">-->
+    <link rel="stylesheet" href="Emden/static/lib/bootstrap-slider/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="Emden/static/lib/bootstrap-select/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="Emden/static/lib/bootstrap-fileinput/css/fileinput.css">
+    {#    <!-- miRNASNP3 css -->#}
+    <link rel="stylesheet" href="Emden/static/css/main.css">
+
+    <!-- loading javascripts -->
+    <script src="Emden/static/lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="Emden/static/lib/bootstrap/bootstrap.js"></script>
+    <script src="Emden/static/lib/ui-bootstrap/ui-bootstrap-tpls-2.4.0.js"></script>
+    <script src="Emden/static/lib/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="Emden/static/lib/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="Emden/static/lib/fornac/dist/scripts/fornac.js"></script>
+    <script src="Emden/static/lib/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="Emden/static/js/jquery-2.1.1.min.js"></script>
+
+    <!-- for icon -->
+    <link rel="icon" href="Emden/static/img/smalllogo.png">
+    <title>Emden</title>
+
+</head>
+
+<style type="text/css">
+
+.n-col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo {
+    text-align: center; 
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.hero-banner {
+  background: url("https://hlccc.org/wp-content/uploads/2017/09/events-hero-bg-free-img.jpg") no-repeat center/cover;
+  padding: 20px 15px;
+  position: relative;
+}
+.hero-banner:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #13234E;
+}
+
+.hero-banner__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 550px;
+  color: #fff;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-size: 35px;
+  line-height: 48px;
+  margin: 0 0 24px;
+}
+.hero-text p {
+  margin: 0 0 24px;
+}
+
+.hero-button {
+  text-align: center;
+  margin-top: 24px;
+  width: 35%;
+}
+.hero-button a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #001958;
+  transition: all 0.1s ease-in-out;
+  margin-bottom: 24px;
+  width: 450px;
+  text-align: center;
+}
+.hero-button a:hover, .hero-button a:focus {
+  background: #956BBB;
+  transition: all 0.1s ease-in-out;
+  color: #fff;
+}
+</style>
+
+<body>
+<!-- website logo -->
+
+<h5></h5>
+<!-- navigation -->
+{% include 'navigation.html' %}
+
+{# {% for message in get_flashed_messages() %}#}
+{#    <p style="color: red;">{{ message }}</p>#}
+{#{% endfor %}#}
+
+
+    <section class="hero-banner">
+    <div class="container logo">
+        <div class="hero-banner__inner">
+
+<div class="logo" style="width: 80%; font-size: 100px; top: 5px; font-family: 'serif';color: #ffe01b">
+    <a href="/Emden">
+        <img src="Emden/static/img/mainlogo.png" alt="Emden" id="logo-banner" width="60%">
+    </a>
+</div>
+            <div class="hero-text" style="font-size: 75px;">
+                <h3>A Novel Method Integrating Graph and Transformer Representations for Predicting the Effect of Mutations on Clinical Drug Response</h3>
+                <p></p>
+            </div>
+            <div class="hero-button logo">
+                <div>
+                    <a href="/Emden/seq_pred"><b>Start Prediction</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!--     <div class="row" id="home-form">
+
+        <div class="n-col-md-6">
+            <div class="panel">
+                <div class="link-skewed">
+                    <a href='/seq_pred'style="font-size: 30px; color: black;">Predict single PPI change by sequence and mutation</a>
+                </div>
+            </div>
+        </div>
+        <div class="n-col-md-6">
+            <div class="panel">
+                <div class="link-svgline">
+                    <a href='/pdb_pred' style="font-size: 30px; color: black;">Predict by complex of known structure and mutation</a>
+                </div>
+            </div>
+        </div>   
+
+    </div>
+    {#        <p class="help-block">Example block-level help text here.</p>#}
+</div> -->
+
+<!-- footer -->
+{% include 'footer.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+
+    <!-- loading css -->
+    <link rel="stylesheet" href="/Emden/static/css/bootstrap.css">
+    <link rel='stylesheet' href='/Emden/static/css/css.css?family=serif:800'>
+<!--    <link rel="stylesheet" href="/Emden/static/css/span_style_v2.css">-->
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-slider/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-table/dist/bootstrap-table.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-select/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="/Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-fileinput/css/fileinput.css">
+    {#    <!-- miRNASNP3 css -->#}
+    <link rel="stylesheet" href="/Emden/static/css/main.css">
+    <link rel="stylesheet" href="/Emden/static/css/job.css">
+
+    <!-- loading javascripts -->
+    <script src="/Emden/static/lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="/Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="/Emden/static/lib/bootstrap/bootstrap.js"></script>
+    <script src="/Emden/static/lib/ui-bootstrap/ui-bootstrap-tpls-2.4.0.js"></script>
+    <script src="/Emden/static/lib/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="/Emden/static/lib/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="/Emden/static/lib/fornac/dist/scripts/fornac.js"></script>
+    <script src="/Emden/static/lib/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/Emden/static/lib/bootstrap-table/dist/bootstrap-table.js"></script>
+    <script src="/Emden/static/lib/bootstrap-table/src/extensions/export/bootstrap-table-export.js"></script>
+    <script src="/Emden/static/js/bootstrap-table-export.js"></script>
+    <script src="/Emden/static/js/tableExport.js"></script>
+
+    <script src="/js/Emden.js"></script>
+
+
+    <!-- for icon -->
+    <link rel="icon" href="/Emden/static/img/logo.png">
+    <title>Emdens</title>
+
+</head>
+
+<style type="text/css">
+html {
+    zoom: 80%;
+}
+.n-col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo {
+    text-align: center; 
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+</style>
+
+<body>
+<!-- website logo -->
+<div class ="logo" style="width: 50%; top: 20px">
+    <a href="/">
+        <img src="/Emden/static/img/2p-logo.png" alt="Emdens" id="logo-banner" width="12%">
+    </a>
+</div>
+<div class="logo" style="width: 80%; font-size: 120px; top: 15px; font-family: 'serif', sans-serif;color: #ffe01b">
+    <a href="/">
+        <span style="color:#ffe01b">M</span>
+        <span style="color:#ffe01b">I</span>
+        <span style="color:#ffe01b">P</span>
+        <span style="color:#ffe01b">P</span>
+        <span style="color:#ffe01b">I</span>
+    </a>
+</div>
+
+<!-- navigation -->
+{% include 'navigation.html' %}
+
+{# {% for message in get_flashed_messages() %}#}
+{#    <p style="color: red;">{{ message }}</p>#}
+{#{% endfor %}#}
+
+<!-- main container -->
+<div class="container" style = "font-family: Comic Sans MS, Comic Sans, cursive;">
+    <div class="page-header">
+        <h2>Details for job (refreash this page for getting results)</h2>
+    </div>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <td><strong>Job id:</strong></td>
+            <td><a class="text-left">{{ results.get('job_id') }}</a></td>
+        </tr>
+        </thead>
+        <tbody>
+        {% if  results.get('job_name') %}
+            <tr>
+                <td><strong>job name: </strong></td>
+                <td><a class="text-left">{{ results['job_name'] }}</a></td>
+            </tr>
+        {% endif %}
+        <tr>
+            <td><strong>PDB id:</strong></td>
+            <td><a class="text-left">{{ results.get('pdb_id') }}</a></td>
+        </tr>
+        <tr>
+            <td><strong>mutated chain id:</strong></td>
+            <td><a class="text-left" id="mutated_id">{{ results.get('mutated_id') }}</a></td>
+        </tr>
+        <tr>
+            <td><strong>mutated position:</strong></td>
+            <td><a class="text-left" id="mutated_pos">{{ results.get('mutated_pos') }}</a></td>
+        </tr>
+        <tr>
+            <td><strong>partner chain id:</strong></td>
+            <td><a class="text-left">{{ results.get('partner_id') }}</a></td>
+        </tr>
+        <tr>
+            <td><strong>latest status: </strong></td>
+            <td><a class="text-left">{{ results.get('job_state') }}</a></td>
+        </tr>
+        <tr>
+            <td><strong>latest update time: </strong></td>
+            <td><a class="text-left">{{ results.get('time') }}</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+    {% if results.get('result') %}
+        <div class="page-header">
+            <h2>Predict results</h2>
+        </div>
+        <table id="ResultTable" class="table table-bordered table-striped table-hover table-condensed"
+               data-toggle="table" data-pagination="true" data-show-pagination-switch="true" data-page-size=5
+               data-show-export="true" style="table-layout: fixed" >
+            <thead>
+            <tr>
+                <td></td>
+                <td><strong>Affected protein</strong></td>
+                <td><strong>Partner protein</strong></td>
+                <td><strong>Variant</strong></td>
+                <td><strong>Pred_class</strong></td>
+                <td><strong>Pred_score</strong></td>
+                <td><strong>Status</strong></td>
+                <td><strong>Error_msg</strong></td>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in results['result'] %}
+                <tr style="max-width: 50px">
+                    <td>{{ loop.index}}</td>
+                    <td>{{ item.get('affected_protein') }}</td>
+                    <td>{{ item.get('partner_protein') }}</td>
+                    <td>{{ item.get('variant') }}</td>
+                    <td>{{ item.get('pred_class') }}</td>
+                    <td>{{ item.get('pred_score') }}</td>
+                    <td>{{ item.get('state') }}</td>
+                    <td>{{ item.get('error_msg') }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>       
+
+    {% endif %}
+
+
+<div class="page-header">
+<table class="table table-striped table-hover">
+<tbody>
+    <div class="page-header">
+        <h2>3D structure of the complex</h2>
+    </div>
+<script src="/Emden/static/js/ngl.js"></script>
+<!---<script src="https://unpkg.com/ngl@2.0.0-dev.39/dist/ngl.umd.js"></script>--->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport");
+      var mutated_id = document.getElementById("mutated_id").innerHTML;
+      var mutated_pos = document.getElementById("mutated_pos").innerHTML;
+      //var mutated_id = "I";
+      //var mutated_pos = "45";
+      
+      var mut_string = ":" + mutated_id;
+      var sele_mut = mut_string + " and " + mutated_pos;
+      
+ 
+      // Handle window resizing
+      window.addEventListener( "resize", function( event ){
+      stage.handleResize(); }, false );
+      
+      stage.setParameters( { backgroundColor: "white", hoverTimeout: -1 } );
+      //stage.loadFile("rcsb://1CSE").then(function (component) {
+      //stage.loadFile("/Emden/static/file/1cse.pdb").then(function (component) {
+      stage.loadFile("/Emden/static/pdb/temp.pdb").then(function (component) {
+      component.addRepresentation("cartoon");
+      component.addRepresentation("rocket", {sele: "helix", color: "lightgray"})
+      //component.addRepresentation("axes", {sele: ":B and backbone", showAxes: false, showBox: true, radius: 0.2})
+      //component.addRepresentation("axes", {sele: ":I and 45", showAxes: true, showBox: true, radius: 0.3})
+      component.addRepresentation("ball+stick", {sele: sele_mut, scale: 4.0, aspectRatio: 4.5, color: "yellow"})
+      //component.addRepresentation("label", {sele: sele_mut, color: "black", labelType:"element",xOffset:0.5})
+      component.addRepresentation("surface", {sele: sele_mut, opacity: 0.4,color: "yellow",side: "front"})
+      component.autoView();
+      });
+    });
+  </script>
+  <div id="viewport" style="width:100%; height:600px; text-align:center;border-style: 
+  solid;border-width: 1px;border-color: #000;"></div>
+</table>
+</div>
+</div>
+<script>
+
+<!-- footer -->
+{% include 'footer.html' %}
+
+</body>
+
+</html>

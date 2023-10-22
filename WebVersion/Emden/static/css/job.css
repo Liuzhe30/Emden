@@ -1,0 +1,23 @@
+table{
+       table-layout:fixed;
+
+}
+
+table td{
+     max-width: 200px;
+
+     overflow: hidden;
+
+     text-overflow:ellipsis;
+
+     white-space: nowrap;
+
+     word-wrap: break-word;
+    /*break-word;*/
+
+}
+
+table td:hover {
+overflow: auto;
+white-space: normal;
+}

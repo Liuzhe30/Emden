@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+
+    <!-- loading css -->
+    <link rel="stylesheet" href="/Emden/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/Emden/static/css/component.css">
+    <link rel="stylesheet" href="/Emden/static/css/jQueryButtonHover.css" />
+    <link rel='stylesheet' href='/Emden/static/css/css.css?family=serif:800'>
+<!--    <link rel="stylesheet" href="/Emden/static/css/span_style_v2.css">-->
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-slider/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-select/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="/Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-fileinput/css/fileinput.css">
+    {#    <!-- miRNASNP3 css -->#}
+    <link rel="stylesheet" href="static/css/main.css">
+
+    <!-- loading javascripts -->
+    <script src="/Emden/static/lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="/Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="/Emden/static/lib/bootstrap/bootstrap.js"></script>
+    <script src="/Emden/static/lib/ui-bootstrap/ui-bootstrap-tpls-2.4.0.js"></script>
+    <script src="/Emden/static/lib/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="/Emden/static/lib/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="/Emden/static/lib/fornac/dist/scripts/fornac.js"></script>
+    <script src="/Emden/static/lib/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/Emden/static/js/jquery-2.1.1.min.js"></script>
+    <script src="/Emden/static/js/Emden.js"></script>
+    <!-- for icon -->
+    <link rel="icon" href="Emden/static/img/mainlogo.png">
+    <title>Emden</title>
+
+</head>
+
+<style type="text/css">
+html
+{
+    zoom: 80%;
+}
+.n-col-md-6 {
+  position: center;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.n-panel {}
+
+.logo {
+    text-align: center; 
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    color: #000;
+}
+
+.item {
+    left: 20px;
+    right: 20px;
+    height: 45px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.item input {
+    width: 80%;
+    height: 100%;
+    color: #000;
+    position: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.item input::placeholder {
+  font-family: 'serif', sans-serif;
+  font-size: 20px;
+  color: #C0C0C0;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  transition: all .2s linear;
+}
+
+.item label {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    transition: all .2s linear;
+    color: #C0C0C0;
+}
+
+.item input:focus+label,
+.item input:valid+label {
+    top: 0;
+    font-size: 12px;
+}
+
+input,
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+</style>
+
+<body>
+<!-- website logo -->
+<div class="logo" style="width: 80%; font-size: 100px; top: 15px; font-family: 'serif', sans-serif;color: #ffe01b">
+    <a href="/Emden">
+        <img src="/Emden/static/img/mainlogo.png" alt="Emden" id="logo-banner" width="20%">
+    </a>
+</div>
+
+<!-- navigation -->
+{% include 'navigation.html' %}
+
+{# {% for message in get_flashed_messages() %}#}
+{#    <p style="color: red;">{{ message }}</p>#}
+{#{% endfor %}#}
+
+<!-- main container -->
+<div class="container" style = "width: 50%; position: center">
+    
+        <div class="n-col-md-6">
+            <div class="panel">
+                <hr>
+                <div class="panel-heading" style="text-align: center; font-size: 26px; font-family: 'serif', sans-serif">
+                    <label>Predict the Effect of Mutations on Clinical Drug Response</label>
+                </div>
+<!--                <div style="text-align: center; font-size: 15px; font-family: 'serif', sans-serif"> 123</div>-->
+                <hr>
+                <div class="panel-body">
+                    <form name="form1" method="POST" enctype="multipart/form-data">
+                        <div style="font-size: 15px;width: 90%;padding-left: 40px;">
+                                Note: <br>
+                                1. Please check in advance that the given protein is a drug target, or the results may be inaccurate.<br>
+                                2. If there are multiple mutations on the protein, please predict them separately.
+    For example, if sequence A has mutations at both position 3 and position 9, then you should separately input the two sets of sequences, "Sequence A  and sequence A with mutation at position 3" as well as "Sequence A and sequence A with mutation at position 9" into the model.<br>
+
+                        </div>
+                        <hr>
+                        <div style="font-size: 20px;width: 90%">
+                            <label>Step 1. Input the original protein sequence: </label>
+                            <div class="item" style="padding-left: 25px;">
+                                <input name='seq'
+                                          style="height: 35px; width: 500px" required></input>
+                                <label for="">e.g.1 P31749 / e.g.2 MSDVAIVKEGWLHKRGEYI..(Use Example Run)</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="font-size: 20px;width: 90%">
+                            <label>Step 2. Input the mutation information: </label>
+                            <div>mutation position</div>
+                            <div class="item" style="padding-left: 25px;">
+                                <input name='muinfo'
+                                          style="height: 35px; width: 500px" required></input>
+                                <label for="">e.g. E17K</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="font-size: 20px;width: 90%">
+                            <label>Step 3. Input the standard pubchem drug name: </label>
+                            <div class="item" style="padding-left: 25px;">
+                                <input name='drugname'
+                                          style="height: 35px; width: 500px" required></input>
+                                <label for="">e.g. Vemurafenib</label>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div>
+                            &nbsp;&nbsp;
+                            <input type="submit" name='form1_submit'  value="Submit" class="btn btn-primary" 
+                            style="background-color: #403b3b;border-color: #403b3b; margin-left: 5%; font-size: 20px;width:200px;height:60px" onclick="submit1()">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="reset" class="btn btn-warning" style="background-color: #dbd902;border-color: #dbd902;  font-size: 20px;width:200px;height:60px" onclick="formReset()">Reset</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-success" style="background-color:#007c89;border-color: #007c89; font-size: 20px;width:200px;height:60px" onclick="example()">Example run</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+    </div>
+    {#        <p class="help-block">Example block-level help text here.</p>#}
+</div>
+
+<!-- footer -->
+{% include 'footer.html' %}
+
+</body>
+
+</html>
+
+
+

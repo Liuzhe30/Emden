@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+
+    <!-- loading css -->
+    <link rel="stylesheet" href="/Emden/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/Emden/static/css/component.css">
+    <link rel="stylesheet" href="/Emden/static/css/jQueryButtonHover.css" />
+    <link rel='stylesheet' href='/Emden/static/css/css.css?family=serif:800'>
+<!--    <link rel="stylesheet" href="/Emden/static/css/span_style_v2.css">-->
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-slider/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-select/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="/Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Emden/static/lib/bootstrap-fileinput/css/fileinput.css">
+    {#    <!-- miRNASNP3 css -->#}
+    <link rel="stylesheet" href="/Emden/static/css/main.css">
+
+    <!-- loading javascripts -->
+    <script src="/Emden/static/lib/jquery/jquery-3.1.1.min.js"></script>
+    <script src="/Emden/static/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="/Emden/static/lib/bootstrap/bootstrap.js"></script>
+    <script src="/Emden/static/lib/ui-bootstrap/ui-bootstrap-tpls-2.4.0.js"></script>
+    <script src="/Emden/static/lib/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="/Emden/static/lib/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="/Emden/static/lib/fornac/dist/scripts/fornac.js"></script>
+    <script src="/Emden/static/lib/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/Emden.js"></script>
+    <script src="/Emden/static/js/jquery-2.1.1.min.js"></script>
+
+    <!-- for icon -->
+    <link rel="icon" href="Emden/static/img/2p-logo.png">
+    <title>Emden</title>
+
+</head>
+
+<style type="text/css">
+html {
+    zoom: 80%;
+}
+.n-col-md-6 {
+  position: center;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.n-panel {}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn:hover {
+    border-radius: 5px;
+    color: #000;
+}
+
+.item {
+    left: 20px;
+    right: 20px;
+    height: 45px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.item input {
+    width: 80%;
+    height: 100%;
+    color: #000;
+    position: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.item input::placeholder {
+  font-family: Comic Sans MS, Comic Sans
+  font-size: 20px;
+  color: #C0C0C0;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  transition: all .2s linear;
+}
+
+.item label {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    transition: all .2s linear;
+    color: #C0C0C0;
+}
+
+.item input:focus+label,
+.item input:valid+label {
+    top: 0;
+    font-size: 12px;
+}
+
+input,
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+</style>
+
+<body>
+<!-- website logo -->
+<div class="logo" style="width: 80%; font-size: 100px; top: 15px; font-family: 'serif', sans-serif;color: #ffe01b">
+    <a href="/Emden">
+        <img src="/Emden/static/img/mainlogo.png" alt="Emden" id="logo-banner" width="20%">
+    </a>
+</div>
+</div>
+
+<!-- navigation -->
+{% include 'navigation.html' %}
+
+<!-- main container -->
+<div class="container" style = "width: 50%; position: center">
+    
+        <div class="n-col-md-6">
+            <div class="panel">
+            
+            <div class="panel-body" style="font-size: 25px;">
+                For suggestions, comments, bug fixes and technical help, feel free to contact us (details below).
+            </div>
+            
+            <div class="panel-body" style="font-size: 25px;">
+                <br><u>Software and website:</u>
+                <br>Zhe Liu, liuzlm1030@sjtu.edu.cn
+                <br>Yihang Bao, baoyihang@sjtu.edu.cn
+            </div>
+
+            <div class="panel-body" style="font-size: 25px;">
+                <br><u>Paper:</u>
+                <br>Prof. Guan Ning Lin, nickgnlin@sjtu.edu.cn
+            </div>
+            <div class="panel-body" style="font-size: 25px;">
+                <br><u>PI contact details:</u>
+                <br>Prof. Guan Ning Lin
+                <br>School of Biomedical Engineering & Med-X Research Institute
+                <br>Shanghai Jiao Tong University
+                <br>Lab: <a href="https://bmi.sjtu.edu.cn/">https://bmi.sjtu.edu.cn/</a>
+
+            </div>
+            </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+

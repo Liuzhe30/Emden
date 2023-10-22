@@ -1,0 +1,2 @@
+gene,uniprotac,variant,drug,smile,label,source
+ABCA1,O95477,K1587R,fenofibrate,CC(C)OC(=O)C(C)(C)OC1=CC=C(C=C1)C(=O)C2=CC=C(C=C2)Cl,1,pharmgkb

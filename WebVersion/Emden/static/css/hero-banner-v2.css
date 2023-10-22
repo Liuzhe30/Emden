@@ -1,0 +1,56 @@
+
+.hero-banner {
+  background: url("https://hlccc.org/wp-content/uploads/2017/09/events-hero-bg-free-img.jpg") no-repeat center/cover;
+  padding: 20px 15px;
+  position: relative;
+}
+.hero-banner:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #403b3b;
+}
+
+.hero-banner__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  color: #fff;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0 0 24px;
+}
+.hero-text p {
+  margin: 0 0 24px;
+}
+
+.hero-button {
+  text-align: left;
+  margin-top: 24px;
+}
+.hero-button a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #001958;
+  transition: all 0.1s ease-in-out;
+  margin-bottom: 24px;
+  width: 180px;
+  text-align: center;
+}
+.hero-button a:hover, .hero-button a:focus {
+  background: #007c89;
+  transition: all 0.1s ease-in-out;
+  color: #fff;
+}
